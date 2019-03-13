@@ -1,0 +1,102 @@
+#{Main(app)} {
+    #{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)} {
+        color: $accent;
+    }
+    #{MessageOuter(divider)} #{MessageOuter(dividerContent)} {
+        color: var(--skypecord-divider-fg);
+    }
+    #{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)}::before,
+    #{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)}::after {
+        opacity: 1;
+    }
+    #{Messages(dividerEnabled)} {
+        border-bottom-color: transparent;
+    }
+    #{$message-markup} {
+        background-color: var(--skypecord-message-bg);
+    }
+    #{$message-isMentioned} {
+        background-color: transparent;
+    }
+    #{$message-isMentioned} #{$message-markup} {
+        background-color: $mentioned-bg;
+    }
+    #{$channelTextArea-inner} {
+        background-color: var(--skypecord-textarea-bg);
+    }
+
+    #{$channelTextArea-text}::placeholder {
+        color: var(--skypecord-placeholder-fg);
+    }
+    
+}
+
+#{$message-container} {
+    display: inline-flex;
+    flex-direction: row;
+    max-width: 100%; /* Caps width to prevent it from flowing out, overflow didn't work there */
+}
+
+#{$message-buttonContainer} {
+    float: none;
+    align-self: flex-start;
+}
+
+#{$message-markup} {
+    border-radius: 0px 10px 10px 0px;
+    padding: 8px;
+    order: -1;
+    overflow: hidden; /* Prevents the markup from overflowing, and also allows the buttons to appear at all times. */
+}
+
+#{$message-markup}:empty {
+    display: none;
+}
+
+#{$message-markup} pre {
+    max-width: fit-content;
+}
+
+#{$message}:last-of-type #{$message-markup} {
+    border-radius: 0px 10px 10px 10px;
+}
+
+#{MessageOuter(dividerContent)}::before,
+#{MessageOuter(dividerContent)}::after {
+    height: 2px;
+}
+
+#{MessageOuter(dividerContent)}::before {
+    margin-right: 15px;
+}
+
+#{MessageOuter(dividerContent)}::after {
+    margin-left: 15px;
+}
+
+#{MessageOuter(divider)} {
+    font-size: 12px;
+}
+
+#{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)} {
+    text-transform: capitalize;
+}
+
+#{TextAreaContainer(channelTextArea)} {
+    border-top-color: transparent;
+}
+
+#{TextAreaContainer(inner)} {
+    min-height: 60px;
+    border-radius: 10px;
+    align-items: center;
+    #{TextAreaContainer(buttons)} {
+        order: 1;
+    }
+    textarea {
+        order: 2;
+    }
+    #{Property(flex)} {
+        order: 3;
+    }
+}

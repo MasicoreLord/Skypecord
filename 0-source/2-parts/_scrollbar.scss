@@ -1,0 +1,23 @@
+::-webkit-scrollbar {
+    width: 2px !important;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+    background-clip: border-box !important;
+    border: none !important;
+}
+
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+}
+
+:hover::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-bg !important;
+}
