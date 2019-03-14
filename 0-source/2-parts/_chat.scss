@@ -61,6 +61,21 @@
     border-radius: 0px 10px 10px 10px;
 }
 
+#{$message-isMentionedCozy}::after {
+    display: none;
+}
+
+#{$message-isMentionedCozy} #{$message-markup}::after {
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    bottom: 4px;
+    width: 1px;
+    border-left: 4px solid #f1b449;
+    border-radius: 0px 0px 0px 10px;
+    content: '';
+}
+
 #{MessageOuter(dividerContent)}::before,
 #{MessageOuter(dividerContent)}::after {
     height: 2px;
