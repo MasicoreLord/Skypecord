@@ -2,18 +2,6 @@
     border-radius: 0;
 }
 
-/* Adjusted pinned/sticky banners, to not cover account container */
-#{$channelList-pinnedBanner} {
-    height: 48px;
-    top: 0;
-}
-
-/* Adjusted scroller to make space for pinned banner */
-#{$channelList-scroller}#{$channelList-hasPinnedBanner} {
-    padding-top: 96px; /* Banner height x2 */
-    margin-top: 48px; /* Same as banner height */
-}
-
 #{$main-app} {
     #{$channelList-container} {
         background-color: var(--skypecord-sidebar-bg);
@@ -36,37 +24,21 @@
         [d='M13.5 4.5l-9 9'] {
             stroke: var(--skypecord-banner-icon-fg);
         }
-        background-color: var(--skypecord-banner-fallback-bg);
-        -webkit-mask-image: linear-gradient(#000 50%, rgba(0,0,0,.4) 100%);
-        mask-image: linear-gradient(#000 50%, rgba(0,0,0,.4) 100%);
     }
 
-    /* Hotfix for newer banner (not in stable yet, so only could do so much) */
-    .header-2o-2hj.banner-1TiK82 {
-        background-color: transparent;
-        -webkit-mask-image: none;
-        mask-image: none;
+    #{$channelList-bannerImage} {
+        background-color: var(--skypecord-banner-fallback-bg);
+        -webkit-mask-image: linear-gradient(#000 0%, transparent 100%);
+        mask-image: linear-gradient(#000 0%, transparent 100%);
+    }
+
+    #{$channelList-banner} {
         color: $banner-header-name-fg;
         border-color: transparent;
     }
 
-    #{$channelList-pinnedBanner} {
-        [d='M4.5 4.5l9 9'],
-        [d='M13.5 4.5l-9 9'] {
-            stroke: var(--skypecord-icon-fg);
-        }
-    }
-
     #{$channelList-actionIcon} {
         color: var(--skypecord-icon-fg)
-    }
-
-    #{$channelList-pinnedBanner} {
-        background-image: none!important; /* !important to override inline style */
-        background-color: transparent;
-    }
-    #{$channelList-pinnedBanner}#{$channelList-banner} #{$channelList-header} {
-        color: var(--skypecord-main-fg);
     }
     #{$channelList-banner} #{$channelList-header} {
         color: $banner-header-name-fg;
@@ -110,4 +82,3 @@
         background-color: transparent;
     }
 }
-//var(--skypecord-main-fg)

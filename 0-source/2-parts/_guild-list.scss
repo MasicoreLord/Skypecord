@@ -7,7 +7,7 @@
     display: none;
 }
 
-/* Display public button, if it appears in the server scroller */
+/* Display public button or anything else that has the same id, if it appears in the server scroller */
 .scroller-2TZvBN #bd-pub-li {
     display: block;
 }
