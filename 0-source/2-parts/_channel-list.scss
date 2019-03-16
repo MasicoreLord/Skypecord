@@ -81,4 +81,10 @@
     #{$channelList-itemContentHoveredText} {
         background-color: transparent;
     }
+
+    #{$channelList-voiceWrapper} {
+        background-color: transparent;
+        color: var(--skypecord-stat-fg);
+        font-family: inherit;
+    }
 }
