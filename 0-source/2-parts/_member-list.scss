@@ -1,3 +1,27 @@
-#{Main(app)} #{ChannelMembers(members)} {
-    background-color: var(--skypecord-sidebar-bg);
+#{$main-app} {
+    #{$membersList} {
+        background-color: var(--skypecord-sidebar-bg);
+    }
+    
+    #{$membersList-member}:hover,
+    #{$membersList-member}.popout-open,
+    #{$membersList-member}.popout-open:hover {
+        #{$membersList-content} {
+            background-color: transparent;
+        }
+    }
+
+    #{$membersList-member}:hover {
+        background-color: var(--skypecord-sidebar-item-hov-bg);
+    }
+
+    #{$membersList-member}.popout-open {
+        background-color: var(--skypecord-sidebar-item-sel-bg);
+    }
+}
+
+#{$membersList-member} {
+    margin-left: 0;
+    padding-left: 8px; /* Replace margin left w/ equivalent padding left */
+    border-radius: 0;
 }
