@@ -12,31 +12,26 @@
         border-bottom: 1px solid;
         border-color: var(--skypecord-border-fg);
     }
-    
     /* Drop Down Button */
     [d='M4.5 4.5l9 9'],
     [d='M13.5 4.5l-9 9'] {
         stroke: var(--skypecord-icon-fg);
     }
-
     #{$channelList-banner} {
         [d='M4.5 4.5l9 9'],
         [d='M13.5 4.5l-9 9'] {
             stroke: var(--skypecord-banner-icon-fg);
         }
     }
-
     #{$channelList-bannerImage} {
         background-color: var(--skypecord-banner-fallback-bg);
         -webkit-mask-image: linear-gradient(#000 0%, transparent 100%);
         mask-image: linear-gradient(#000 0%, transparent 100%);
     }
-
     #{$channelList-banner} {
         color: $banner-header-name-fg;
         border-color: transparent;
     }
-
     #{$channelList-actionIcon} {
         color: var(--skypecord-icon-fg)
     }
@@ -86,5 +81,9 @@
         background-color: transparent;
         color: var(--skypecord-stat-fg);
         font-family: inherit;
+    }
+    /* Add Button */
+    [name='PlusAlt'] polygon {
+        fill: var(--skypecord-icon-fg);
     }
 }
