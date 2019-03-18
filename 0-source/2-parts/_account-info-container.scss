@@ -3,11 +3,29 @@
         background-color: var(--skypecord-sidebar-bg);
         color: var(--skypecord-main-fg);
     }
+    #{$currentAccount-status} {
+        border-color: var(--skypecord-status-border);
+    }
+    [aria-label='Mute'] {
+        background-image: var(--skypecord-mic-icon)!important;
+    }
+    [aria-label='Unmute'] {
+        background-image: var(--skypecord-muted-mic-icon)!important;
+    }
+    [aria-label='Deafen'] {
+        background-image: var(--skypecord-headphone-icon)!important;
+    }
+    [aria-label='Undeafen'] {
+        background-image: var(--skypecord-muted-headphone-icon)!important;
+    }
+    [name='Gear'] {
+        background-image: var(--skypecord-ellipsis-icon);
+        background-size: 100%;
+        path {
+            fill: none;
+        }
+    }
 }
-
-// #{$main-themeLight} [aria-label='Mute'] {
-//     background-image: $skypecord-mic-icon-light !important; /* !important to override inline style */
-// }
 
 #{$currentAccount-container} {
     margin-bottom: 0;
