@@ -43,8 +43,8 @@
 }
 
 #{$message-markup} {
-    border-radius: 0px 10px 10px 0px;
-    padding: 8px;
+    border-radius: 0 inRem(10px) inRem(10px) 0;
+    padding: inRem(8px);
     order: -1;
     overflow: hidden; /* Prevents the markup from overflowing, and also allows the buttons to appear at all times. */
 }
@@ -58,7 +58,7 @@
 }
 
 #{$message}:last-of-type #{$message-markup} {
-    border-radius: 0px 10px 10px 10px;
+    border-radius: 0 inRem(10px) inRem(10px) inRem(10px);
 }
 
 #{$message-isMentionedCozy}::after {
@@ -67,30 +67,30 @@
 
 #{$message-isMentionedCozy} #{$message-markup}::after {
     position: absolute;
-    left: 3px;
-    top: 2px;
-    bottom: 4px;
-    width: 1px;
-    border-left: 4px solid #f1b449;
-    border-radius: 0px 0px 0px 10px;
+    left: inRem(3px);
+    top: inRem(2px);
+    bottom: inRem(4px);
+    width: inRem(1px);
+    border-left: inRem(4px) solid #f1b449;
+    border-radius: 0 0 0 inRem(10px);
     content: '';
 }
 
 #{MessageOuter(dividerContent)}::before,
 #{MessageOuter(dividerContent)}::after {
-    height: 2px;
+    height: inRem(2px);
 }
 
 #{MessageOuter(dividerContent)}::before {
-    margin-right: 15px;
+    margin-right: inRem(15px);
 }
 
 #{MessageOuter(dividerContent)}::after {
-    margin-left: 15px;
+    margin-left: inRem(15px);
 }
 
 #{MessageOuter(divider)} {
-    font-size: 12px;
+    font-size: inRem(12px);
 }
 
 #{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)} {
@@ -102,8 +102,8 @@
 }
 
 #{TextAreaContainer(inner)} {
-    min-height: 60px;
-    border-radius: 10px;
+    min-height: inRem(60px);
+    border-radius: inRem(10px);
     align-items: center;
     #{TextAreaContainer(buttons)} {
         order: 1;

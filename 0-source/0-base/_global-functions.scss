@@ -212,3 +212,8 @@
 @function TextAreaContainer($class, $index: 1) {
     @return get-class("TextAreaContainer", $class, $index);
 }
+
+@function inRem($px-size, $root-px: 16px) {
+    $remified: $px-size / $root-px;
+    @return #{$remified}rem;
+}

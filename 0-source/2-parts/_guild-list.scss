@@ -8,8 +8,14 @@
 }
 
 /* Display public button or anything else that has the same id, if it appears in the server scroller */
-.scroller-2TZvBN #bd-pub-li {
+#{$guild-scroller} #bd-pub-li {
     display: block;
+}
+
+#{$guild}:not(#bd-pub-li):not(.RANbutton-frame) #{$guild-inner},
+#{$home} #{$guild-inner},
+#{$dm-inner} {
+    border-radius: 50%!important;
 }
 
 #{$main-app} {
@@ -24,5 +30,25 @@
     }
     #{$friends-online} {
         color: var(--skypecord-main-fg);
+    }
+    #{$guild-inner} {
+        background-color: var(--skypecord-avatar-bg)!important; /* Override inline style on guilds w/ no icon */
+        a {
+            color: $accent;
+        }
+    }
+    #{$guild-circleButton},
+    #{$guild-circleButton}:hover,
+    #{$guild-circleButton}#{$guild-circleButtonSelected} {
+        background-color: var(--skypecord-avatar-bg);
+        color: $accent;
+    }
+    #{$guild-icon}:not(#{$guild-noIcon}) {
+        background-color: $accent;
+        color: $alt-fg;
+    }
+    #{$guild-noIcon},
+    #{$home-icon} {
+        color: $accent;
     }
 }

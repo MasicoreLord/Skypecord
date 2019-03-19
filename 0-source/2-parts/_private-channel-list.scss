@@ -1,6 +1,18 @@
 #{Main(app)} {
-    #{SearchBoxes(searchBar, 2)} {
+    #{$privateSearchBar-wrapper} {
+        box-shadow: none;
+    }
+    #{$search-bar} {
         background-color: var(--skypecord-input-box-bg);
+        input {
+            color: var(--skypecord-main-fg);
+            &::placeholder {
+                color: var(--skypecord-placeholder-fg);
+            }
+        }
+    }
+    #{$search-barInner} {
+        background-color: transparent;
     }
     #{Channels(channels)} {
         background-color: var(--skypecord-sidebar-bg);
@@ -49,6 +61,10 @@
             }
         }
     }
+}
+
+#{$search-bar} input {
+    font-size: 12px;
 }
 
 #{PrivateChannelsList(privateChannels)} header:first-of-type {

@@ -31,6 +31,7 @@
     margin-bottom: 0;
     padding-bottom: 1px; // Balance out margin removal
     order: -1; // Force it to the top
+    font-size: 12px;
 }
 
 #{$currentAccount-accountDetails} #{$currentAccount-discriminator} {
