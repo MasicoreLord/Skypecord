@@ -28,8 +28,15 @@
     line-height: 28px;
 }
 
-.channelName-3stJzi {
+#{$chat-channelName} {
     height: 30px;
+    svg {
+        display: none;
+    }
+}
+
+#{$chat-headerButtonDivider} {
+    display: none;
 }
 
 #{$client-headerTitle} {
