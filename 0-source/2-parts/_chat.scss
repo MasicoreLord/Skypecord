@@ -28,6 +28,10 @@
     #{$channelTextArea-text}::placeholder {
         color: var(--skypecord-placeholder-fg);
     }
+
+    #{$chat-channelTextArea} {
+        border-top-color: transparent;
+    }
     
 }
 
@@ -97,10 +101,6 @@
     text-transform: capitalize;
 }
 
-#{TextAreaContainer(channelTextArea)} {
-    border-top-color: transparent;
-}
-
 #{TextAreaContainer(inner)} {
     min-height: inRem(60px);
     border-radius: inRem(10px);
@@ -124,4 +124,9 @@
 
 #{$popouts-popoutTopRight}[style$='translateX(-100%) translateY(-100%) translateZ(0px);'] {
     transform: translateX(-43px) translateY(-100%) translateZ(0px)!important;
+}
+
+#{$chat-channelTextArea} {
+    padding-top: 8px;
+    margin-bottom: 20px;
 }
