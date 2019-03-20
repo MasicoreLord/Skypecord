@@ -82,15 +82,15 @@
 
 #{MessageOuter(dividerContent)}::before,
 #{MessageOuter(dividerContent)}::after {
-    height: inRem(2px);
+    height: 2px;
 }
 
 #{MessageOuter(dividerContent)}::before {
-    margin-right: inRem(15px);
+    margin-right: 15px;
 }
 
 #{MessageOuter(dividerContent)}::after {
-    margin-left: inRem(15px);
+    margin-left: 15px;
 }
 
 #{MessageOuter(divider)} {
@@ -127,6 +127,6 @@
 }
 
 #{$chat-channelTextArea} {
-    padding-top: 8px;
-    margin-bottom: 20px;
+    padding-top: inRem(8px);
+    margin-bottom: inRem(20px);
 }

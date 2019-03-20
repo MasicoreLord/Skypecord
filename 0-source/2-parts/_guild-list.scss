@@ -18,6 +18,10 @@
     border-radius: 50%!important;
 }
 
+#{$guild-inner} {
+    font-weight: 600;
+}
+
 #{$main-app} {
     #{$guild-wrapper} {
         background-color: var(--skypecord-sidebar-bg);
