@@ -7,23 +7,22 @@
 }
 
 #{$client-topic} {
-    margin-left: 65px;
-    padding-left: 4px;
+    padding-left: 0;
+    margin-left: 0;
     &::before {
         display: none;
     }
 }
 
 #{$main-app} {
-    #{$chat-searchBarWrapper} #{$search-bar} {
+    #{$chat-searchBarWrapper} #{$search-bar},
+    #{$library-filterInput},
+    #{$store-browseSearchInput} {
         background-color: transparent;
     }
 }
 
-// 19px from top - When it wasn't absolute
 #{$chat-titleText} {
-    position: absolute;
-    top: 19px;
     font-size: 24px;
     line-height: 28px;
 }
@@ -35,52 +34,25 @@
     }
 }
 
-#{$chat-headerButtonDivider} {
-    display: none;
-}
-
-#{$client-headerTitle} {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: -28px;
-}
-
-#{$chat-searchBarWrapper} {
-    margin: 0;
-    position: absolute;
-    left: 12px;
-    bottom: 23px;
-}
-
 #{$chat-searchBarIcon} {
     order: -1;
+    margin-right: 0;
+    margin-left: 0;
 }
 
-.search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root {
-    padding: 0 0 0 3px;
+#{$library-filterIcon},
+#{$store-browseSearchIcon} {
+    right: unset;
+    left: 6px;
 }
 
-.search-2oPWTC .searchBar-3dMhjb,
-.search-2oPWTC.focused-31_ccS .searchBar-3dMhjb, .search-2oPWTC.open-6_Y_aH .searchBar-3dMhjb, .search-2oPWTC.popout-open .searchBar-3dMhjb {
-    width: 57px;
+#{$library-filter} #{$library-filterInput},
+#{$store-browseSearch} #{$store-browseSearchInput} {
+    padding-left: 30px;
+    padding-right: 0;
 }
 
-.search-2oPWTC .DraftEditor-root {
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.searchBarIcon-1J6sKG .icon-3cZ1F_ {
-    width: 12px;
-    height: 12px;
-    background-size: 100%;
-}
-
-.searchBarIcon-1J6sKG {
-    width: 12px;
-    margin: 0;
-}
-
-.title-3qD0b- .input-autosize-input, .titleCall-_b9o8P .input-autosize-input {
+.title-3qD0b- .input-autosize-input,
+.titleCall-_b9o8P .input-autosize-input {
     font-size: inherit;
 }
