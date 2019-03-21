@@ -1,15 +1,15 @@
-#{Main(app)} {
-    #{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)} {
+#{$main-app} {
+    #{$message-divider}#{$message-dividerRed} #{$message-dividerContent} {
         color: $accent;
     }
-    #{MessageOuter(divider)} #{MessageOuter(dividerContent)} {
+    #{$message-divider} #{$message-dividerContent} {
         color: var(--skypecord-divider-fg);
     }
-    #{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)}::before,
-    #{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)}::after {
+    #{$message-divider}#{$message-dividerRed} #{$message-dividerContent}::before,
+    #{$message-divider}#{$message-dividerRed} #{$message-dividerContent}::after {
         opacity: 1;
     }
-    #{Messages(dividerEnabled)} {
+    #{$message-dividerEnabled} {
         border-bottom-color: transparent;
     }
     #{$message-markup} {
@@ -80,38 +80,38 @@
     content: '';
 }
 
-#{MessageOuter(dividerContent)}::before,
-#{MessageOuter(dividerContent)}::after {
+#{$message-dividerContent}::before,
+#{$message-dividerContent}::after {
     height: 2px;
 }
 
-#{MessageOuter(dividerContent)}::before {
+#{$message-dividerContent}::before {
     margin-right: 15px;
 }
 
-#{MessageOuter(dividerContent)}::after {
+#{$message-dividerContent}::after {
     margin-left: 15px;
 }
 
-#{MessageOuter(divider)} {
+#{$message-divider} {
     font-size: inRem(12px);
 }
 
-#{MessageOuter(divider)}#{MessageOuter(dividerRed)} #{MessageOuter(dividerContent)} {
+#{$message-divider}#{$message-dividerRed} #{$message-dividerContent} {
     text-transform: capitalize;
 }
 
-#{TextAreaContainer(inner)} {
+#{$chat-channelTextAreaInner} {
     min-height: inRem(60px);
     border-radius: inRem(10px);
     align-items: center;
-    #{TextAreaContainer(buttons)} {
+    #{$chat-channelTextAreaButtons} {
         order: 1;
     }
     textarea {
         order: 2;
     }
-    #{Property(flex)} {
+    #{$property-flexLayout} {
         order: 3;
     }
 }
