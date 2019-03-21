@@ -1,6 +1,7 @@
 #{$main-app} {
     #{$membersList} {
         background-color: var(--skypecord-sidebar-bg);
+        border-color: var(--skypecord-border-fg);
     }
     
     #{$membersList-member}:hover,
@@ -18,6 +19,10 @@
     #{$membersList-member}.popout-open {
         background-color: var(--skypecord-sidebar-item-sel-bg);
     }
+}
+
+#{$membersList} {
+    border-left: 1px solid;
 }
 
 #{$membersList-member} {

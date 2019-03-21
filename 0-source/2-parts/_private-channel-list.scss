@@ -69,16 +69,10 @@
 
 #{$privateChannelList} header:first-of-type {
     font-weight: 600;
-    height: 100%;
     border-top: 1px solid var(--skypecord-nav-divider-fg);
     padding-top: 10px;
-    margin-top: 8px;
-}
-
-#{$privateChannelList} #{$client-scroller} {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0;
+    margin-top: 50px;
+    max-width: 100%;
 }
 
 #{$privateChannelList-linkButtonIcon} {
@@ -89,10 +83,6 @@
     transform: translateX(-50%);
 }
 
-#{$privateChannelList} header,
-#{$privateChannelList-channel}[style^='height'] {
-    grid-column: 1/-1;
-}
 
 #{$privateChannelList} #{$client-scroller} [style='width: 100%; height: 20px;'] {
     display: none;
@@ -101,6 +91,8 @@
 #{$privateChannelList-channel}:not([style^='height']) {
     height: 50px;
     margin-bottom: -5px;
+    width: 25%;
+    float: left;
 }
 
 #{$privateChannelList-channel}:not([style^='height']) #{$privateChannelList-channelName} {

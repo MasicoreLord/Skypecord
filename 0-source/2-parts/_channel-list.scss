@@ -2,14 +2,24 @@
     border-radius: 0;
 }
 
+#{$channelList-header} {
+    box-shadow: none;
+    border-bottom: 1px solid;
+}
+
+#{$channelList} {
+    border-right: 1px solid;
+}
+
 #{$main-app} {
     #{$channelList-container} {
         background-color: var(--skypecord-sidebar-bg);
     }
     #{$channelList-header} {
         color: var(--skypecord-main-fg);
-        box-shadow: none;
-        border-bottom: 1px solid;
+        border-color: var(--skypecord-border-fg);
+    }
+    #{$channelList} {
         border-color: var(--skypecord-border-fg);
     }
     /* Drop Down Button */
