@@ -11,6 +11,13 @@
 #{$client-topic} {
     padding-left: 0;
     margin-left: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    top: 0;
+    strong {
+        font-weight: 800;
+    }
     &::before {
         display: none;
     }
@@ -24,6 +31,13 @@
     }
     #{$chat-headerButtonIconWrapper}::after {
         background-color: var(--skypecord-header-button-bg);
+    }
+    #{$chat-channelName},
+    #{$client-headerTitle} {
+        color: var(--skypecord-header-title-fg);
+    }
+    #{$client-topic} {
+        color: var(--skypecord-header-topic-fg);
     }
 }
 
@@ -57,9 +71,11 @@
     }
 }
 
-#{$chat-titleText} {
+#{$chat-titleText},
+#{$client-headerTitle} {
     font-size: 24px;
     line-height: 28px;
+    font-weight: 700;
 }
 
 #{$chat-channelName} {

@@ -4,6 +4,10 @@
         border-color: var(--skypecord-border-fg);
     }
     
+    #{$membersList-membersGroup} {
+        color: var(--skypecord-header-fg);
+    }
+
     #{$membersList-member}:hover,
     #{$membersList-member}.popout-open,
     #{$membersList-member}.popout-open:hover {
@@ -23,6 +27,11 @@
 
 #{$membersList} {
     border-left: 1px solid;
+}
+
+#{$membersList-membersGroup} {
+    font-weight: 600;
+    font-size: 12px;
 }
 
 #{$membersList-member} {

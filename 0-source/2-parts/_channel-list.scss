@@ -97,3 +97,10 @@
         fill: var(--skypecord-icon-fg);
     }
 }
+
+#{$channelList-categoryNameCollapsed},
+#{$channelList-categoryNameDefault},
+#{$channelList-categoryNameMuted} {
+    font-size: 12px;
+    font-weight: 600;
+}
