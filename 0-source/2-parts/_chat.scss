@@ -78,8 +78,8 @@
 #{$message-isMentionedCozy} #{$message-markup}::after {
     position: absolute;
     left: inRem(3px);
-    top: 2px;
-    height: calc(100% - 4px);
+    top: inRem(2px);
+    height: calc(100% - inRem(4px));
     width: inRem(1px);
     border-left: inRem(4px) solid;
     border-radius: 0;
@@ -88,7 +88,7 @@
 
 
 #{$message-isMentionedCozy} #{$message-markup},
-#{$message}:last-of-type #{$message-markup} {
+#{$message}:last-of-type #{$message-isMentionedCozy} #{$message-markup} {
     border-radius: 0 inRem(10px) inRem(10px) 0;
 }
 
