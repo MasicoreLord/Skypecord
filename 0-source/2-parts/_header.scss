@@ -41,19 +41,28 @@
     }
 }
 
+#{$client-headerBar} {
+    #{$library-filter},
+    #{$store-browseSearch},
+    #{$chat-searchBarWrapper} {
+        margin: 0 16px;
+    }
+}
+
+#{$chat-searchBar} .DraftEditor-root {
+    font-weight: 700;
+}
+
 #{$chat-headerButtonIconWrapper} {
     position: relative;
     margin-left: 24px;
     margin-right: 0;
     #{$chat-headerButtonDivider} + & {
-        margin-left: 18px;
+        margin-left: 0;
     }
     svg {
         position: relative;
         z-index: 2;
-    }
-    + #{$chat-searchBarWrapper} {
-        margin-left: 18px;
     }
     &::after {
         content: '';
@@ -83,6 +92,10 @@
     svg {
         display: none;
     }
+}
+
+#{$chat-headerButtonDivider} {
+    display: none;
 }
 
 #{$chat-searchBarIcon} {

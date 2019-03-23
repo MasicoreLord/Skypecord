@@ -2,21 +2,53 @@
     height: 27px;
 }
 
+#{$client-win} {
+    #{$main-app} {
+        &::before,
+        &::after {
+            position: fixed;
+            content: '';
+            height: 31px;
+            right: 0;
+            top: 0;
+            box-sizing: border-box;
+        }
+        &::before {
+            top: 0;
+            left: 0;
+            background-color: var(--skypecord-windows-titlebar-bg);
+            color: var(--skypecord-windows-titlebar-fg);
+            content: 'Skypecord';
+            font-size: 12px;
+            font-weight: 600;
+            padding-left: 13px;
+            padding-top: 11px;
+            padding-bottom: 9px;
+            border: 1px solid $window-decoration-border;
+            border-bottom: none;
+        }
+        &::after {
+            width: 135px;
+            content: var(--skypecord-minimize-icon) var(--skypecord-window-control-spacer) var(--skypecord-maximize-icon) var(--skypecord-window-control-spacer) var(--skypecord-close-icon);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
 #{$client-winButton} {
     height: 31px;
     width: 45px;
+    opacity: 0;
+    cursor: default;
+    &:hover {
+        background-color: #{$window-control-hover-bg};
+    }
 }
 
-#{$client-wordmark}::after {
-    content: 'Skypecord';
-    color: #fff;
-    position: absolute;
-    font-size: 12px;
-    z-index: 1001;
-    width: 570px;
-    height: 40px;
-    top: 10px;
-    left: 8px;
+#{$client-winButtonClose}:hover {
+    background-color: #{$window-close-hover-bg};
 }
 
 #{$client-wordmark} svg {

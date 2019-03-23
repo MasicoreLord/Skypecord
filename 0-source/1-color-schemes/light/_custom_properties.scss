@@ -1,4 +1,9 @@
 #{$main-themeLight} {
+    --skypecord-windows-titlebar-bg: #E5E4E8;
+    --skypecord-windows-titlebar-fg: rgb(0, 0, 0);
+    --skypecord-minimize-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' name='TitleBarMinimize' width='12' height='12' viewBox='0 0 12 12'%3E%3Crect fill='%23000' width='10' height='1' x='1' y='6'%3E%3C/rect%3E%3C/svg%3E");
+    --skypecord-maximize-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' name='TitleBarMaximize' width='12' height='12' viewBox='0 0 12 12'%3E%3Crect width='9' height='9' x='1.5' y='1.5' fill='none' stroke='%23000'%3E%3C/rect%3E%3C/svg%3E");
+    --skypecord-close-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' name='TitleBarClose' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpolygon fill='%23000' fill-rule='evenodd' points='11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1'%3E%3C/polygon%3E%3C/svg%3E");
     --skypecord-sidebar-bg: rgb(240, 244, 248);
     --skypecord-sidebar-item-hov-bg: rgba(199, 237, 252, 0.5);
     --skypecord-sidebar-item-sel-bg: rgb(199, 237, 252);

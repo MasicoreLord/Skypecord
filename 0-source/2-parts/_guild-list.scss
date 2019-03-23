@@ -1,5 +1,6 @@
 #{$guild-wrapper} {
     border-radius: 0;
+    border-right: 1px solid;
 }
 
 /* Hide public button that's out of place */
@@ -25,6 +26,7 @@
 #{$main-app} {
     #{$guild-wrapper} {
         background-color: var(--skypecord-sidebar-bg);
+        border-color: var(--skypecord-border-fg);
     }
     #{$guild}#{$guild-unread},
     #{$guild}#{$guild-selected} {
