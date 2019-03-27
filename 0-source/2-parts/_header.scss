@@ -57,9 +57,6 @@
     position: relative;
     margin-left: 24px;
     margin-right: 0;
-    #{$chat-headerButtonDivider} + & {
-        margin-left: 0;
-    }
     svg {
         position: relative;
         z-index: 2;
@@ -74,7 +71,8 @@
         height: 40px;
         border-radius: 50%;
         #{$client-headerBar} #{$property-flexLayout} > div &,
-        a & {
+        a &,
+        .toolbar-94eLIm > div & {
             top: -15px;
         }
     }

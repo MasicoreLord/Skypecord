@@ -42,10 +42,9 @@
     #{$chat-channelTextArea} {
         border-top-color: transparent;
     }
-    
 }
 
-#{$unread-barWrapper}[style$='translateY(-150%);'] {
+#{$guild-wrapper} #{$unread-barWrapper}[style$='translateY(-150%);'] {
     -webkit-app-region: drag;
     #{$main-app} & {
         box-shadow: none;
@@ -58,7 +57,7 @@
     max-width: 100%; /* Caps width to prevent it from flowing out, overflow didn't work there */
 }
 
-#{$message-buttonContainer} {
+#{$message-buttonContainerWrapper} {
     float: none;
     align-self: flex-start;
 }
@@ -92,7 +91,7 @@
     position: absolute;
     left: inRem(3px);
     top: inRem(2px);
-    height: calc(100% - inRem(4px));
+    height: calc(100% - #{inRem(4px)});
     width: inRem(1px);
     border-left: inRem(4px) solid;
     border-radius: 0;

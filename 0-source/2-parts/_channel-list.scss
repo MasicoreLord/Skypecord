@@ -3,8 +3,8 @@
 }
 
 #{$channelList-header} {
-    box-shadow: none;
     border-bottom: 1px solid;
+    height: 36px;
 }
 
 #{$channelList} {
@@ -18,9 +18,13 @@
     #{$channelList-header} {
         color: var(--skypecord-main-fg);
         border-color: var(--skypecord-border-fg);
+        box-shadow: none;
     }
     #{$channelList} {
         border-color: var(--skypecord-border-fg);
+        #{$badge-wrapper} {
+            background-color: $accent;
+        }
     }
     /* Drop Down Button */
     [d='M4.5 4.5l9 9'],

@@ -1,2 +1,35 @@
 // BetterDocs
-@import url('https://anti-betterdocs.github.io/BlockBetterDocs/code.css');
+#{$main-app} {
+    #{$message-markup} {
+        [href*='#{"//"}betterdocs.us' i],
+        [href*='#{"//"}betterdocs.net' i],
+        [href*='#{"//"}betterdocs.netlify.com' i] {
+            color: rgb(255, 123, 15);
+        }
+    }
+    #{$message-embed} {
+        #{$message-embedContentInner} {
+            a[href*='#{"//"}betterdocs.us' i],
+            a[href*='#{"//"}betterdocs.net' i],
+            a[href*='#{"//"}betterdocs.netlify.com' i] {
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(255, 123, 15);
+                    text-align: center;
+                    font-size: inRem(14px);
+                    padding: 4px;
+                    color: #fff;
+                    z-index: 1;
+                    content: 'Warning: BetterDocs is NOT an official source.';
+                }
+            }
+        }
+    }
+}

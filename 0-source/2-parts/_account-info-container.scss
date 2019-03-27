@@ -6,6 +6,9 @@
     #{$currentAccount-status} {
         border-color: var(--skypecord-status-border);
     }
+    #{$currentAccount-button}:hover {
+        background-color: transparent;
+    }
     [aria-label='Mute'] {
         background-image: var(--skypecord-mic-icon)!important;
     }
@@ -24,6 +27,23 @@
         path {
             fill: none;
         }
+    }
+}
+
+#{$main-themeLight} {
+    #{$currentAccount-button} {
+        opacity: 1;
+    }
+    #{$currentAccount-button}:hover {
+        opacity: .6;
+    }
+}
+#{$main-themeDark} {
+    #{$currentAccount-button} {
+        opacity: .6;
+    }
+    #{$currentAccount-button}:hover {
+        opacity: 1;
     }
 }
 
