@@ -59,13 +59,22 @@
             #{$privateChannelList-channelActivity} {
                 color: var(--skypecord-main-fg);
             }
+            #{$privateChannelList-channelActivityIconForeground} {
+                fill: var(--skypecord-main-fg);
+            }
         }
         #{$privateChannelList-channelStatus} {
             border-color: var(--skypecord-status-border);
         }
     }
     #{$privateChannelList-channelClose} {
-        background-image: var(--skypecord-close-icon);
+        background-image: var(--skypecord-close-icon-2);
+    }
+    #{$privateChannelList-channelActivityIconForeground} {
+        fill: var(--skypecord-main-fg);
+    }
+    #{$privateChannelList-channel}:hover #{$privateChannelList-channelActivityIconForeground} {
+        fill: var(--skypecord-main-fg);
     }
 }
 

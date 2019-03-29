@@ -1,0 +1,33 @@
+.theme-light {
+    &#{$client-contextMenu} {
+        background-color: var(--skypecord-content-menu-bg);
+    }
+    #{$client-contextMenuItem} {
+        color: var(--skypecord-main-fg);
+        &:hover {
+            background-color: var(--skypecord-context-menu-item-bg);
+            color: var(--skypecord-main-fg);
+        }
+    }
+}
+
+#{$client-contextMenu},
+#{$client-contextMenuItem} {
+    border-radius: 0;
+}
+
+#{$client-contextMenu} {
+    padding: 9px 0;
+    max-height: 100%;
+    overflow: auto;
+    &[style*='top: 10px'] {
+        top: 31px!important;
+        max-height: calc(100% - 49px);
+    }
+}
+
+#{$client-contextMenuItem} {
+    padding: 10px 13px;
+    font-size: 14px;
+    line-height: 17px;
+}

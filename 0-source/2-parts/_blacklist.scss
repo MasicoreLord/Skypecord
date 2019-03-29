@@ -1,9 +1,54 @@
 // BetterDocs
+%betterdocs-blocker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: inRem(14px);
+    padding: 4px;
+    z-index: 1;
+    content: 'Warning: BetterDocs is NOT an official source.';
+}
+
+#{$message-embed} {
+    #{$message-embedContentInner} {
+        a[href*='#{"//"}betterdocs.us' i],
+        a[href*='#{"//"}betterdocs.net' i],
+        a[href*='#{"//"}betterdocs.netlify.com' i] {
+            &::after {
+               @extend %betterdocs-blocker;
+            }
+        }
+    }
+}
+
+#{$chat-inviteWrapper} {
+    position: relative;
+}
+
+#{$chat-inviteWrapper} [style*='/icons/556962006574301227'] {
+    position: static;
+    &::after {
+        @extend %betterdocs-blocker;
+    }
+}
+
 #{$main-app} {
+    %betterdocs-blocker-colors {
+        background-color: rgb(255, 123, 15);
+        color: #fff;
+    }
     #{$message-markup} {
         [href*='#{"//"}betterdocs.us' i],
         [href*='#{"//"}betterdocs.net' i],
-        [href*='#{"//"}betterdocs.netlify.com' i] {
+        [href*='#{"//"}betterdocs.netlify.com' i],
+        [href*='#{"//"}discordapp.com/invite/D4cAkXX'],
+        [href*='#{"//"}discord.gg/invite/D4cAkXX'] {
             color: rgb(255, 123, 15);
         }
     }
@@ -13,23 +58,12 @@
             a[href*='#{"//"}betterdocs.net' i],
             a[href*='#{"//"}betterdocs.netlify.com' i] {
                 &::after {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: rgb(255, 123, 15);
-                    text-align: center;
-                    font-size: inRem(14px);
-                    padding: 4px;
-                    color: #fff;
-                    z-index: 1;
-                    content: 'Warning: BetterDocs is NOT an official source.';
+                   @extend %betterdocs-blocker-colors;
                 }
             }
         }
+    }
+    #{$chat-inviteWrapper} [style*='/icons/556962006574301227']::after {
+        @extend %betterdocs-blocker-colors;
     }
 }

@@ -2,3 +2,20 @@
 #{$guild-wrapper}.foldercontentclosed {
     border-right: 0;
 }
+
+/* Joined Date & Created Date by DevilBro */
+.theme-light,
+.theme-dark {
+    #{$modal-topSectionNormal},
+    #{$modal-topSectionSpotify},
+    #{$modal-topSectionPlaying},
+    #{$modal-topSectionStreaming} {
+        &,
+        &:not(.topSectionNormal-2-vo2m) {
+            .joinedAtDate,
+            .creationDate {
+                color: $alt-fg;
+            }
+        }
+    }
+}

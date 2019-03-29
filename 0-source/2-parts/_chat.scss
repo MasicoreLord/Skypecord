@@ -42,6 +42,42 @@
     #{$chat-channelTextArea} {
         border-top-color: transparent;
     }
+    #{$chat-newMessagesBar} {
+        background-color: var(--skypecord-new-message-bar-bg);
+    }
+    #{$chat-jumpToPresentBar} {
+        background-color: $jump-to-present-bar-bg;
+        button {
+            color: $jump-to-present-bar-fg;
+        }
+    }
+}
+
+#{$chat-newMessagesBar},
+#{$chat-jumpToPresentBar} {
+    padding: 0 25px;
+    min-height: 30px;
+    min-width: fit-content;
+    border-radius: 15px;
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+    button {
+        padding: 0 5px;
+        line-height: 12px;
+        &:first-child,
+        &:last-child {
+            font-size: 12px;
+        }
+    }
+}
+
+#{$chat-newMessagesBar} {
+    top: 7px;
+}
+
+#{$chat-jumpToPresentBar} {
+    bottom: 7px;
 }
 
 #{$guild-wrapper} #{$unread-barWrapper}[style$='translateY(-150%);'] {
