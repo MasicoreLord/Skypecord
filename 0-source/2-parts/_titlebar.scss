@@ -1,40 +1,79 @@
-#{$client-winTitlebar} {
+#{$client-winTitleBar} {
     height: 27px;
 }
 
-#{$client-win} {
+#{$client-macOSTitleBar} {
+    position: static;
+    height: 31px;
+}
+
+#{$client-win},
+#{$client-macOs} {
     #{$main-app} {
-        &::before,
-        &::after {
-            position: fixed;
-            content: '';
-            height: 31px;
-            right: 0;
-            top: 0;
-            box-sizing: border-box;
-            z-index: 3000;
-        }
         &::before {
-            top: 0;
-            left: 0;
             background-color: var(--skypecord-windows-titlebar-bg);
-            color: var(--skypecord-windows-titlebar-fg);
-            content: 'Skypecord';
-            font-size: 12px;
-            font-weight: 600;
-            padding-left: 13px;
+            content: '';
             padding-top: 10px;
             padding-bottom: 10px;
-            border: 1px solid $window-decoration-border;
-            border-bottom: none;
+            left: 0;
+            top: 0;
         }
+        &::before,
         &::after {
-            width: 135px;
-            content: var(--skypecord-minimize-icon) var(--skypecord-window-control-spacer) var(--skypecord-maximize-icon) var(--skypecord-window-control-spacer) var(--skypecord-close-icon);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            color: var(--skypecord-windows-titlebar-fg);
+            font-size: 12px;
+            font-weight: 600;
         }
+    }
+}
+
+#{$client-win} #{$main-app} {
+    &::before,
+    &::after {
+        position: fixed;
+        content: '';
+        height: 31px;
+        right: 0;
+        top: 0;
+        box-sizing: border-box;
+        z-index: 3000;
+    }
+    &::after {
+        width: 135px;
+        content: var(--skypecord-minimize-icon) var(--skypecord-window-control-spacer) var(--skypecord-maximize-icon) var(--skypecord-window-control-spacer) var(--skypecord-close-icon);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &::before {
+        content: 'Skypecord';
+        font-size: 12px;
+        font-weight: 600;
+        padding-left: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid $window-decoration-border;
+        border-bottom: none;
+    }
+}
+
+#{$client-macOs} #{$main-app} {
+    &::before {
+        position: fixed;
+        content: '';
+        height: 31px;
+        right: 0;
+        top: 0;
+        box-sizing: border-box;
+        z-index: 3000;
+    }
+    &::after {
+        position: fixed;
+        content: 'Skypecord';
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3001;
     }
 }
 

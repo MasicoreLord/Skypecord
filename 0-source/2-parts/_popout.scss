@@ -1,0 +1,97 @@
+#{$client-popout} {
+    padding: 9px 0;
+    border-radius: 0;
+    background-color: var(--skypecord-menu-bg);
+    margin: 0;
+    height: unset!important;
+}
+
+#{$chat-guildMenu} {
+    border-radius: 0;
+}
+
+#{$chat-guildMenuItem} {
+    padding: 10px 13px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#{$searchPopout-option} {
+    border-radius: 0;
+    margin: 0;
+    padding: 10px 13px;
+    font-size: 14px;
+    line-height: 17px;
+    height: unset;
+}
+
+#{$searchPopout-container}:empty {
+    display: none;
+}
+
+#{$searchPopout-container} #{$searchPopout-resultsGroup}{
+    &:first-of-type {
+        padding-top: 0;
+    }
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+#{$searchPopout-resultsGroup} #{$searchPopout-learnMore} {
+    top: 12px;
+    transform: translateY(-50%);
+}
+
+.theme-light,
+.theme-dark {
+    #{$searchPopout-container} {
+        box-shadow: none;
+    }
+    #{$chat-guildMenu},
+    #{$searchPopout-container},
+    #{$searchPopout-calenderPicker} .react-datepicker,
+    #{$searchPopout-calenderPicker} .react-datepicker__header {
+        background-color: transparent;
+    }
+    #{$searchPopout-option} {
+        &::after {
+            display: none;
+        }
+    }
+    #{$chat-guildMenuItem} {
+        &,
+        &:not(#{$chat-guildMenuInviteItem}):not(#{$chat-guildMenuLeaveItem}):hover {
+            color: var(--skypecord-main-fg);
+        }
+        &:hover {
+            background-color: var(--skypecord-menu-item-bg);
+        }
+    }
+    #{$searchPopout-option} {
+        &:hover,
+        &#{$searchPopout-optionSelected} {
+            background-color: var(--skypecord-menu-item-bg);
+            #{$searchPopout-answer},
+            &#{$searchPopout-user} #{$searchPopout-displayUsername} {
+                color: var(--skypecord-main-fg);
+            }
+        }
+        #{$searchPopout-filter},
+        &#{$searchPopout-user} #{$searchPopout-displayNick} {
+            color: var(--skypecord-main-fg);
+        }
+        #{$searchPopout-answer},
+        &#{$searchPopout-user} #{$searchPopout-displayUsername} {
+            color: var(--skypecord-secondary-fg);
+        }
+    }
+    #{$searchPopout-resultsGroup} {
+        #{$searchPopout-header},
+        #{$searchPopout-learnMore} a,
+        #{$searchPopout-clearHistory},
+        #{$searchPopout-plusIcon} {
+            color: var(--skypecord-header-fg);
+        }
+    }
+}

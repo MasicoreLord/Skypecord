@@ -1,20 +1,23 @@
-#{$main-app} {
-    #{$privateChannelList-searchBarWrapper} {
-        box-shadow: none;
-    }
-    #{$search-bar} {
+//In themed Popouts
+#{$main-themeLight},
+#{$main-themeDark} {
+    #{$emojiPicker-searchBar},
+    #{$privateChannelList-searchBar} {
         background-color: var(--skypecord-input-box-bg);
-        input {
+        #{$chat-searchBarInput} {
             color: var(--skypecord-main-fg);
             &::placeholder {
                 color: var(--skypecord-placeholder-fg);
             }
         }
     }
-    #{$search-barInner} {
-        background-color: transparent;
+}
+
+#{$main-app} {
+    #{$privateChannelList-searchBarWrapper} {
+        box-shadow: none;
     }
-    #{$chat-channels} {
+    #{$channelList} {
         background-color: var(--skypecord-sidebar-bg);
     }
     #{$privateChannelList-linkButtonIcon} {
@@ -76,6 +79,11 @@
     #{$privateChannelList-channel}:hover #{$privateChannelList-channelActivityIconForeground} {
         fill: var(--skypecord-main-fg);
     }
+    #{$mainNavList-badgeWrapper} {
+        #{$badge} {
+            box-shadow: 0 0 0 2px var(--skypecord-sidebar-bg);
+        }
+    }
 }
 
 #{$privateChannelList-channelClose} {
@@ -84,8 +92,11 @@
     width: 10px;
 }
 
-#{$search-bar} input {
-    font-size: 12px;
+#{$emojiPicker-searchBar},
+#{$privateChannelList-searchBar} {
+    #{$chat-searchBarInput} {
+        font-size: 12px;
+    }
 }
 
 #{$privateChannelList} header:first-of-type {

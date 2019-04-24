@@ -1,6 +1,9 @@
-#{$guild-wrapper} {
+#{$mainNavList-wrapper} {
     border-radius: 0;
     border-right: 1px solid;
+    .platform-osx & {
+        margin-top: 0;
+    }
 }
 
 /* Hide public button that's out of place */
@@ -9,52 +12,67 @@
 }
 
 /* Display public button or anything else that has the same id, if it appears in the server scroller */
-#{$guild-scroller} #bd-pub-li {
+#{$mainNavList-scroller} #bd-pub-li {
     display: block;
 }
 
-#{$guild}:not(#bd-pub-li):not(.RANbutton-frame) #{$guild-inner},
-#{$home} #{$guild-inner},
-#{$dm-inner} {
-    border-radius: 50%!important;
+#{$mainNavList-itemInner} {
+    border-radius: 50%;
+    foreignObject {
+        mask: none;
+    }
 }
 
-#{$guild-inner} {
+#{$mainNavList-itemSvg} {
+    border-radius: 50%;
+}
+
+#{$mainNavList-itemInner} {
     font-weight: 600;
 }
 
 #{$main-app} {
-    #{$guild-wrapper} {
+    #{$mainNavList-wrapper} {
         background-color: var(--skypecord-sidebar-bg);
         border-color: var(--skypecord-border-fg);
     }
-    #{$guild}#{$guild-unread},
-    #{$guild}#{$guild-selected} {
-        &::before {
-            background-color: var(--skypecord-unread-indicator-bg);
-        }
+    #{$mainNavList-indicator} {
+        background-color: var(--skypecord-unread-indicator-bg);
     }
-    #{$friends-online} {
-        color: var(--skypecord-main-fg);
-    }
-    #{$guild-inner} {
+    #{$mainNavList-itemInner} {
         background-color: var(--skypecord-avatar-bg)!important; /* Override inline style on guilds w/ no icon */
         a {
             color: $accent;
         }
     }
-    #{$guild-circleButton},
-    #{$guild-circleButton}:hover,
-    #{$guild-circleButton}#{$guild-circleButtonSelected} {
+    #{$mainNavList-indicator} {
+        background-color: var(--skypecord-unread-indicator-bg);
+        opacity: 1!important;
+    }
+    #{$mainNavList-actionButton},
+    #{$mainNavList-actionButton}:hover,
+    #{$mainNavList-actionButton}#{$mainNavList-homeSelected},
+    #{$mainNavList-actionButton}#{$mainNavList-guildNoIconSelected},
+    #{$mainNavList-actionButton}#{$mainNavList-actionSelected} {
         background-color: var(--skypecord-avatar-bg);
         color: $accent;
     }
-    #{$guild-icon}:not(#{$guild-noIcon}) {
+    #{$mainNavList-itemIcon} {
         background-color: $accent;
         color: $alt-fg;
     }
-    #{$guild-noIcon},
-    #{$home-icon} {
+    #{$mainNavList-itemAcronym},
+    #{$mainNavList-homeIcon} {
         color: $accent;
+    }
+    #{$mainNavList-itemAcronym},
+    #{$mainNavList-homeButton} {
+        &,
+        &#{$mainNavList-homeSelected},
+        &#{$mainNavList-guildNoIconSelected},
+        &#{$mainNavList-actionSelected} {
+            background-color: var(--skypecord-avatar-bg);
+            color: $accent;
+        }
     }
 }

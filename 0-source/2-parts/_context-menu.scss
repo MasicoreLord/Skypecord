@@ -1,11 +1,11 @@
 .theme-light {
     &#{$client-contextMenu} {
-        background-color: var(--skypecord-content-menu-bg);
+        background-color: var(--skypecord-menu-bg);
     }
     #{$client-contextMenuItem} {
         color: var(--skypecord-main-fg);
         &:hover {
-            background-color: var(--skypecord-context-menu-item-bg);
+            background-color: var(--skypecord-menu-item-bg);
             color: var(--skypecord-main-fg);
         }
     }
@@ -18,12 +18,9 @@
 
 #{$client-contextMenu} {
     padding: 9px 0;
-    max-height: 100%;
+    max-height: calc(100vh - 155px);
     overflow: auto;
-    &[style*='top: 10px'] {
-        top: 31px!important;
-        max-height: calc(100% - 49px);
-    }
+    z-index: 3003;
 }
 
 #{$client-contextMenuItem} {

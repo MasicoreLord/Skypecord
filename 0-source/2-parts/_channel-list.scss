@@ -1,10 +1,19 @@
-#{$channelList-base} {
-    border-radius: 0;
+&,
+#{$client-win},
+#{$client-macOs},
+#{$client-linux},
+#{$client-web} {
+    #{$chat-base} {
+        border-radius: 0;
+    }
 }
 
 #{$channelList-header} {
-    border-bottom: 1px solid;
-    height: 36px;
+    height: 88px;
+}
+
+#{$channelList-headerContainer} {
+    box-shadow: 0 1px 0 var(--skypecord-border-fg);
 }
 
 #{$channelList} {
@@ -22,8 +31,8 @@
     }
     #{$channelList} {
         border-color: var(--skypecord-border-fg);
-        #{$badge-wrapper} {
-            background-color: $accent;
+        #{$badge} {
+            background-color: $accent!important;
         }
     }
     /* Drop Down Button */
@@ -44,7 +53,6 @@
     }
     #{$channelList-banner} {
         color: $banner-header-name-fg;
-        border-color: transparent;
     }
     #{$channelList-actionIcon} {
         color: var(--skypecord-icon-fg)
@@ -52,59 +60,85 @@
     #{$channelList-banner} #{$channelList-header} {
         color: $banner-header-name-fg;
     }
-    #{$channelList-itemWrapperSelectedText} {
-        background-color: var(--skypecord-sidebar-item-sel-bg);
-    }
-    #{$channelList-itemWrapperHoveredText} {
-        background-color: var(--skypecord-sidebar-item-hov-bg);
-    }
+    // #{$channelList-itemWrapperSelectedText} {
+    //     background-color: var(--skypecord-sidebar-item-sel-bg);
+    // }
+    // #{$channelList-itemWrapperHoveredText} {
+    //     background-color: var(--skypecord-sidebar-item-hov-bg);
+    // }
     #{$channelList-itemUnread} {
         background-color: var(--skypecord-unread-indicator-bg);
     }
-    #{$channelList-itemNameConnectedVoice},
-    #{$channelList-itemNameDefaultText},
-    #{$channelList-itemNameDefaultVoice},
-    #{$channelList-itemNameHoveredText},
-    #{$channelList-itemNameHoveredVoice},
-    #{$channelList-itemNameLockedVoice},
-    #{$channelList-itemNameSelectedText},
-    #{$channelList-itemNameSelectedVoice},
-    #{$channelList-itemNameUnreadText},
-    #{$channelList-itemConnectedVoiceIcon},
-    #{$channelList-itemDefaultTextIcon},
-    #{$channelList-itemDefaultVoiceIcon},
-    #{$channelList-itemHoveredTextIcon},
-    #{$channelList-itemHoveredVoiceIcon},
-    #{$channelList-itemLockedVoiceIcon},
-    #{$channelList-itemSelectedTextIcon},
-    #{$channelList-itemSelectedVoiceIcon},
-    #{$channelList-itemUnreadTextIcon} {
+    #{$channelList-actionIcon},
+    #{$channelList-itemName} {
         color: var(--skypecord-main-fg);
     }
-    #{$channelList-categoryNameCollapsed},
-    #{$channelList-categoryNameDefault},
-    #{$channelList-categoryNameMuted} {
+    #{$channelList-categoryName},
+    #{$channelList-categoryIcon} {
         color: var(--skypecord-header-fg);
     }
-    #{$channelList-itemContentSelectedText},
-    #{$channelList-itemContentHoveredText} {
-        background-color: transparent;
-    }
+    // #{$channelList-itemContentSelectedText},
+    // #{$channelList-itemContentHoveredText} {
+    //     background-color: transparent;
+    // }
 
-    #{$channelList-voiceWrapper} {
-        background-color: transparent;
-        color: var(--skypecord-stat-fg);
-        font-family: inherit;
+    // #{$channelList-voiceWrapper} {
+    //     background-color: transparent;
+    //     color: var(--skypecord-stat-fg);
+    //     font-family: inherit;
+    // }
+    #{$channelList-item} {
+        &#{$channelList-itemSelected},
+        &#{$channelList-itemSelected}:hover,
+        &:hover {
+            background-color: var(--skypecord-sidebar-item-sel-bg);
+        }
+    }
+    #{$channelList-itemContentWrapper} {
+        &#{$channelList-itemSelectedInner} {
+            #{$channelList-itemContent} {
+                background-color: var(--skypecord-sidebar-item-sel-bg);
+            }
+        }
+        &:hover,
+        &#{$channelList-itemSelectedInner}:hover {
+            #{$channelList-itemContent} {
+                background-color: var(--skypecord-sidebar-item-sel-bg);
+            }
+        }
+    }
+    #{$channelList-itemContentWrapper} {
+        &,
+        &:hover {
+            &,
+            &#{$channelList-itemConnectedInner},
+            &#{$channelList-itemSelectedInner},
+            &#{$channelList-itemUnreadInner},
+            &#{$channelList-itemMutedInner} {
+                &,
+                &:hover {
+                    #{$channelList-itemName} {
+                        color: var(--skypecord-main-fg);
+                    }
+                }
+            }
+        }
+    }
+    #{$channelList-itemIcon} {
+        color: var(--skypecord-main-fg);
     }
     /* Add Button */
     [name='PlusAlt'] polygon {
         fill: var(--skypecord-icon-fg);
     }
 }
-
-#{$channelList-categoryNameCollapsed},
-#{$channelList-categoryNameDefault},
-#{$channelList-categoryNameMuted} {
+//.wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg,
+//.wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg
+//.wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg,
+//.wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg
+//.wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg
+//.wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg
+#{$channelList-categoryName} {
     font-size: 12px;
     font-weight: 600;
 }

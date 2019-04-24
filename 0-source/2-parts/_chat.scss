@@ -1,4 +1,4 @@
-#{$client-app} {
+#{$client-win} {
     box-sizing: border-box;
     border: 1px solid $window-decoration-border;
     border-top: none;
@@ -51,6 +51,9 @@
             color: $jump-to-present-bar-fg;
         }
     }
+    #{$unread-bar} {
+        box-shadow: none;
+    }
 }
 
 #{$chat-newMessagesBar},
@@ -80,7 +83,7 @@
     bottom: 7px;
 }
 
-#{$guild-wrapper} #{$unread-barWrapper}[style$='translateY(-150%);'] {
+#{$mainNavList-wrapper} #{$unread-barWrapper}[style$='translateY(-150%);'] {
     -webkit-app-region: drag;
     #{$main-app} & {
         box-shadow: none;
@@ -181,12 +184,12 @@
 }
 
 /* Reposition attach popout to compensate for re-ordered message box */
-#{$popouts-popoutTopLeft}[style$='transform: translateX(0%) translateY(-100%) translateZ(0px);'] {
+#{$client-popoutTopLeft}[style$='transform: translateX(0%) translateY(-100%) translateZ(0px);'] {
     transform: translateX(calc(-100% + 43px)) translateY(-100%) translateZ(0px)!important;
     margin-right: -20px;
 }
 
-#{$popouts-popoutTopRight}[style$='translateX(-100%) translateY(-100%) translateZ(0px);'] {
+#{$client-popoutTopRight}[style$='translateX(-100%) translateY(-100%) translateZ(0px);'] {
     transform: translateX(-43px) translateY(-100%) translateZ(0px)!important;
 }
 

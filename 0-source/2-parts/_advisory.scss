@@ -31,7 +31,7 @@
     position: relative;
 }
 
-#{$chat-inviteWrapper} [style*='/icons/556962006574301227'] {
+#{$chat-inviteWrapper} [style*='/icons/153708594091655168'] {
     position: static;
     &::after {
         @extend %betterdocs-blocker;
@@ -63,7 +63,7 @@
             }
         }
     }
-    #{$chat-inviteWrapper} [style*='/icons/556962006574301227']::after {
+    #{$chat-inviteWrapper} [style*='/icons/153708594091655168']::after {
         @extend %betterdocs-blocker-colors;
     }
 }

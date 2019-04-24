@@ -1,5 +1,4 @@
 #{$modal-root} {
-    width: 480px;
     height: 660px;
     border-radius: 0;
     display: flex;
@@ -43,6 +42,10 @@
     }
 }
 
+#{$client-themedPopout} {
+    border: none;
+}
+
 .theme-light,
 .theme-dark {
     #{$modal-topSectionNormal},
@@ -65,6 +68,38 @@
             &#{$modal-itemSelected} {
                 border-color: $alt-fg!important;
             }
+        }
+    }
+    #{$modal-topSectionNormal} {
+        background-color: var(--skypecord-main-bg);
+    }
+    #{$profile-userInfoSectionHeader} {
+        color: var(--skypecord-main-fg);
+    }
+    #{$profile-note} textarea {
+        color: var(--skypecord-main-fg);
+        &::placeholder {
+            color: var(--skypecord-secondary-fg);
+        }
+        &:focus {
+            background-color: transparent;
+        }
+    }
+    #{$client-themedPopout} {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #{$messagesPopout-wrap} {
+        max-height: calc(100vh - 80px)!important;
+    }
+    #{$client-popoutBottom},
+    #{$client-popoutBottomLeft},
+    #{$client-popoutNoArrow},
+    #{$client-popoutTopLeft},
+    #{$client-popoutTopRight} {
+        &,
+        &#{$client-popoutNoArrow} {
+            margin: 0;
         }
     }
 }

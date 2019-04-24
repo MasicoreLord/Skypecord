@@ -1,6 +1,6 @@
-/* Blacklist */
-@import "blacklist";
-/* /Blacklist */
+/* Advisories */
+@import "advisory";
+/* /Advisories */
 
 /* Font */
 @import "font";
@@ -53,6 +53,10 @@
 /* Modal */
 @import "modal";
 /* /Modal */
+
+/* Settings */
+@import "settings";
+/* /Settings */
 
 /* Popout */
 @import "popout";

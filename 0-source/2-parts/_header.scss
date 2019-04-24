@@ -4,8 +4,16 @@
     padding-right: 24px;
 }
 
-#{$client-headerTitle} {
+#{$client-headerContent} {
     flex-direction: column;
+    align-items: flex-start;
+    > .iconWrapper-2OrFZ1 {
+        display: none;
+    }
+}
+
+#{$client-headerContentDivider} {
+    display: none;
 }
 
 #{$client-topic} {
@@ -18,21 +26,16 @@
     strong {
         font-weight: 800;
     }
-    &::before {
-        display: none;
-    }
 }
 
 #{$main-app} {
-    #{$chat-searchBarWrapper} #{$search-bar},
-    #{$library-filterInput},
-    #{$store-browseSearchInput} {
+    #{$page-searchBar},
+    #{$chat-searchBarInner} {
         background-color: transparent;
     }
     #{$chat-headerButtonIconWrapper}::after {
         background-color: var(--skypecord-header-button-bg);
     }
-    #{$chat-channelName},
     #{$client-headerTitle} {
         color: var(--skypecord-header-title-fg);
     }
@@ -46,14 +49,23 @@
     #{$store-browseSearch},
     #{$chat-searchBarWrapper} {
         margin: 0 16px;
+        + #{$chat-headerButtonIconWrapper} {
+            margin-left: 0;
+        }
     }
 }
 
-#{$chat-searchBar} .DraftEditor-root {
-    font-weight: 700;
+// #{$chat-searchBar} .DraftEditor-root {
+//     font-weight: 700;
+// }
+
+#{$chat-searchBar} .DraftEditor-root .public-DraftEditorPlaceholder-root,
+#{$page-searchBar} #{$page-filterInput} {
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
-#{$chat-headerButtonIconWrapper} {
+#{$client-toolbar} #{$chat-headerButtonIconWrapper} {
     position: relative;
     margin-left: 24px;
     margin-right: 0;
@@ -70,11 +82,6 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        #{$client-headerBar} #{$property-flexLayout} > div &,
-        a &,
-        .toolbar-94eLIm > div & {
-            top: -15px;
-        }
     }
 }
 
@@ -85,36 +92,37 @@
     font-weight: 700;
 }
 
-#{$chat-channelName} {
+#{$client-headerTitle} {
     height: 30px;
-    svg {
-        display: none;
-    }
+    // svg {
+    //     display: none;
+    // }
 }
 
-#{$chat-headerButtonDivider} {
-    display: none;
+// #{$chat-headerButtonDivider} {
+//     display: none;
+// }
+
+#{$chat-searchBarIcon},
+#{$page-iconContainer} {
+    order: -1;
 }
 
 #{$chat-searchBarIcon} {
-    order: -1;
     margin-right: 0;
     margin-left: 0;
 }
 
-#{$library-filterIcon},
-#{$store-browseSearchIcon} {
-    right: unset;
-    left: 6px;
-}
+// #{$page-iconContainer} {
+//     right: unset;
+//     left: 6px;
+// }
 
-#{$library-filter} #{$library-filterInput},
-#{$store-browseSearch} #{$store-browseSearchInput} {
-    padding-left: 30px;
-    padding-right: 0;
-}
+// #{$page-filterInput} {
+//     padding-left: 30px;
+//     padding-right: 0;
+// }
 
-.title-3qD0b- .input-autosize-input,
-.titleCall-_b9o8P .input-autosize-input {
+#{$chat-titleInput} {
     font-size: inherit;
 }
