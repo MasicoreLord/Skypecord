@@ -5,6 +5,13 @@
 }
 
 #{$main-app} {
+    #{$chat-content},
+    #{$chat-noChannel},
+    #{$chat-messagesWrapper},
+    #{$chat},
+    #{$chat} form {
+        background-color: var(--skypecord-main-bg);
+    }
     #{$message-divider}#{$message-dividerRed} #{$message-dividerContent} {
         color: $accent;
     }
@@ -21,6 +28,10 @@
     #{$message-markup} {
         background-color: var(--skypecord-message-bg);
         color: var(--skypecord-main-fg);
+        a {
+            color: var(--skypecord-main-fg);
+            text-decoration: underline;
+        }
     }
     #{$message-isMentionedCozy} #{$message-markup}::after {
         border-color: $mentioned-bar-bg;

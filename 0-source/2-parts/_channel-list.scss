@@ -40,7 +40,7 @@
     [d='M13.5 4.5l-9 9'] {
         stroke: var(--skypecord-icon-fg);
     }
-    #{$channelList-banner} {
+    #{$channelList-withBanner} {
         [d='M4.5 4.5l9 9'],
         [d='M13.5 4.5l-9 9'] {
             stroke: var(--skypecord-banner-icon-fg);
@@ -51,13 +51,13 @@
         -webkit-mask-image: linear-gradient(#000 0%, transparent 100%);
         mask-image: linear-gradient(#000 0%, transparent 100%);
     }
-    #{$channelList-banner} {
+    #{$channelList-withBanner} {
         color: $banner-header-name-fg;
     }
     #{$channelList-actionIcon} {
         color: var(--skypecord-icon-fg)
     }
-    #{$channelList-banner} #{$channelList-header} {
+    #{$channelList-withBanner} #{$channelList-header} {
         color: $banner-header-name-fg;
     }
     // #{$channelList-itemWrapperSelectedText} {
@@ -87,23 +87,21 @@
     //     color: var(--skypecord-stat-fg);
     //     font-family: inherit;
     // }
-    #{$channelList-item} {
-        &#{$channelList-itemSelected},
-        &#{$channelList-itemSelected}:hover,
-        &:hover {
+    #{$channelList-itemContentWrapper} {
+        &#{$channelList-itemSelectedInner}:hover,
+        &#{$channelList-itemSelectedInner} {
             background-color: var(--skypecord-sidebar-item-sel-bg);
+        }
+        &:hover {
+            background-color: var(--skypecord-sidebar-item-hov-bg);
         }
     }
     #{$channelList-itemContentWrapper} {
-        &#{$channelList-itemSelectedInner} {
+        &#{$channelList-itemSelectedInner},
+        &#{$channelList-itemSelectedInner}:hover,
+        &:hover {
             #{$channelList-itemContent} {
-                background-color: var(--skypecord-sidebar-item-sel-bg);
-            }
-        }
-        &:hover,
-        &#{$channelList-itemSelectedInner}:hover {
-            #{$channelList-itemContent} {
-                background-color: var(--skypecord-sidebar-item-sel-bg);
+                background-color: transparent;
             }
         }
     }
@@ -122,22 +120,28 @@
                     }
                 }
             }
+            &#{$channelList-itemMutedInner} {
+                &,
+                &:hover {
+                    #{$channelList-itemName} {
+                        text-decoration: line-through;
+                    }
+                }
+            }
         }
     }
     #{$channelList-itemIcon} {
         color: var(--skypecord-main-fg);
     }
     /* Add Button */
-    [name='PlusAlt'] polygon {
-        fill: var(--skypecord-icon-fg);
+    [name='PlusAlt'] {
+        opacity: 1;
+        polygon {
+            fill: var(--skypecord-header-fg);
+        }
     }
 }
-//.wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg,
-//.wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg
-//.wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg,
-//.wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg
-//.wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg
-//.wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg
+
 #{$channelList-categoryName} {
     font-size: 12px;
     font-weight: 600;

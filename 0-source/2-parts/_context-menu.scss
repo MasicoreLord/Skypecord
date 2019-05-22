@@ -17,14 +17,16 @@
 }
 
 #{$client-contextMenu} {
-    padding: 9px 0;
+    padding: 7px 0;
     max-height: calc(100vh - 155px);
     overflow: auto;
-    z-index: 3003;
+    &:empty {
+        display: none;
+    }
 }
 
 #{$client-contextMenuItem} {
-    padding: 10px 13px;
+    padding: 7px 12px;
     font-size: 14px;
     line-height: 17px;
 }

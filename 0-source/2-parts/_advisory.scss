@@ -2,24 +2,27 @@
 %betterdocs-blocker {
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: inRem(16px);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: inRem(14px);
-    padding: 4px;
+    line-height: 1;
+    padding: inRem(4px);
     z-index: 1;
-    content: 'Warning: BetterDocs is NOT an official source.';
+    content: '\26A0 Warning: BetterDocs/Discord Source is NOT official.';
 }
 
 #{$message-embed} {
     #{$message-embedContentInner} {
         a[href*='#{"//"}betterdocs.us' i],
         a[href*='#{"//"}betterdocs.net' i],
-        a[href*='#{"//"}betterdocs.netlify.com' i] {
+        a[href*='#{"//"}betterdocs.netlify.com' i],
+        a[href*='#{"//"}discordsource.com' i] {
             &::after {
                @extend %betterdocs-blocker;
             }
@@ -40,23 +43,36 @@
 
 #{$main-app} {
     %betterdocs-blocker-colors {
-        background-color: rgb(255, 123, 15);
+        background-color: rgb(233, 112, 13);
         color: #fff;
+    }
+    %betterdocs-blocker-link-colors {
+        color: lighten(rgb(233, 112, 13), 5%)!important;
     }
     #{$message-markup} {
         [href*='#{"//"}betterdocs.us' i],
         [href*='#{"//"}betterdocs.net' i],
         [href*='#{"//"}betterdocs.netlify.com' i],
+        [href*='#{"//"}discordsource.com' i],
         [href*='#{"//"}discordapp.com/invite/D4cAkXX'],
-        [href*='#{"//"}discord.gg/invite/D4cAkXX'] {
-            color: rgb(255, 123, 15);
+        [href*='#{"//"}discord.gg/D4cAkXX'] {
+            @extend %betterdocs-blocker-link-colors;
+            &::before {
+                content: '\26A0 Unofficial';
+                padding: inRem(2px);
+                margin-right: inRem(2px);
+                display: inline-block;
+                @extend %betterdocs-blocker-colors;
+            }
         }
     }
     #{$message-embed} {
         #{$message-embedContentInner} {
             a[href*='#{"//"}betterdocs.us' i],
             a[href*='#{"//"}betterdocs.net' i],
-            a[href*='#{"//"}betterdocs.netlify.com' i] {
+            a[href*='#{"//"}betterdocs.netlify.com' i],
+            a[href*='#{"//"}discordsource.com' i] {
+                @extend %betterdocs-blocker-link-colors;
                 &::after {
                    @extend %betterdocs-blocker-colors;
                 }

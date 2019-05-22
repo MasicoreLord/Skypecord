@@ -1,7 +1,200 @@
-[aria-label$='_SETTINGS'] {
-    left: 50%;
-    top: 50%;
-    right: unset;
-    bottom: unset;
+%settings-tab-item-colors {
+    border-color: var(--skypecord-border-fg);
+    color: var(--skypecord-main-fg);
+}
+
+%settings-tab-item-hover-colors {
+    background-color: var(--skypecord-sidebar-item-hov-bg);
+}
+
+%settings-tab-item-selected-colors {
+    background-color: var(--skypecord-sidebar-item-sel-bg);
+}
+
+%settings-tab-separator-colors {
+    background: none;
+}
+
+#{$main-app} {
+    #{$settings-itemThemed}#{$settings-itemSelected}#{$settings-item} {
+        &,
+        &:hover {
+            color: var(--skypecord-main-fg)
+        }
+    }
+    #{$settings-side},
+    #{$settings-topPill} {
+        #{$settings-itemThemed}#{$settings-itemSelected}#{$settings-item} {
+            &,
+            &:hover {
+                background-color: var(--skypecord-sidebar-item-sel-bg);
+            }
+        }
+        #{$settings-itemThemed}#{$settings-item}:hover {
+            @extend %settings-tab-item-hover-colors;
+        }
+    }
+    #{$settings-sidebarRegion} {
+        background-color: var(--skypecord-sidebar-bg);
+    }
+    #{$settings-contentRegion} {
+        background-color: var(--skypecord-content-region-bg);
+    }
+    #{$settings-side} {
+        #{$settings-item} {
+            @extend %settings-tab-item-colors;
+        }
+        #{$settings-separator} {
+            @extend %settings-tab-separator-colors;
+        }
+    }
+    #bd-settings-sidebar /* BandagedBD */ {
+        [style*='color: rgb(114, 118, 125);'] {
+            color: var(--skypecord-secondary-fg)!important;
+        }
+        .ui-tab-bar-item {
+            &,
+            &:hover,
+            &.selected,
+            &.selected:hover {
+                @extend %settings-tab-item-colors;
+            }
+            &:hover {
+                @extend %settings-tab-item-hover-colors;
+            }
+            &.selected,
+            &.selected:hover {
+                @extend %settings-tab-item-selected-colors;
+            }
+        }
+        .ui-tab-bar-separator {
+            @extend %settings-tab-separator-colors;
+        }
+    }
+}
+
+#{$client-layer}:first-child {
+    opacity: 1!important;
+    transform: unset!important;
+    will-change: unset!important;
+}
+
+#{$client-layer} {
+    &.stop-animations {
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 101;
+            position: absolute;
+            #{$main-app} & {
+                background-color: rgba(0,0,0,0.5);
+            }
+        }
+    }
+}
+
+%settings-tab-item {
+    margin-bottom: 0;
+    border-radius: 0;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+%settings-top-tab-item {
+    border-top: none;
+}
+
+#{$settings-side} {
+    #{$settings-item} {
+        @extend %settings-tab-item;
+    }
+    #{$settings-header},
+    #{$settings-separator} {
+        + #{$settings-item} {
+            @extend %settings-top-tab-item;
+        }
+    }
+}
+
+#bd-settings-sidebar /* BandagedBD */ {
+    .ui-tab-bar-item {
+        @extend %settings-tab-item;
+    }
+    .ui-tab-bar-header,
+    .ui-tab-bar-separator {
+        + .ui-tab-bar-item {
+            @extend %settings-top-tab-item;
+        }
+    }
+}
+
+#{$settings-sidebar} {
+    padding: 45px 0;
+    width: 100%;
+}
+
+#{$settings-sidebarRegion},
+#{$settings-sidebarRegionScroller} {
+    -webkit-box-pack: initial;
+    justify-content: stretch;
+}
+
+#{$client-win} #{$settings-standardSidebarView} {
+    top: 0;
+}
+#{$settings-contentRegion} {
+    z-index: auto;
+}
+#{$settings-toolsContainer} {
+    height: 0;
+    width: 0;
+    padding: 0;
+    flex: 0;
+}
+#{$settings-closeKeybind} {
     display: none;
+}
+#{$settings-contentRegionScroller} #{$settings-tools} {
+    position: static;
+}
+#{$settings-closeButton} {
+    position: fixed;
+    cursor: default;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    z-index: -1;
+    border: none;
+    &:hover {
+        background-color: transparent;
+    }
+    svg {
+        display: none;
+    }
+}
+
+#{$client-layers} > #{$client-layer}:last-of-type:not(:only-of-type) {
+    height: 700px;
+    width: 1100px;
+    top: calc(50% - 350px);
+    left: calc(50% - 550px);
+    border-radius: 3px;
+    z-index: 102;
+    transform: none!important;
+    #{$client-win} &,
+    #{$client-macOs} & {
+        top: calc(50% - 350px - 9px);
+    }
 }

@@ -85,10 +85,6 @@
             background-color: transparent;
         }
     }
-    #{$client-themedPopout} {
-        background-color: transparent;
-        box-shadow: none;
-    }
     #{$messagesPopout-wrap} {
         max-height: calc(100vh - 80px)!important;
     }

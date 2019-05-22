@@ -7,16 +7,26 @@
 #{$client-headerContent} {
     flex-direction: column;
     align-items: flex-start;
-    > .iconWrapper-2OrFZ1 {
+    > #{$chat-headerButtonIconWrapper},
+    &::after {
         display: none;
     }
 }
 
-#{$client-headerContentDivider} {
+#{$client-topic} {
+    width: 100%;
+}
+
+
+#{$client-headerContentDivider},
+#{$chat-headerStatus},
+#{$chat-akaBadge},
+#{$chat-headerMobileIndicator} {
     display: none;
 }
 
-#{$client-topic} {
+#{$client-topic},
+#{$chat-nicknames} {
     padding-left: 0;
     margin-left: 0;
     font-weight: 700;
@@ -29,6 +39,9 @@
 }
 
 #{$main-app} {
+    #{$client-headerBar} {
+        background-color: var(--skypecord-main-bg);
+    }
     #{$page-searchBar},
     #{$chat-searchBarInner} {
         background-color: transparent;
@@ -39,7 +52,8 @@
     #{$client-headerTitle} {
         color: var(--skypecord-header-title-fg);
     }
-    #{$client-topic} {
+    #{$client-topic},
+    #{$chat-nicknames} {
         color: var(--skypecord-header-topic-fg);
     }
 }
@@ -54,10 +68,6 @@
         }
     }
 }
-
-// #{$chat-searchBar} .DraftEditor-root {
-//     font-weight: 700;
-// }
 
 #{$chat-searchBar} .DraftEditor-root .public-DraftEditorPlaceholder-root,
 #{$page-searchBar} #{$page-filterInput} {
@@ -94,14 +104,7 @@
 
 #{$client-headerTitle} {
     height: 30px;
-    // svg {
-    //     display: none;
-    // }
 }
-
-// #{$chat-headerButtonDivider} {
-//     display: none;
-// }
 
 #{$chat-searchBarIcon},
 #{$page-iconContainer} {
@@ -112,16 +115,6 @@
     margin-right: 0;
     margin-left: 0;
 }
-
-// #{$page-iconContainer} {
-//     right: unset;
-//     left: 6px;
-// }
-
-// #{$page-filterInput} {
-//     padding-left: 30px;
-//     padding-right: 0;
-// }
 
 #{$chat-titleInput} {
     font-size: inherit;

@@ -1,3 +1,24 @@
+.theme-light,
+.theme-dark {
+    #{$tooltip} {
+        background-color: var(--skypecord-tooltip-bg);
+        color: var(--skypecord-tooltip-fg);
+        box-shadow: none;
+        border-color: var(--skypecord-tooltip-border);
+    }
+}
+
+#{$tooltip} {
+    border-radius: 0;
+    border: 1px solid;
+    font-size: 12px;
+    animation: skypecord-fade .2s ease-in-out;
+}
+
+#{$tooltipDefault} #{$tooltip-pointer} {
+    display: none;
+}
+
 #{$tooltips-layer} {
-    z-index: 3002;
+    pointer-events: none;
 }

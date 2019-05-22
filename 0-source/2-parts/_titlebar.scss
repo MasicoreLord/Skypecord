@@ -1,10 +1,10 @@
 #{$client-winTitleBar} {
-    height: 27px;
+    height: 28px;
 }
 
 #{$client-macOSTitleBar} {
     position: static;
-    height: 31px;
+    height: 32px;
 }
 
 #{$client-win},
@@ -32,11 +32,10 @@
     &::after {
         position: fixed;
         content: '';
-        height: 31px;
+        height: 32px;
         right: 0;
         top: 0;
         box-sizing: border-box;
-        z-index: 3000;
     }
     &::after {
         width: 135px;
@@ -61,11 +60,10 @@
     &::before {
         position: fixed;
         content: '';
-        height: 31px;
+        height: 32px;
         right: 0;
         top: 0;
         box-sizing: border-box;
-        z-index: 3000;
     }
     &::after {
         position: fixed;
@@ -73,12 +71,11 @@
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 3001;
     }
 }
 
 #{$client-winButton} {
-    height: 31px;
+    height: 32px;
     width: 45px;
     opacity: 0;
     cursor: default;

@@ -9,16 +9,20 @@
     #{$currentAccount-button}:hover {
         background-color: transparent;
     }
-    [aria-label='Mute'] {
+    /* Mute */
+    [style*='/assets/4bc527c257233fc69b94342d77bcb9ee.svg'] {
         background-image: var(--skypecord-mic-icon)!important;
     }
-    [aria-label='Unmute'] {
+    /* Unmute */
+    [style*='/assets/896770bf2d6ed0358ed0adefdbe96a24.svg'] {
         background-image: var(--skypecord-muted-mic-icon)!important;
     }
-    [aria-label='Deafen'] {
+    /* Deafen */
+    [style*='/assets/c7c47afdf35d5a3e06233319d3aa7674.svg'] {
         background-image: var(--skypecord-headphone-icon)!important;
     }
-    [aria-label='Undeafen'] {
+    /* Undeafen */
+    [style*='/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg'] {
         background-image: var(--skypecord-muted-headphone-icon)!important;
     }
     [name='Gear'] {

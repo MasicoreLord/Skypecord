@@ -1,0 +1,16 @@
+[style*='color: rgb(114, 137, 218);'] {
+    color: $accent!important;
+}
+
+[style*='background-color: rgb(114, 137, 218);'] {
+    background-color: $accent!important;
+    color: $alt-fg!important;
+}
+
+[style*='border-color: rgb(114, 137, 218);'] {
+    border-color: $accent!important;
+}
+
+a {
+    color: $link-fg;
+}

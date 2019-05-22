@@ -1,34 +1,117 @@
 #{$mainNavList-wrapper} {
     border-radius: 0;
     border-right: 1px solid;
-    .platform-osx & {
+    width: 190px;
+    #{$client-macOs} & {
         margin-top: 0;
     }
 }
 
-/* Hide public button that's out of place */
-#bd-pub-li {
-    display: none;
+#{$mainNavList-scrollerWrap} {
+    width: calc(100% + 2px); // added scrollbar width
 }
 
-/* Display public button or anything else that has the same id, if it appears in the server scroller */
-#{$mainNavList-scroller} #bd-pub-li {
-    display: block;
+#{$mainNavList-item} {
+    width: 190px;
+    justify-content: flex-start;
+    padding-left: 8px;
+    margin: 0;
+    padding: 4px 8px;
 }
+
+// #{$mainNavList-itemInner} {
+//     width: 168px;
+// }
+
+#{$mainNavList-itemSvg} {
+    overflow: visible;
+}
+
+#{$mainNavList-itemButton},
+#{$mainNavList-actionButton} {
+    &::after {
+        content: attr(aria-label);
+        position: absolute;
+        left: calc(100% + 4px);
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--skypecord-main-fg);
+        width: 126px;
+        line-height: 48px;
+        overflow: hidden;
+        white-space: nowrap;
+        -webkit-mask-image: linear-gradient(to left, transparent 0, #000 8px);
+        mask-image: linear-gradient(-90deg, transparent 0, #000 8px);
+    }
+}
+
+#{$mainNavList-indicatorWrapper},
+#{$mainNavList-homeIndicatorWrapper},
+#{$mainNavList-actionIndicatorWrapper} {
+    width: 194px;
+    height: 58px;
+}
+
+%main-nav-list-item-selected {
+    width: 194px;
+    height: 58px!important;
+    top: -2px;
+}
+
+@for $i from 9 through 40 {
+    #{$mainNavList-indicator}[style*="height: #{$i}"] {
+        &[style*='opacity: 1'],
+        &[style*='opacity: 0.9'],
+        &[style*='opacity: 0.8'] {
+           @extend %main-nav-list-item-selected;
+        }
+    }
+}
+
+#{$mainNavList-itemIcon},
+#{$mainNavList-actionButton} {
+    border-radius: 50%;
+}
+
+#{$mainNavList-badgeWrapper} {
+    width: 178px;
+}
+
+#{$mainNavList-lowerBadge} {
+    top: 17px;
+}
+
+#{$mainNavList-separater} {
+    width: calc(100% - 20px);
+}
+
+#{$client-macOs} #{$mainNavList-scroller} {
+    padding-top: 4px;
+}
+
+// /* Hide public button that's messed up */
+// #bd-pub-li /* BandagedBD */ {
+//     display: none;
+// }
 
 #{$mainNavList-itemInner} {
     border-radius: 50%;
     foreignObject {
         mask: none;
+        x: -71px;
     }
 }
 
 #{$mainNavList-itemSvg} {
-    border-radius: 50%;
+    width: 190px;
 }
 
 #{$mainNavList-itemInner} {
     font-weight: 600;
+}
+
+#{$mainNavList-itemInnerContainer}:active {
+    transform: none;
 }
 
 #{$main-app} {
@@ -73,6 +156,21 @@
         &#{$mainNavList-actionSelected} {
             background-color: var(--skypecord-avatar-bg);
             color: $accent;
+        }
+    }
+    #{$mainNavList-item}:hover {
+        background-color: var(--skypecord-sidebar-item-hov-bg);
+    }
+    %nav-list-item-selected-colors {
+        background-color: var(--skypecord-sidebar-item-sel-bg);
+    }
+    @for $i from 9 through 40 {
+        #{$mainNavList-indicator}[style*="height: #{$i}"] {
+            &[style*='opacity: 1'],
+            &[style*='opacity: 0.9'],
+            &[style*='opacity: 0.8'] {
+                @extend %nav-list-item-selected-colors;
+            }
         }
     }
 }

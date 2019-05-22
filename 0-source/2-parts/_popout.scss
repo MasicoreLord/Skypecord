@@ -1,11 +1,3 @@
-#{$client-popout} {
-    padding: 9px 0;
-    border-radius: 0;
-    background-color: var(--skypecord-menu-bg);
-    margin: 0;
-    height: unset!important;
-}
-
 #{$chat-guildMenu} {
     border-radius: 0;
 }
@@ -48,11 +40,15 @@
     #{$searchPopout-container} {
         box-shadow: none;
     }
-    #{$chat-guildMenu},
-    #{$searchPopout-container},
     #{$searchPopout-calenderPicker} .react-datepicker,
     #{$searchPopout-calenderPicker} .react-datepicker__header {
         background-color: transparent;
+    }
+
+    #{$chat-guildMenu},
+    #{$searchPopout-container},
+    #{$client-themedPopout} {
+        background-color: var(--skypecord-menu-bg);
     }
     #{$searchPopout-option} {
         &::after {
@@ -93,5 +89,8 @@
         #{$searchPopout-plusIcon} {
             color: var(--skypecord-header-fg);
         }
+    }
+    #{$client-themedPopout} {
+        box-shadow: none;
     }
 }
