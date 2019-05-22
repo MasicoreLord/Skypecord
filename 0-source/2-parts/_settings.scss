@@ -71,16 +71,19 @@
             @extend %settings-tab-separator-colors;
         }
     }
+    #{$settings-closeButton}:hover {
+        background-color: transparent;
+    }
 }
 
 #{$client-layer}:first-child {
     opacity: 1!important;
     transform: unset!important;
-    will-change: unset!important;
 }
 
 #{$client-layer} {
-    &.stop-animations {
+    &.stop-animations,
+    &.publicServersOpen /* BandagedBD */ {
         &::after {
             content: '';
             width: 100%;
@@ -177,15 +180,13 @@
     border-radius: 0;
     z-index: -1;
     border: none;
-    &:hover {
-        background-color: transparent;
-    }
     svg {
         display: none;
     }
 }
 
-#{$client-layers} > #{$client-layer}:last-of-type:not(:only-of-type) {
+#{$client-layers} > #{$client-layer}:last-of-type:not(:only-of-type),
+#pubslayer /* BandagedBD */ {
     height: 700px;
     width: 1100px;
     top: calc(50% - 350px);
