@@ -67,7 +67,7 @@
     //     background-color: var(--skypecord-sidebar-item-hov-bg);
     // }
     #{$channelList-itemUnread} {
-        background-color: var(--skypecord-unread-indicator-bg);
+        background-color: var(--skypecord-indicator-bg);
     }
     #{$channelList-actionIcon},
     #{$channelList-itemName} {

@@ -21,4 +21,10 @@
 
 #{$tooltips-layer} {
     pointer-events: none;
+    &[style*='left: 64'],
+    &[style*='left: 65'] {
+        #{$tooltipDefault} {
+            display: none;
+        }
+    }
 }

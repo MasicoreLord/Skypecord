@@ -21,15 +21,6 @@
     display: none;
 }
 
-#{$searchPopout-container} #{$searchPopout-resultsGroup}{
-    &:first-of-type {
-        padding-top: 0;
-    }
-    &:last-of-type {
-        padding-bottom: 0;
-    }
-}
-
 #{$searchPopout-resultsGroup} #{$searchPopout-learnMore} {
     top: 12px;
     transform: translateY(-50%);

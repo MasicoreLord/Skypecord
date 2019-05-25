@@ -1,7 +1,7 @@
 #{$mainNavList-wrapper} {
     border-radius: 0;
     border-right: 1px solid;
-    width: 190px;
+    width: 200px;
     #{$client-macOs} & {
         margin-top: 0;
     }
@@ -12,7 +12,7 @@
 }
 
 #{$mainNavList-item} {
-    width: 190px;
+    width: 200px;
     justify-content: flex-start;
     padding-left: 8px;
     margin: 0;
@@ -36,26 +36,25 @@
         font-size: 15px;
         font-weight: 500;
         color: var(--skypecord-main-fg);
-        width: 126px;
+        width: 134px;
         line-height: 48px;
         overflow: hidden;
         white-space: nowrap;
-        -webkit-mask-image: linear-gradient(to left, transparent 0, #000 8px);
-        mask-image: linear-gradient(-90deg, transparent 0, #000 8px);
+        -webkit-mask-image: linear-gradient(to left, transparent 0, #000 20px);
+        mask-image: linear-gradient(-90deg, transparent 0, #000 20px);
     }
 }
 
 #{$mainNavList-indicatorWrapper},
 #{$mainNavList-homeIndicatorWrapper},
 #{$mainNavList-actionIndicatorWrapper} {
-    width: 194px;
-    height: 58px;
+    width: 204px;
+    height: 56px;
 }
 
 %main-nav-list-item-selected {
-    width: 194px;
-    height: 58px!important;
-    top: -2px;
+    width: 204px;
+    height: 100%!important;
 }
 
 @for $i from 9 through 40 {
@@ -68,13 +67,19 @@
     }
 }
 
+#{$mainNavList-indicator} {
+    border-radius: 0;
+}
+
 #{$mainNavList-itemIcon},
-#{$mainNavList-actionButton} {
+#{$mainNavList-actionButton},
+#{$mainNavList-homeButton},
+#{$mainNavList-itemAcronym} {
     border-radius: 50%;
 }
 
 #{$mainNavList-badgeWrapper} {
-    width: 178px;
+    width: 188px;
 }
 
 #{$mainNavList-lowerBadge} {
@@ -89,21 +94,16 @@
     padding-top: 4px;
 }
 
-// /* Hide public button that's messed up */
-// #bd-pub-li /* BandagedBD */ {
-//     display: none;
-// }
-
 #{$mainNavList-itemInner} {
     border-radius: 50%;
     foreignObject {
         mask: none;
-        x: -71px;
+        x: -76px;
     }
 }
 
 #{$mainNavList-itemSvg} {
-    width: 190px;
+    width: 200px;
 }
 
 #{$mainNavList-itemInner} {
@@ -119,9 +119,6 @@
         background-color: var(--skypecord-sidebar-bg);
         border-color: var(--skypecord-border-fg);
     }
-    #{$mainNavList-indicator} {
-        background-color: var(--skypecord-unread-indicator-bg);
-    }
     #{$mainNavList-itemInner} {
         background-color: var(--skypecord-avatar-bg)!important; /* Override inline style on guilds w/ no icon */
         a {
@@ -129,7 +126,7 @@
         }
     }
     #{$mainNavList-indicator} {
-        background-color: var(--skypecord-unread-indicator-bg);
+        background-color: var(--skypecord-indicator-bg);
         opacity: 1!important;
     }
     #{$mainNavList-actionButton},

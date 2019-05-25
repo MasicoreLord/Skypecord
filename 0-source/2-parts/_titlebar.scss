@@ -45,7 +45,7 @@
         align-items: center;
     }
     &::before {
-        content: 'Skypecord';
+        content: var(--skypecord-titlebar-text);
         font-size: 12px;
         font-weight: 600;
         padding-left: 13px;
@@ -67,7 +67,7 @@
     }
     &::after {
         position: fixed;
-        content: 'Skypecord';
+        content: var(--skypecord-titlebar-text);
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
