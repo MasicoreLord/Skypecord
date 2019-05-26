@@ -1,9 +1,8 @@
-// BetterDocs
-%betterdocs-blocker {
+// BetterDocs/Discord Source
+%advisory {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0;
     width: fit-content;
     height: inRem(16px);
     display: flex;
@@ -14,17 +13,38 @@
     line-height: 1;
     padding: inRem(4px);
     z-index: 1;
-    content: '\26A0 Warning: BetterDocs/Discord Source is NOT official.';
+    content: 'Unofficial \26A0';
+    pointer-events: none;
+}
+
+%advisory-trusted {
+    content: 'Trusted | Unofficial \1F6C8';
+}
+
+%advisory-official {
+    content: 'Official \2713'
 }
 
 #{$message-embed} {
     #{$message-embedContentInner} {
+        a[href*='#{"//"}betterdiscord.net' i],
         a[href*='#{"//"}betterdocs.us' i],
         a[href*='#{"//"}betterdocs.net' i],
         a[href*='#{"//"}betterdocs.netlify.com' i],
-        a[href*='#{"//"}discordsource.com' i] {
+        a[href*='#{"//"}discordsource.com' i],
+        a[href*='#{"//"}betterdiscordlibrary.com' i] {
             &::after {
-               @extend %betterdocs-blocker;
+               @extend %advisory;
+            }
+        }
+        a[href*='#{"//"}betterdiscordlibrary.com' i] {
+            &::after {
+               @extend %advisory-trusted;
+            }
+        }
+        a[href*='#{"//"}betterdiscord.net' i] {
+            &::after {
+                @extend %advisory-official;
             }
         }
     }
@@ -34,35 +54,88 @@
     position: relative;
 }
 
-#{$chat-inviteWrapper} [style*='/icons/153708594091655168'] {
-    position: static;
-    &::after {
-        @extend %betterdocs-blocker;
+#{$chat-inviteWrapper} {
+    [style*='/icons/153708594091655168/'],
+    [style*='/icons/86004744966914048/'],
+    [style*='/icons/280806472928198656/'] {
+        position: static;
+        &::after {
+            @extend %advisory;
+        }
+    }
+    [style*='/icons/86004744966914048/'],
+    [style*='/icons/280806472928198656/'] {
+        &::after {
+            @extend %advisory-official;
+        }
     }
 }
 
 #{$main-app} {
-    %betterdocs-blocker-colors {
+    %advisory-unofficial-colors {
         background-color: rgb(233, 112, 13);
         color: #fff;
     }
-    %betterdocs-blocker-link-colors {
+    %advisory-unofficial-link-colors {
         color: lighten(rgb(233, 112, 13), 5%)!important;
     }
-    #{$message-markup} {
+    %advisory-colors {
+        background-color: rgb(27, 137, 228);
+        color: #fff;
+    }
+    %advisory-link-colors {
+        color: lighten(rgb(27, 137, 228), 5%)!important;
+    }
+    %advisory-official-colors {
+        background-color: rgb(13, 158, 78);
+        color: #fff;
+    }
+    %advisory-official-link-colors {
+        color: lighten(rgb(13, 158, 78), 5%)!important;
+    }
+    #{$message-markup} > {
+        [href*='#{"//"}betterdiscord.net' i],
+        [href*='#{"//"}discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
+        [href*='#{"//"}discordapp.com/invite/2HScm8j'],
+        [href*='#{"//"}discord.gg/0Tmfo5ZbORBSfCjI'],
+        [href*='#{"//"}discord.gg/2HScm8j'],
         [href*='#{"//"}betterdocs.us' i],
         [href*='#{"//"}betterdocs.net' i],
         [href*='#{"//"}betterdocs.netlify.com' i],
         [href*='#{"//"}discordsource.com' i],
         [href*='#{"//"}discordapp.com/invite/D4cAkXX'],
         [href*='#{"//"}discord.gg/D4cAkXX'] {
-            @extend %betterdocs-blocker-link-colors;
+            @extend %advisory-unofficial-link-colors;
             &::before {
-                content: '\26A0 Unofficial';
+                content: 'Unofficial Source of Themes/Plugins \26A0';
                 padding: inRem(2px);
                 margin-right: inRem(2px);
                 display: inline-block;
-                @extend %betterdocs-blocker-colors;
+                @extend %advisory-unofficial-colors;
+            }
+        }
+        [href*='#{"//"}betterdiscordlibrary.com' i] {
+            @extend %advisory-link-colors;
+            &::before {
+                content: 'Trusted Source of Themes/Plugins [Unofficial] \1F6C8';
+                padding: inRem(2px);
+                margin-right: inRem(2px);
+                display: inline-block;
+                @extend %advisory-colors;
+            }
+        }
+        [href*='#{"//"}betterdiscord.net' i],
+        [href*='#{"//"}discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
+        [href*='#{"//"}discordapp.com/invite/2HScm8j'],
+        [href*='#{"//"}discord.gg/0Tmfo5ZbORBSfCjI'],
+        [href*='#{"//"}discord.gg/2HScm8j'] {
+            @extend %advisory-official-link-colors;
+            &::before {
+                content: 'Official Source of Themes/Plugins \2713';
+                padding: inRem(2px);
+                margin-right: inRem(2px);
+                display: inline-block;
+                @extend %advisory-official-colors;
             }
         }
     }
@@ -72,14 +145,34 @@
             a[href*='#{"//"}betterdocs.net' i],
             a[href*='#{"//"}betterdocs.netlify.com' i],
             a[href*='#{"//"}discordsource.com' i] {
-                @extend %betterdocs-blocker-link-colors;
+                @extend %advisory-unofficial-link-colors;
                 &::after {
-                   @extend %betterdocs-blocker-colors;
+                   @extend %advisory-unofficial-colors;
+                }
+            }
+            a[href*='#{"//"}betterdiscordlibrary.com' i] {
+                @extend %advisory-link-colors;
+                &::after {
+                    @extend %advisory-colors;
+                }
+            }
+            a[href*='#{"//"}betterdiscord.net' i] {
+                @extend %advisory-official-link-colors;
+                &::after {
+                    @extend %advisory-official-colors;
                 }
             }
         }
     }
-    #{$chat-inviteWrapper} [style*='/icons/153708594091655168']::after {
-        @extend %betterdocs-blocker-colors;
+    #{$chat-inviteWrapper} {
+        [style*='/icons/153708594091655168/']::after {
+            @extend %advisory-unofficial-colors;
+        }
+        [style*='/icons/86004744966914048/'],
+        [style*='/icons/280806472928198656/'] {
+            &::after {
+                @extend %advisory-official-colors;
+            }
+        }
     }
 }

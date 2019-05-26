@@ -48,27 +48,36 @@
 #{$mainNavList-indicatorWrapper},
 #{$mainNavList-homeIndicatorWrapper},
 #{$mainNavList-actionIndicatorWrapper} {
-    width: 204px;
+    width: 220px;
     height: 56px;
 }
 
 %main-nav-list-item-selected {
-    width: 204px;
+    width: 100%;
     height: 100%!important;
 }
 
 @for $i from 9 through 40 {
-    #{$mainNavList-indicator}[style*="height: #{$i}"] {
-        &[style*='opacity: 1'],
-        &[style*='opacity: 0.9'],
-        &[style*='opacity: 0.8'] {
-           @extend %main-nav-list-item-selected;
+    #{$mainNavList-indicator} {
+        [style*="height: #{$i}"] {
+            &[style*='opacity: 1'],
+            &[style*='opacity: 0.9'],
+            &[style*='opacity: 0.8'] {
+               @extend %main-nav-list-item-selected;
+            }
+        }
+        .bd-guild .bd-selected & {
+            @extend %main-nav-list-item-selected;
         }
     }
 }
 
 #{$mainNavList-indicator} {
     border-radius: 0;
+    height: 8px!important;
+    #{$mainNavList-item}.bd-guild:not(.bd-unread):not(.bd-selected) & /* BandagedBD */ {
+        display: none;
+    }
 }
 
 #{$mainNavList-itemIcon},
@@ -162,12 +171,17 @@
         background-color: var(--skypecord-sidebar-item-sel-bg);
     }
     @for $i from 9 through 40 {
-        #{$mainNavList-indicator}[style*="height: #{$i}"] {
-            &[style*='opacity: 1'],
-            &[style*='opacity: 0.9'],
-            &[style*='opacity: 0.8'] {
-                @extend %nav-list-item-selected-colors;
+        #{$mainNavList-indicator} {
+            [style*="height: #{$i}"] {
+                &[style*='opacity: 1'],
+                &[style*='opacity: 0.9'],
+                &[style*='opacity: 0.8'] {
+                    @extend %nav-list-item-selected-colors;
+                }
             }
+        }
+        .bd-guild .bd-selected #{$mainNavList-indicator} {
+            @extend %nav-list-item-selected-colors;
         }
     }
 }
