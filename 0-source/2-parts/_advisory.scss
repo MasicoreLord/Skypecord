@@ -1,224 +1,178 @@
-// Hide conflicting BD blocker stuff
-#app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*="www.discordsource." i], #app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*=":#{"//"}discordsource." i], #app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*="www.betterdocs." i], #app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*=":#{"//"}betterdocs." i] {
-    display: block !important;
-}
+// // BetterDocs/Discord Source
+// %advisory {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: fit-content;
+//     height: inRem(16px);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     font-size: inRem(14px);
+//     line-height: 1;
+//     padding: inRem(4px);
+//     z-index: 1;
+//     content: 'Unofficial \26A0';
+//     pointer-events: none;
+// }
 
-#app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.discordsource." i]:before, #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="#{"//"}discordsource." i]:before, #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.betterdocs." i]:before, #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="#{"//"}betterdocs." i]:before,
-#app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="www.discordsource." i]:after, #app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="#{"//"}discordsource." i]:after, #app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="www.betterdocs." i]:after, #app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="#{"//"}betterdocs." i]:after {
-    display: none !important;
-}
+// %advisory-trusted {
+//     content: 'Trusted | Unofficial \1F6C8';
+// }
 
-#app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.discordsource." i], #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="#{"//"}discordsource." i], #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.betterdocs." i], #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="#{"//"}betterdocs." i] {
-    height: auto !important;
-}
+// %advisory-official {
+//     content: 'Official \2713'
+// }
 
-#app-mount .embedLink-1G1K1D[href*="www.discordsource." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="www.discordsource." i], #app-mount .embedLink-1G1K1D[href*="#{"//"}discordsource." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="#{"//"}discordsource." i], #app-mount .embedLink-1G1K1D[href*="www.betterdocs." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="www.betterdocs." i], #app-mount .embedLink-1G1K1D[href*="#{"//"}betterdocs." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="#{"//"}betterdocs." i] {
-    color: lighten(rgb(233, 112, 13), 5%)!important;
-    pointer-events: all!important;
-}
+// #{$message-embed} {
+//     #{$message-embedContentInner} {
+//         a[href*='#{"//"}betterdiscord.net' i],
+//         a[href*='#{"//"}betterdocs.us' i],
+//         a[href*='#{"//"}betterdocs.net' i],
+//         a[href*='#{"//"}betterdocs.netlify.com' i],
+//         a[href*='#{"//"}discordsource.com' i],
+//         a[href*='#{"//"}betterdiscordlibrary.com' i] {
+//             &::after {
+//                @extend %advisory;
+//             }
+//         }
+//         a[href*='#{"//"}betterdiscordlibrary.com' i] {
+//             &::after {
+//                @extend %advisory-trusted;
+//             }
+//         }
+//         a[href*='#{"//"}betterdiscord.net' i] {
+//             &::after {
+//                 @extend %advisory-official;
+//             }
+//         }
+//     }
+// }
 
-#app-mount .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="discordapp.com/invite/D4cAkXX" i] {
-    color: lighten(rgb(233, 112, 13), 5%)!important;
-    letter-spacing: initial!important;
-    cursor: pointer!important;
-    pointer-events: all!important;
+// #{$chat-inviteWrapper} {
+//     position: relative;
+// }
 
-    &::after {
-        display: none;
-    }
-}
+// #{$chat-inviteWrapper} {
+//     [style*='/icons/153708594091655168/'],
+//     [style*='/icons/86004744966914048/'],
+//     [style*='/icons/280806472928198656/'] {
+//         position: static;
+//         &::after {
+//             @extend %advisory;
+//         }
+//     }
+//     [style*='/icons/86004744966914048/'],
+//     [style*='/icons/280806472928198656/'] {
+//         &::after {
+//             @extend %advisory-official;
+//         }
+//     }
+// }
 
-#app-mount .wrapper-35wsBm .icon-3o6xvg[style*="/icons/153708594091655168" i]:after {
-    display: none;
-}
-
-#app-mount .embedLink-1G1K1D[href*="www.discordsource." i]::selection,
-#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="www.discordsource." i]::selection,
-#app-mount .embedLink-1G1K1D[href*="#{"//"}discordsource." i]::selection,
-#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="#{"//"}discordsource." i]::selection,
-#app-mount .embedLink-1G1K1D[href*="www.betterdocs." i]::selection,
-#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="www.betterdocs." i]::selection,
-#app-mount .embedLink-1G1K1D[href*="#{"//"}betterdocs." i]::selection,
-#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="#{"//"}betterdocs." i]::selection {
-    background-color: #3390FF !important;
-    color: #fff !important;
-}
-
-// BetterDocs/Discord Source
-%advisory {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: fit-content;
-    height: inRem(16px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: inRem(14px);
-    line-height: 1;
-    padding: inRem(4px);
-    z-index: 1;
-    content: 'Unofficial \26A0';
-    pointer-events: none;
-}
-
-%advisory-trusted {
-    content: 'Trusted | Unofficial \1F6C8';
-}
-
-%advisory-official {
-    content: 'Official \2713'
-}
-
-#{$message-embed} {
-    #{$message-embedContentInner} {
-        a[href*='#{"//"}betterdiscord.net' i],
-        a[href*='#{"//"}betterdocs.us' i],
-        a[href*='#{"//"}betterdocs.net' i],
-        a[href*='#{"//"}betterdocs.netlify.com' i],
-        a[href*='#{"//"}discordsource.com' i],
-        a[href*='#{"//"}betterdiscordlibrary.com' i] {
-            &::after {
-               @extend %advisory;
-            }
-        }
-        a[href*='#{"//"}betterdiscordlibrary.com' i] {
-            &::after {
-               @extend %advisory-trusted;
-            }
-        }
-        a[href*='#{"//"}betterdiscord.net' i] {
-            &::after {
-                @extend %advisory-official;
-            }
-        }
-    }
-}
-
-#{$chat-inviteWrapper} {
-    position: relative;
-}
-
-#{$chat-inviteWrapper} {
-    [style*='/icons/153708594091655168/'],
-    [style*='/icons/86004744966914048/'],
-    [style*='/icons/280806472928198656/'] {
-        position: static;
-        &::after {
-            @extend %advisory;
-        }
-    }
-    [style*='/icons/86004744966914048/'],
-    [style*='/icons/280806472928198656/'] {
-        &::after {
-            @extend %advisory-official;
-        }
-    }
-}
-
-#{$main-app} {
-    %advisory-unofficial-colors {
-        background-color: rgb(233, 112, 13);
-        color: #fff;
-    }
-    %advisory-unofficial-link-colors {
-        color: lighten(rgb(233, 112, 13), 5%)!important;
-    }
-    %advisory-colors {
-        background-color: rgb(27, 137, 228);
-        color: #fff;
-    }
-    %advisory-link-colors {
-        color: lighten(rgb(27, 137, 228), 5%)!important;
-    }
-    %advisory-official-colors {
-        background-color: rgb(13, 158, 78);
-        color: #fff;
-    }
-    %advisory-official-link-colors {
-        color: lighten(rgb(13, 158, 78), 5%)!important;
-    }
-    #{$message-markup} > {
-        [href*='#{"//"}betterdiscord.net' i],
-        [href*='#{"//"}discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
-        [href*='#{"//"}discordapp.com/invite/2HScm8j'],
-        [href*='#{"//"}discord.gg/0Tmfo5ZbORBSfCjI'],
-        [href*='#{"//"}discord.gg/2HScm8j'],
-        [href*='#{"//"}betterdocs.us' i],
-        [href*='#{"//"}betterdocs.net' i],
-        [href*='#{"//"}betterdocs.netlify.com' i],
-        [href*='#{"//"}discordsource.com' i],
-        [href*='#{"//"}discordapp.com/invite/D4cAkXX'],
-        [href*='#{"//"}discord.gg/D4cAkXX'] {
-            @extend %advisory-unofficial-link-colors;
-            &::before {
-                content: 'Unofficial Source of Themes/Plugins \26A0';
-                padding: inRem(2px);
-                margin-right: inRem(2px);
-                display: inline-block;
-                @extend %advisory-unofficial-colors;
-            }
-        }
-        [href*='#{"//"}betterdiscordlibrary.com' i] {
-            @extend %advisory-link-colors;
-            &::before {
-                content: 'Trusted Source of Themes/Plugins [Unofficial] \1F6C8';
-                padding: inRem(2px);
-                margin-right: inRem(2px);
-                display: inline-block;
-                @extend %advisory-colors;
-            }
-        }
-        [href*='#{"//"}betterdiscord.net' i],
-        [href*='#{"//"}discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
-        [href*='#{"//"}discordapp.com/invite/2HScm8j'],
-        [href*='#{"//"}discord.gg/0Tmfo5ZbORBSfCjI'],
-        [href*='#{"//"}discord.gg/2HScm8j'] {
-            @extend %advisory-official-link-colors;
-            &::before {
-                content: 'Official Source of Themes/Plugins \2713';
-                padding: inRem(2px);
-                margin-right: inRem(2px);
-                display: inline-block;
-                @extend %advisory-official-colors;
-            }
-        }
-    }
-    #{$message-embed} {
-        #{$message-embedContentInner} {
-            a[href*='#{"//"}betterdocs.us' i],
-            a[href*='#{"//"}betterdocs.net' i],
-            a[href*='#{"//"}betterdocs.netlify.com' i],
-            a[href*='#{"//"}discordsource.com' i] {
-                @extend %advisory-unofficial-link-colors;
-                &::after {
-                   @extend %advisory-unofficial-colors;
-                }
-            }
-            a[href*='#{"//"}betterdiscordlibrary.com' i] {
-                @extend %advisory-link-colors;
-                &::after {
-                    @extend %advisory-colors;
-                }
-            }
-            a[href*='#{"//"}betterdiscord.net' i] {
-                @extend %advisory-official-link-colors;
-                &::after {
-                    @extend %advisory-official-colors;
-                }
-            }
-        }
-    }
-    #{$chat-inviteWrapper} {
-        [style*='/icons/153708594091655168/']::after {
-            @extend %advisory-unofficial-colors;
-        }
-        [style*='/icons/86004744966914048/'],
-        [style*='/icons/280806472928198656/'] {
-            &::after {
-                @extend %advisory-official-colors;
-            }
-        }
-    }
-}
+// #{$main-app} {
+//     %advisory-unofficial-colors {
+//         background-color: rgb(233, 112, 13);
+//         color: #fff;
+//     }
+//     %advisory-unofficial-link-colors {
+//         color: lighten(rgb(233, 112, 13), 5%)!important;
+//     }
+//     %advisory-colors {
+//         background-color: rgb(27, 137, 228);
+//         color: #fff;
+//     }
+//     %advisory-link-colors {
+//         color: lighten(rgb(27, 137, 228), 5%)!important;
+//     }
+//     %advisory-official-colors {
+//         background-color: rgb(13, 158, 78);
+//         color: #fff;
+//     }
+//     %advisory-official-link-colors {
+//         color: lighten(rgb(13, 158, 78), 5%)!important;
+//     }
+//     #{$message-markup} > {
+//         [href*='#{"//"}betterdiscord.net' i],
+//         [href*='#{"//"}discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
+//         [href*='#{"//"}discordapp.com/invite/2HScm8j'],
+//         [href*='#{"//"}discord.gg/0Tmfo5ZbORBSfCjI'],
+//         [href*='#{"//"}discord.gg/2HScm8j'],
+//         [href*='#{"//"}betterdocs.us' i],
+//         [href*='#{"//"}betterdocs.net' i],
+//         [href*='#{"//"}betterdocs.netlify.com' i],
+//         [href*='#{"//"}discordsource.com' i],
+//         [href*='#{"//"}discordapp.com/invite/D4cAkXX'],
+//         [href*='#{"//"}discord.gg/D4cAkXX'] {
+//             @extend %advisory-unofficial-link-colors;
+//             &::before {
+//                 content: 'Unofficial Source of Themes/Plugins \26A0';
+//                 padding: inRem(2px);
+//                 margin-right: inRem(2px);
+//                 display: inline-block;
+//                 @extend %advisory-unofficial-colors;
+//             }
+//         }
+//         [href*='#{"//"}betterdiscordlibrary.com' i] {
+//             @extend %advisory-link-colors;
+//             &::before {
+//                 content: 'Trusted Source of Themes/Plugins [Unofficial] \1F6C8';
+//                 padding: inRem(2px);
+//                 margin-right: inRem(2px);
+//                 display: inline-block;
+//                 @extend %advisory-colors;
+//             }
+//         }
+//         [href*='#{"//"}betterdiscord.net' i],
+//         [href*='#{"//"}discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
+//         [href*='#{"//"}discordapp.com/invite/2HScm8j'],
+//         [href*='#{"//"}discord.gg/0Tmfo5ZbORBSfCjI'],
+//         [href*='#{"//"}discord.gg/2HScm8j'] {
+//             @extend %advisory-official-link-colors;
+//             &::before {
+//                 content: 'Official Source of Themes/Plugins \2713';
+//                 padding: inRem(2px);
+//                 margin-right: inRem(2px);
+//                 display: inline-block;
+//                 @extend %advisory-official-colors;
+//             }
+//         }
+//     }
+//     #{$message-embed} {
+//         #{$message-embedContentInner} {
+//             a[href*='#{"//"}betterdocs.us' i],
+//             a[href*='#{"//"}betterdocs.net' i],
+//             a[href*='#{"//"}betterdocs.netlify.com' i],
+//             a[href*='#{"//"}discordsource.com' i] {
+//                 @extend %advisory-unofficial-link-colors;
+//                 &::after {
+//                    @extend %advisory-unofficial-colors;
+//                 }
+//             }
+//             a[href*='#{"//"}betterdiscordlibrary.com' i] {
+//                 @extend %advisory-link-colors;
+//                 &::after {
+//                     @extend %advisory-colors;
+//                 }
+//             }
+//             a[href*='#{"//"}betterdiscord.net' i] {
+//                 @extend %advisory-official-link-colors;
+//                 &::after {
+//                     @extend %advisory-official-colors;
+//                 }
+//             }
+//         }
+//     }
+//     #{$chat-inviteWrapper} {
+//         [style*='/icons/153708594091655168/']::after {
+//             @extend %advisory-unofficial-colors;
+//         }
+//         [style*='/icons/86004744966914048/'],
+//         [style*='/icons/280806472928198656/'] {
+//             &::after {
+//                 @extend %advisory-official-colors;
+//             }
+//         }
+//     }
+// }
