@@ -66,7 +66,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.3.1 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.3.2 Alpha'
 ; }
 
 /* Font */
@@ -89,14 +89,53 @@ textarea {
 
 /* /Animations */
 /* Advisories */
+#app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*="www.discordsource." i], #app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*="://discordsource." i], #app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*="www.betterdocs." i], #app-mount .embed-IeVjo6 .embedThumbnail-2Y84-K[href*="://betterdocs." i] {
+  display: block !important; }
+
+#app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.discordsource." i]:before, #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="//discordsource." i]:before, #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.betterdocs." i]:before, #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="//betterdocs." i]:before,
+#app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="www.discordsource." i]:after, #app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="//discordsource." i]:after, #app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="www.betterdocs." i]:after, #app-mount .container-1YxwTf .markup-2BOw-j > .anchor-3Z-8Bb[href*="//betterdocs." i]:after {
+  display: none !important; }
+
+#app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.discordsource." i], #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="//discordsource." i], #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="www.betterdocs." i], #app-mount .embed-IeVjo6 .embedLink-1G1K1D[href*="//betterdocs." i] {
+  height: auto !important; }
+
+#app-mount .embedLink-1G1K1D[href*="www.discordsource." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="www.discordsource." i], #app-mount .embedLink-1G1K1D[href*="//discordsource." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="//discordsource." i], #app-mount .embedLink-1G1K1D[href*="www.betterdocs." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="www.betterdocs." i], #app-mount .embedLink-1G1K1D[href*="//betterdocs." i], #app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="//betterdocs." i] {
+  color: #f27d1d !important;
+  pointer-events: all !important; }
+
+#app-mount .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="discordapp.com/invite/D4cAkXX" i] {
+  color: #f27d1d !important;
+  letter-spacing: initial !important;
+  cursor: pointer !important;
+  pointer-events: all !important; }
+  #app-mount .markup-2BOw-j .anchor-3Z-8Bb:not(.channelLink-2TxEu3):not(.guildsError-3cFMtY):not(.guildsError-b7zR5H):not(.embedAuthorName-3mnTWj):not(.downloadButton-1bWXpg):not(.downloadLink-1ywL9o)[href*="discordapp.com/invite/D4cAkXX" i]::after {
+    display: none; }
+
+#app-mount .wrapper-35wsBm .icon-3o6xvg[style*="/icons/153708594091655168" i]:after {
+  display: none; }
+
+#app-mount .embedLink-1G1K1D[href*="www.discordsource." i]::selection,
+#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="www.discordsource." i]::selection,
+#app-mount .embedLink-1G1K1D[href*="//discordsource." i]::selection,
+#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="//discordsource." i]::selection,
+#app-mount .embedLink-1G1K1D[href*="www.betterdocs." i]::selection,
+#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="www.betterdocs." i]::selection,
+#app-mount .embedLink-1G1K1D[href*="//betterdocs." i]::selection,
+#app-mount .container-1YxwTf .markup-2BOw-j .anchor-3Z-8Bb[href*="//betterdocs." i]::selection {
+  background-color: #3390FF !important;
+  color: #fff !important; }
+
+.embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscord.net' i]::after,
 .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.us' i]::after,
 .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.net' i]::after,
 .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.netlify.com' i]::after,
-.embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//discordsource.com' i]::after, .wrapper-35wsBm [style*='/icons/153708594091655168']::after {
+.embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//discordsource.com' i]::after,
+.embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscordlibrary.com' i]::after, .wrapper-35wsBm [style*='/icons/153708594091655168/']::after,
+.wrapper-35wsBm [style*='/icons/86004744966914048/']::after,
+.wrapper-35wsBm [style*='/icons/280806472928198656/']::after {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
   width: fit-content;
   height: 1rem;
   display: flex;
@@ -107,44 +146,110 @@ textarea {
   line-height: 1;
   padding: 0.25rem;
   z-index: 1;
-  content: '\26A0 Warning: BetterDocs/Discord Source is NOT official.'; }
+  content: 'Unofficial \26A0';
+  pointer-events: none; }
+
+
+.embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscordlibrary.com' i]::after {
+  content: 'Trusted | Unofficial \1F6C8'; }
+
+.embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscord.net' i]::after,
+.wrapper-35wsBm [style*='/icons/86004744966914048/']::after,
+.wrapper-35wsBm [style*='/icons/280806472928198656/']::after {
+  content: 'Official \2713'; }
 
 .wrapper-35wsBm {
   position: relative; }
 
-.wrapper-35wsBm [style*='/icons/153708594091655168'] {
+.wrapper-35wsBm [style*='/icons/153708594091655168/'],
+.wrapper-35wsBm [style*='/icons/86004744966914048/'],
+.wrapper-35wsBm [style*='/icons/280806472928198656/'] {
   position: static; }
 
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.us' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.net' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.netlify.com' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//discordsource.com' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//discordapp.com/invite/D4cAkXX']::before,
-.app-2rEoOp .markup-2BOw-j [href*='//discord.gg/D4cAkXX']::before, .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.us' i]::after,
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscord.net' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/2HScm8j']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/2HScm8j']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.us' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.net' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.netlify.com' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordsource.com' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/D4cAkXX']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/D4cAkXX']::before, .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.us' i]::after,
 .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.net' i]::after,
 .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.netlify.com' i]::after,
-.app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//discordsource.com' i]::after, .app-2rEoOp .wrapper-35wsBm [style*='/icons/153708594091655168']::after {
+.app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//discordsource.com' i]::after, .app-2rEoOp .wrapper-35wsBm [style*='/icons/153708594091655168/']::after {
   background-color: #e9700d;
   color: #fff; }
 
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.us' i],
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.net' i],
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.netlify.com' i],
-.app-2rEoOp .markup-2BOw-j [href*='//discordsource.com' i],
-.app-2rEoOp .markup-2BOw-j [href*='//discordapp.com/invite/D4cAkXX'],
-.app-2rEoOp .markup-2BOw-j [href*='//discord.gg/D4cAkXX'], .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.us' i],
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscord.net' i],
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/2HScm8j'],
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/0Tmfo5ZbORBSfCjI'],
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/2HScm8j'],
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.us' i],
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.net' i],
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.netlify.com' i],
+.app-2rEoOp .markup-2BOw-j > [href*='//discordsource.com' i],
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/D4cAkXX'],
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/D4cAkXX'], .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.us' i],
 .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.net' i],
 .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdocs.netlify.com' i],
 .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//discordsource.com' i] {
   color: #f27d1d !important; }
 
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.us' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.net' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//betterdocs.netlify.com' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//discordsource.com' i]::before,
-.app-2rEoOp .markup-2BOw-j [href*='//discordapp.com/invite/D4cAkXX']::before,
-.app-2rEoOp .markup-2BOw-j [href*='//discord.gg/D4cAkXX']::before {
-  content: '\26A0 Unofficial';
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscordlibrary.com' i]::before, .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscordlibrary.com' i]::after {
+  background-color: #1b89e4;
+  color: #fff; }
+
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscordlibrary.com' i], .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscordlibrary.com' i] {
+  color: #3295e7 !important; }
+
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscord.net' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/2HScm8j']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/2HScm8j']::before, .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscord.net' i]::after, .app-2rEoOp .wrapper-35wsBm [style*='/icons/86004744966914048/']::after,
+.app-2rEoOp .wrapper-35wsBm [style*='/icons/280806472928198656/']::after {
+  background-color: #0d9e4e;
+  color: #fff; }
+
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscord.net' i],
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/0Tmfo5ZbORBSfCjI'],
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/2HScm8j'],
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/0Tmfo5ZbORBSfCjI'],
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/2HScm8j'], .app-2rEoOp .embed-IeVjo6 .embedContentInner-FBnk7v a[href*='//betterdiscord.net' i] {
+  color: #0fb65a !important; }
+
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscord.net' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/2HScm8j']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/2HScm8j']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.us' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.net' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdocs.netlify.com' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordsource.com' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/D4cAkXX']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/D4cAkXX']::before {
+  content: 'Unofficial Source of Themes/Plugins \26A0';
+  padding: 0.125rem;
+  margin-right: 0.125rem;
+  display: inline-block; }
+
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscordlibrary.com' i]::before {
+  content: 'Trusted Source of Themes/Plugins [Unofficial] \1F6C8';
+  padding: 0.125rem;
+  margin-right: 0.125rem;
+  display: inline-block; }
+
+.app-2rEoOp .markup-2BOw-j > [href*='//betterdiscord.net' i]::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discordapp.com/invite/2HScm8j']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/0Tmfo5ZbORBSfCjI']::before,
+.app-2rEoOp .markup-2BOw-j > [href*='//discord.gg/2HScm8j']::before {
+  content: 'Official Source of Themes/Plugins \2713';
   padding: 0.125rem;
   margin-right: 0.125rem;
   display: inline-block; }
@@ -211,7 +316,6 @@ a {
   padding-left: 13px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #5d5d5d;
   border-bottom: none; }
 
 .platform-osx .app-2rEoOp::before {
@@ -424,7 +528,8 @@ a {
 .wrapper-1Rf91z {
   border-radius: 0;
   border-right: 1px solid;
-  width: 200px; }
+  width: 200px;
+  box-sizing: border-box; }
   .platform-osx .wrapper-1Rf91z {
     margin-top: 0; }
 
@@ -459,15 +564,18 @@ a {
 .pill-31IEus,
 .pill-2uzAFe,
 .pill-3YxEhL {
-  width: 204px;
+  width: 220px;
   height: 56px; }
 
-.item-2hkk8m[style*="height: 9"][style*='opacity: 1'], .item-2hkk8m[style*="height: 9"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 9"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 10"][style*='opacity: 1'], .item-2hkk8m[style*="height: 10"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 10"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 11"][style*='opacity: 1'], .item-2hkk8m[style*="height: 11"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 11"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 12"][style*='opacity: 1'], .item-2hkk8m[style*="height: 12"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 12"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 13"][style*='opacity: 1'], .item-2hkk8m[style*="height: 13"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 13"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 14"][style*='opacity: 1'], .item-2hkk8m[style*="height: 14"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 14"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 15"][style*='opacity: 1'], .item-2hkk8m[style*="height: 15"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 15"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 16"][style*='opacity: 1'], .item-2hkk8m[style*="height: 16"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 16"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 17"][style*='opacity: 1'], .item-2hkk8m[style*="height: 17"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 17"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 18"][style*='opacity: 1'], .item-2hkk8m[style*="height: 18"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 18"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 19"][style*='opacity: 1'], .item-2hkk8m[style*="height: 19"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 19"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 20"][style*='opacity: 1'], .item-2hkk8m[style*="height: 20"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 20"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 21"][style*='opacity: 1'], .item-2hkk8m[style*="height: 21"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 21"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 22"][style*='opacity: 1'], .item-2hkk8m[style*="height: 22"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 22"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 23"][style*='opacity: 1'], .item-2hkk8m[style*="height: 23"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 23"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 24"][style*='opacity: 1'], .item-2hkk8m[style*="height: 24"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 24"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 25"][style*='opacity: 1'], .item-2hkk8m[style*="height: 25"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 25"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 26"][style*='opacity: 1'], .item-2hkk8m[style*="height: 26"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 26"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 27"][style*='opacity: 1'], .item-2hkk8m[style*="height: 27"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 27"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 28"][style*='opacity: 1'], .item-2hkk8m[style*="height: 28"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 28"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 29"][style*='opacity: 1'], .item-2hkk8m[style*="height: 29"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 29"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 30"][style*='opacity: 1'], .item-2hkk8m[style*="height: 30"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 30"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 31"][style*='opacity: 1'], .item-2hkk8m[style*="height: 31"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 31"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 32"][style*='opacity: 1'], .item-2hkk8m[style*="height: 32"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 32"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 33"][style*='opacity: 1'], .item-2hkk8m[style*="height: 33"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 33"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 34"][style*='opacity: 1'], .item-2hkk8m[style*="height: 34"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 34"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 35"][style*='opacity: 1'], .item-2hkk8m[style*="height: 35"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 35"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 36"][style*='opacity: 1'], .item-2hkk8m[style*="height: 36"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 36"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 37"][style*='opacity: 1'], .item-2hkk8m[style*="height: 37"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 37"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 38"][style*='opacity: 1'], .item-2hkk8m[style*="height: 38"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 38"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 39"][style*='opacity: 1'], .item-2hkk8m[style*="height: 39"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 39"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 40"][style*='opacity: 1'], .item-2hkk8m[style*="height: 40"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 40"][style*='opacity: 0.8'] {
-  width: 204px;
+.item-2hkk8m [style*="height: 9"][style*='opacity: 1'], .item-2hkk8m [style*="height: 9"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 9"][style*='opacity: 0.8'], .bd-guild .bd-selected .item-2hkk8m, .item-2hkk8m [style*="height: 10"][style*='opacity: 1'], .item-2hkk8m [style*="height: 10"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 10"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 11"][style*='opacity: 1'], .item-2hkk8m [style*="height: 11"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 11"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 12"][style*='opacity: 1'], .item-2hkk8m [style*="height: 12"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 12"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 13"][style*='opacity: 1'], .item-2hkk8m [style*="height: 13"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 13"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 14"][style*='opacity: 1'], .item-2hkk8m [style*="height: 14"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 14"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 15"][style*='opacity: 1'], .item-2hkk8m [style*="height: 15"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 15"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 16"][style*='opacity: 1'], .item-2hkk8m [style*="height: 16"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 16"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 17"][style*='opacity: 1'], .item-2hkk8m [style*="height: 17"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 17"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 18"][style*='opacity: 1'], .item-2hkk8m [style*="height: 18"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 18"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 19"][style*='opacity: 1'], .item-2hkk8m [style*="height: 19"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 19"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 20"][style*='opacity: 1'], .item-2hkk8m [style*="height: 20"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 20"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 21"][style*='opacity: 1'], .item-2hkk8m [style*="height: 21"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 21"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 22"][style*='opacity: 1'], .item-2hkk8m [style*="height: 22"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 22"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 23"][style*='opacity: 1'], .item-2hkk8m [style*="height: 23"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 23"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 24"][style*='opacity: 1'], .item-2hkk8m [style*="height: 24"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 24"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 25"][style*='opacity: 1'], .item-2hkk8m [style*="height: 25"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 25"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 26"][style*='opacity: 1'], .item-2hkk8m [style*="height: 26"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 26"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 27"][style*='opacity: 1'], .item-2hkk8m [style*="height: 27"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 27"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 28"][style*='opacity: 1'], .item-2hkk8m [style*="height: 28"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 28"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 29"][style*='opacity: 1'], .item-2hkk8m [style*="height: 29"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 29"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 30"][style*='opacity: 1'], .item-2hkk8m [style*="height: 30"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 30"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 31"][style*='opacity: 1'], .item-2hkk8m [style*="height: 31"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 31"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 32"][style*='opacity: 1'], .item-2hkk8m [style*="height: 32"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 32"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 33"][style*='opacity: 1'], .item-2hkk8m [style*="height: 33"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 33"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 34"][style*='opacity: 1'], .item-2hkk8m [style*="height: 34"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 34"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 35"][style*='opacity: 1'], .item-2hkk8m [style*="height: 35"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 35"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 36"][style*='opacity: 1'], .item-2hkk8m [style*="height: 36"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 36"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 37"][style*='opacity: 1'], .item-2hkk8m [style*="height: 37"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 37"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 38"][style*='opacity: 1'], .item-2hkk8m [style*="height: 38"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 38"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 39"][style*='opacity: 1'], .item-2hkk8m [style*="height: 39"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 39"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 40"][style*='opacity: 1'], .item-2hkk8m [style*="height: 40"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 40"][style*='opacity: 0.8'] {
+  width: 100%;
   height: 100% !important; }
 
 .item-2hkk8m {
-  border-radius: 0; }
+  border-radius: 0;
+  height: 8px !important; }
+  .listItem-2P_4kh.bd-guild:not(.bd-unread):not(.bd-selected) .item-2hkk8m {
+    display: none; }
 
 .icon-27yU2q,
 .circleIconButton-jET_ig,
@@ -482,7 +590,8 @@ a {
   top: 17px; }
 
 .guildSeparator-3s64Iy {
-  width: calc(100% - 20px); }
+  width: calc(100% - 16px);
+  border-radius: 0; }
 
 .platform-osx .scroller-2TZvBN {
   padding-top: 4px; }
@@ -543,7 +652,7 @@ a {
 .app-2rEoOp .listItem-2P_4kh:hover {
   background-color: var(--skypecord-sidebar-item-hov-bg); }
 
-.app-2rEoOp .item-2hkk8m[style*="height: 9"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 9"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 9"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 10"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 10"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 10"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 11"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 11"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 11"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 12"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 12"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 12"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 13"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 13"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 13"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 14"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 14"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 14"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 15"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 15"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 15"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 16"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 16"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 16"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 17"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 17"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 17"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 18"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 18"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 18"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 19"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 19"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 19"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 20"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 20"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 20"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 21"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 21"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 21"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 22"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 22"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 22"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 23"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 23"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 23"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 24"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 24"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 24"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 25"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 25"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 25"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 26"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 26"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 26"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 27"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 27"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 27"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 28"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 28"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 28"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 29"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 29"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 29"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 30"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 30"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 30"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 31"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 31"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 31"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 32"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 32"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 32"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 33"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 33"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 33"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 34"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 34"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 34"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 35"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 35"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 35"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 36"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 36"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 36"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 37"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 37"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 37"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 38"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 38"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 38"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 39"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 39"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 39"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 40"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 40"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 40"][style*='opacity: 0.8'] {
+.app-2rEoOp .item-2hkk8m [style*="height: 9"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 9"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 9"][style*='opacity: 0.8'], .app-2rEoOp .bd-guild .bd-selected .item-2hkk8m, .app-2rEoOp .item-2hkk8m [style*="height: 10"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 10"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 10"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 11"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 11"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 11"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 12"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 12"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 12"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 13"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 13"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 13"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 14"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 14"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 14"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 15"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 15"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 15"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 16"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 16"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 16"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 17"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 17"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 17"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 18"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 18"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 18"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 19"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 19"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 19"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 20"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 20"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 20"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 21"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 21"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 21"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 22"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 22"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 22"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 23"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 23"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 23"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 24"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 24"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 24"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 25"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 25"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 25"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 26"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 26"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 26"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 27"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 27"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 27"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 28"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 28"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 28"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 29"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 29"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 29"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 30"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 30"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 30"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 31"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 31"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 31"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 32"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 32"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 32"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 33"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 33"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 33"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 34"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 34"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 34"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 35"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 35"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 35"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 36"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 36"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 36"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 37"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 37"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 37"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 38"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 38"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 38"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 39"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 39"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 39"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 40"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 40"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 40"][style*='opacity: 0.8'] {
   background-color: var(--skypecord-sidebar-item-sel-bg); }
 
 /* /Guild List - Servers */
@@ -628,7 +737,6 @@ a {
 /* Chat */
 .platform-win {
   box-sizing: border-box;
-  border: 1px solid #5d5d5d;
   border-top: none; }
 
 .app-2rEoOp .content-yTz4x3,
