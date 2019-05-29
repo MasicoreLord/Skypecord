@@ -2,6 +2,7 @@
     border-radius: 0;
     border-right: 1px solid;
     width: 200px;
+    box-sizing: border-box;
     #{$client-macOs} & {
         margin-top: 0;
     }
@@ -96,7 +97,8 @@
 }
 
 #{$mainNavList-separater} {
-    width: calc(100% - 20px);
+    width: calc(100% - 16px);
+    border-radius: 0;
 }
 
 #{$client-macOs} #{$mainNavList-scroller} {
