@@ -79,11 +79,6 @@
     #{$privateChannelList-channel}:hover #{$privateChannelList-channelActivityIconForeground} {
         fill: var(--skypecord-main-fg);
     }
-    #{$mainNavList-badgeWrapper} {
-        #{$badge} {
-            box-shadow: 0 0 0 2px var(--skypecord-sidebar-bg);
-        }
-    }
 }
 
 #{$privateChannelList-channelClose} {

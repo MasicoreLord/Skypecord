@@ -4,7 +4,8 @@
 }
 
 %settings-tab-item-hover-colors {
-    background-color: var(--skypecord-sidebar-item-hov-bg);
+    background-color: transparent;
+    color: var(--skypecord-secondary-fg);
 }
 
 %settings-tab-item-selected-colors {
@@ -74,6 +75,25 @@
     #{$settings-closeButton}:hover {
         background-color: transparent;
     }
+    // Cards
+    .cardPrimaryOutline-29Ujqw {
+        border-color: var(--skypecord-border-fg);
+    }
+
+    .cardPrimary-1Hv-to {
+        border-color: transparent;
+        background-color: rgba(199, 237, 252, .5);
+    }
+}
+
+// Cards
+.card-3Qj_Yx {
+    border-radius: 10px;
+}
+
+// Radial boxes
+.item-26Dhrx {
+    border-radius: 0;
 }
 
 #{$client-layer}:first-child {

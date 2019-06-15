@@ -14,3 +14,48 @@
 a {
     color: $link-fg;
 }
+
+#{$main-app} {
+    #{$client-buttonFilled}#{$client-buttonAccentFilled} {
+        background-color: transparent;
+        color: var(--skypecord-button-fg);
+        border-color: var(--skypecord-button-border);
+    }
+    
+    #{$client-buttonFilled}#{$client-primaryButton} {
+        background-color: $accent;
+        color: $alt-fg;
+        &:hover {
+            background-color: rgba($accent, .7);
+        }
+    }
+}
+
+#{$client-buttonFilled}#{$client-buttonAccentFilled} {
+    border: 1px solid;
+}
+
+#{$client-minButton} {
+    height: auto;
+    border-radius: 12px;
+}
+
+#{$client-smallButton} {
+    height: 32px;
+    border-radius: 16px;
+}
+
+#{$client-buttonNormal} {
+    height: 32px;
+    border-radius: 16px;
+}
+
+#{$client-mediumButton} {
+    height: 38px;
+    border-radius: 19px;
+}
+
+#{$client-largeButton} {
+    height: 44px;
+    border-radius: 22px;
+}

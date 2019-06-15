@@ -64,6 +64,11 @@
     $chat: '.chat-3bRxxu';
 //Client
     $client-app: '.app-19_DXt';
+    $client-button: '.button-38aScr';
+    $client-buttonIcon: '.buttonIcon-3yYVOH';
+    $client-buttonAccentFilled: '.colorBrand-3pXr91';
+    $client-buttonFilled: '.lookFilled-1Gx00P';
+    $client-buttonNormal: '.buttonSize-2Pmk-w';
     $client-colorBlindMode: '.colorblind-mode';
     $client-contextMenu: '.contextMenu-HLZMGh';
     $client-contextMenuItem: '.item-1Yvehc';
@@ -72,6 +77,7 @@
     $client-headerContentDivider: '.divider-3FBTu8';
     $client-headerIcon: '.icon-22AiRD';
     $client-headerTitle: '.title-29uC1r';
+    $client-largeButton: '.sizeLarge-1vSeWK';
     $client-layerAnimating: '.animating-rRxada';
     $client-layers: '.layers-3iHuyZ';
     $client-layer: '.layer-3QrUeG';
@@ -82,14 +88,18 @@
     $client-macOs: '.platform-osx';
     $client-macOSTitleBar: '.typeMacOS-3EmCyP';
     $client-macOSTitleBarUnfocused: '.unfocused-1QsMU3';
+    $client-mediumButton: '.sizeMedium-1AC_Sl';
+    $client-minButton: '.sizeMin-1mJd1x';
     $client-popout: '.popout-3sVMXz';
     $client-popoutBottom: '.popoutBottom-1YbShG';
     $client-popoutBottomLeft: '.popoutBottomLeft-JehOp2';
     $client-popoutNoArrow: '.popoutBottomRight-2JrySt';
     $client-popoutTopLeft: '.popoutTopLeft-b5Eb3O';
     $client-popoutTopRight: '.popoutTopRight-3BzFIE';
+    $client-primaryButton: '.colorPrimary-3b3xI6';
     $client-scroller: '.scroller-2FKFPG';
     $client-scrollerWrap: '.scrollerWrap-2lJEkd';
+    $client-smallButton: '.sizeSmall-2cSMqn';
     $client-themedPopout: '.themedPopout-25DgLi';
     $client-titleBar: '.titleBar-AC4pGV';
     $client-toolbar: '.toolbar-1t6TWx';
@@ -102,14 +112,15 @@
     $client-winTitleBar: '.typeWindows-1za-n7';
     $client-wordmark: '.wordmark-2iDDfm';
 // Current Account
-    $currentAccount-accountDetails: '.accountDetails-3k9g4n';
+    $currentAccount-nameTag: '.nameTag-LxtdSI';
     $currentAccount-avatar: '.avatar-3JE4B3';
-    $currentAccount-button: '.button-2b6hmh';
-    $currentAccount-buttonInner: '.buttonInner-LmnaN_';
+    $currentAccount-button: '.button-s03oPN';
+    $currentAccount-buttonInner: '.contents-18-Yxp';
     $currentAccount-container: '.container-2Thooq';
-    $currentAccount-discriminator: '.discriminator';
+    $currentAccount-discriminator: '.discriminator-3W31ZY';
     $currentAccount-status: '.status-2kJpnA';
-    $currentAccount-username: '.username';
+    $currentAccount-username: '.username-u0EL4I';
+    $currentAccount-usernameContainer: '.usernameContainer-1GWXka';
 // Emoji Picker
     $emojiPicker-searchBar: '.searchBar-2pWH0_';
 // Library
@@ -141,6 +152,7 @@
     $mainNavList-itemIcon: '.icon-27yU2q';
     $mainNavList-itemInner: '.wrapper-25eVIn';
     $mainNavList-itemSvg: '.svg-1X37T1';
+    $mainNavList-itemInnerWrapper: '.listItemWrapper-3X98Pc';
     $mainNavList-lowerBadge: '.lowerBadge-29hYVK';
     $mainNavList-scroller: '.scroller-2TZvBN';
     $mainNavList-scrollerWrap: '.scrollerWrap-1IAIlv';

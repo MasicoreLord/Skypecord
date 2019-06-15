@@ -1,6 +1,8 @@
 #{$main-app} {
     #{$currentAccount-container} {
         background-color: var(--skypecord-sidebar-bg);
+    }
+    #{$currentAccount-username} {
         color: var(--skypecord-main-fg);
     }
     #{$currentAccount-status} {
@@ -10,27 +12,24 @@
         background-color: transparent;
     }
     /* Mute */
-    [style*='/assets/4bc527c257233fc69b94342d77bcb9ee.svg'] {
+    [name='Nova_MicrophoneMute'] {
         background-image: var(--skypecord-mic-icon)!important;
     }
     /* Unmute */
-    [style*='/assets/896770bf2d6ed0358ed0adefdbe96a24.svg'] {
+    [name='Nova_Microphone'] {
         background-image: var(--skypecord-muted-mic-icon)!important;
     }
     /* Deafen */
-    [style*='/assets/c7c47afdf35d5a3e06233319d3aa7674.svg'] {
+    [name='Nova_HeadsetDeafen'] {
         background-image: var(--skypecord-headphone-icon)!important;
     }
     /* Undeafen */
-    [style*='/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg'] {
+    [name='Nova_Headset'] {
         background-image: var(--skypecord-muted-headphone-icon)!important;
     }
+    /* Settings */
     [name='Gear'] {
         background-image: var(--skypecord-ellipsis-icon);
-        background-size: 100%;
-        path {
-            fill: none;
-        }
     }
 }
 
@@ -51,12 +50,22 @@
     }
 }
 
+#{$client-buttonIcon} {
+    background-size: 100%;
+    path {
+        fill: none;
+    }
+}
+
 #{$currentAccount-container} {
     margin-bottom: 0;
     padding-bottom: 1px; // Balance out margin removal
+}
+
+#{$currentAccount-usernameContainer} {
     font-size: 12px;
 }
 
-#{$currentAccount-accountDetails} #{$currentAccount-discriminator} {
+#{$currentAccount-discriminator} {
     display: none;
 }

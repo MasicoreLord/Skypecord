@@ -1,7 +1,7 @@
 #{$mainNavList-wrapper} {
     border-radius: 0;
     border-right: 1px solid;
-    width: 200px;
+    width: 208px;
     box-sizing: border-box;
     #{$client-macOs} & {
         margin-top: 0;
@@ -13,7 +13,7 @@
 }
 
 #{$mainNavList-item} {
-    width: 200px;
+    width: 208px;
     justify-content: flex-start;
     padding-left: 8px;
     margin: 0;
@@ -37,37 +37,47 @@
         font-size: 15px;
         font-weight: 500;
         color: var(--skypecord-main-fg);
-        width: 134px;
+        width: 208px - 8px - 48px - 4px - 8px - 3px;
         line-height: 48px;
         overflow: hidden;
         white-space: nowrap;
-        -webkit-mask-image: linear-gradient(to left, transparent 0, #000 20px);
-        mask-image: linear-gradient(-90deg, transparent 0, #000 20px);
+        $mask-image: linear-gradient(to left, transparent 0, #000 21px);
+        -webkit-mask-image: $mask-image;
+        mask-image: $mask-image;
     }
 }
 
 #{$mainNavList-indicatorWrapper},
 #{$mainNavList-homeIndicatorWrapper},
 #{$mainNavList-actionIndicatorWrapper} {
-    width: 220px;
+    width: 228px;
     height: 56px;
+}
+
+#{$mainNavList-homeIndicatorWrapper},
+#{$mainNavList-actionIndicatorWrapper} {
+    #{$mainNavList-indicator} {
+        display: none;
+    }
 }
 
 %main-nav-list-item-selected {
     width: 100%;
     height: 100%!important;
+    display: block
 }
 
 @for $i from 9 through 40 {
     #{$mainNavList-indicator} {
-        [style*="height: #{$i}"] {
+        &[style*="height: #{$i}"] {
             &[style*='opacity: 1'],
             &[style*='opacity: 0.9'],
             &[style*='opacity: 0.8'] {
                @extend %main-nav-list-item-selected;
             }
         }
-        .bd-guild .bd-selected & {
+        /* BandagedBD */
+        .bd-selected & {
             @extend %main-nav-list-item-selected;
         }
     }
@@ -89,7 +99,7 @@
 }
 
 #{$mainNavList-badgeWrapper} {
-    width: 188px;
+    width: 191px;
 }
 
 #{$mainNavList-lowerBadge} {
@@ -109,12 +119,12 @@
     border-radius: 50%;
     foreignObject {
         mask: none;
-        x: -76px;
+        x: -80px;
     }
 }
 
 #{$mainNavList-itemSvg} {
-    width: 200px;
+    width: 208px;
 }
 
 #{$mainNavList-itemInner} {
@@ -144,13 +154,10 @@
     #{$mainNavList-actionButton}:hover,
     #{$mainNavList-actionButton}#{$mainNavList-homeSelected},
     #{$mainNavList-actionButton}#{$mainNavList-guildNoIconSelected},
-    #{$mainNavList-actionButton}#{$mainNavList-actionSelected} {
+    #{$mainNavList-actionButton}#{$mainNavList-actionSelected},
+    #{$mainNavList-itemIcon} {
         background-color: var(--skypecord-avatar-bg);
         color: $accent;
-    }
-    #{$mainNavList-itemIcon} {
-        background-color: $accent;
-        color: $alt-fg;
     }
     #{$mainNavList-itemAcronym},
     #{$mainNavList-homeIcon} {
@@ -167,14 +174,18 @@
         }
     }
     #{$mainNavList-item}:hover {
-        background-color: var(--skypecord-sidebar-item-hov-bg);
+        #{$mainNavList-indicatorWrapper},
+        #{$mainNavList-homeIndicatorWrapper},
+        #{$mainNavList-actionIndicatorWrapper} {
+            background-color: var(--skypecord-sidebar-item-hov-bg);
+        }
     }
     %nav-list-item-selected-colors {
         background-color: var(--skypecord-sidebar-item-sel-bg);
     }
     @for $i from 9 through 40 {
         #{$mainNavList-indicator} {
-            [style*="height: #{$i}"] {
+            &[style*="height: #{$i}"] {
                 &[style*='opacity: 1'],
                 &[style*='opacity: 0.9'],
                 &[style*='opacity: 0.8'] {
@@ -182,8 +193,14 @@
                 }
             }
         }
-        .bd-guild .bd-selected #{$mainNavList-indicator} {
+        /* BandagedBD */
+        .bd-selected #{$mainNavList-indicator} {
             @extend %nav-list-item-selected-colors;
+        }
+    }
+    #{$mainNavList-badgeWrapper} {
+        #{$badge} {
+            background-color: $accent!important;
         }
     }
 }

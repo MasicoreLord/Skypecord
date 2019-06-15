@@ -20,6 +20,13 @@
     border-right: 1px solid;
 }
 
+#{$channelList-bannerImage} {
+    background-size: 0, cover; /* Shrink gradient background to nothing to get rid of it on banners */
+    &::after {
+        display: none;
+    }
+}
+
 #{$main-app} {
     #{$channelList-container} {
         background-color: var(--skypecord-sidebar-bg);
