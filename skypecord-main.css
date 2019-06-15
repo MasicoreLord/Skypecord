@@ -21,11 +21,13 @@
   --skypecord-icon-fg: rgb(43, 44, 51);
   --skypecord-banner-fallback-bg: rgb(0, 120, 212);
   --skypecord-banner-icon-fg: rgb(255, 255, 255);
+  --skypecord-button-fg: rgb(43, 44, 51);
   --skypecord-divider-fg: rgb(138, 141, 145);
   --skypecord-nav-divider-fg: rgb(213, 217, 222);
   --skypecord-border-fg: rgb(213, 217, 222);
   --skypecord-header-fg: rgb(138, 141, 145);
   --skypecord-header-title-fg: rgb(43, 44, 51);
+  --skypecord-button-border: rgb(43, 44, 51);
   --skypecord-header-topic-fg: rgb(138, 141, 145);
   --skypecord-header-button-bg: rgb(241, 241, 244);
   --skypecord-placeholder-fg: rgb(138, 141, 145);
@@ -67,7 +69,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.3.3 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4 Alpha'
 ; }
 
 /* Font */
@@ -104,6 +106,40 @@ textarea {
 
 a {
   color: #1686d9; }
+
+.app-2rEoOp .lookFilled-1Gx00P.colorBrand-3pXr91 {
+  background-color: transparent;
+  color: var(--skypecord-button-fg);
+  border-color: var(--skypecord-button-border); }
+
+.app-2rEoOp .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+  background-color: #0078d4;
+  color: white; }
+  .app-2rEoOp .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+    background-color: rgba(0, 120, 212, 0.7); }
+
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+  border: 1px solid; }
+
+.sizeMin-1mJd1x {
+  height: auto;
+  border-radius: 12px; }
+
+.sizeSmall-2cSMqn {
+  height: 32px;
+  border-radius: 16px; }
+
+.buttonSize-2Pmk-w {
+  height: 32px;
+  border-radius: 16px; }
+
+.sizeMedium-1AC_Sl {
+  height: 38px;
+  border-radius: 19px; }
+
+.sizeLarge-1vSeWK {
+  height: 44px;
+  border-radius: 22px; }
 
 /* General Styles */
 /* Titlebar */
@@ -312,46 +348,52 @@ a {
   /* Mute */
   /* Unmute */
   /* Deafen */
-  /* Undeafen */ }
+  /* Undeafen */
+  /* Settings */ }
   .app-2rEoOp .container-2Thooq {
-    background-color: var(--skypecord-sidebar-bg);
+    background-color: var(--skypecord-sidebar-bg); }
+  .app-2rEoOp .username-u0EL4I {
     color: var(--skypecord-main-fg); }
   .app-2rEoOp .status-2kJpnA {
     border-color: var(--skypecord-status-border); }
-  .app-2rEoOp .button-2b6hmh:hover {
+  .app-2rEoOp .button-s03oPN:hover {
     background-color: transparent; }
-  .app-2rEoOp [style*='/assets/4bc527c257233fc69b94342d77bcb9ee.svg'] {
+  .app-2rEoOp [name='Nova_MicrophoneMute'] {
     background-image: var(--skypecord-mic-icon) !important; }
-  .app-2rEoOp [style*='/assets/896770bf2d6ed0358ed0adefdbe96a24.svg'] {
+  .app-2rEoOp [name='Nova_Microphone'] {
     background-image: var(--skypecord-muted-mic-icon) !important; }
-  .app-2rEoOp [style*='/assets/c7c47afdf35d5a3e06233319d3aa7674.svg'] {
+  .app-2rEoOp [name='Nova_HeadsetDeafen'] {
     background-image: var(--skypecord-headphone-icon) !important; }
-  .app-2rEoOp [style*='/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg'] {
+  .app-2rEoOp [name='Nova_Headset'] {
     background-image: var(--skypecord-muted-headphone-icon) !important; }
   .app-2rEoOp [name='Gear'] {
-    background-image: var(--skypecord-ellipsis-icon);
-    background-size: 100%; }
-    .app-2rEoOp [name='Gear'] path {
-      fill: none; }
+    background-image: var(--skypecord-ellipsis-icon); }
 
-.theme-light .button-2b6hmh {
+.theme-light .button-s03oPN {
   opacity: 1; }
 
-.theme-light .button-2b6hmh:hover {
+.theme-light .button-s03oPN:hover {
   opacity: .6; }
 
-.theme-dark .button-2b6hmh {
+.theme-dark .button-s03oPN {
   opacity: .6; }
 
-.theme-dark .button-2b6hmh:hover {
+.theme-dark .button-s03oPN:hover {
   opacity: 1; }
+
+.buttonIcon-3yYVOH {
+  background-size: 100%; }
+  .buttonIcon-3yYVOH path {
+    fill: none; }
 
 .container-2Thooq {
   margin-bottom: 0;
-  padding-bottom: 1px;
+  padding-bottom: 1px; }
+
+.usernameContainer-1GWXka {
   font-size: 12px; }
 
-.accountDetails-3k9g4n .discriminator {
+.discriminator-3W31ZY {
   display: none; }
 
 /* /Account Info - User Controls */
@@ -364,7 +406,7 @@ a {
 .wrapper-1Rf91z {
   border-radius: 0;
   border-right: 1px solid;
-  width: 200px;
+  width: 208px;
   box-sizing: border-box; }
   .platform-osx .wrapper-1Rf91z {
     margin-top: 0; }
@@ -373,7 +415,7 @@ a {
   width: calc(100% + 2px); }
 
 .listItem-2P_4kh {
-  width: 200px;
+  width: 208px;
   justify-content: flex-start;
   padding-left: 8px;
   margin: 0;
@@ -390,22 +432,123 @@ a {
   font-size: 15px;
   font-weight: 500;
   color: var(--skypecord-main-fg);
-  width: 134px;
+  width: 137px;
   line-height: 48px;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-mask-image: linear-gradient(to left, transparent 0, #000 20px);
-  mask-image: linear-gradient(-90deg, transparent 0, #000 20px); }
+  -webkit-mask-image: linear-gradient(to left, transparent 0, #000 21px);
+  mask-image: linear-gradient(to left, transparent 0, #000 21px); }
 
 .pill-31IEus,
 .pill-2uzAFe,
 .pill-3YxEhL {
-  width: 220px;
+  width: 228px;
   height: 56px; }
 
-.item-2hkk8m [style*="height: 9"][style*='opacity: 1'], .item-2hkk8m [style*="height: 9"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 9"][style*='opacity: 0.8'], .bd-guild .bd-selected .item-2hkk8m, .item-2hkk8m [style*="height: 10"][style*='opacity: 1'], .item-2hkk8m [style*="height: 10"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 10"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 11"][style*='opacity: 1'], .item-2hkk8m [style*="height: 11"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 11"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 12"][style*='opacity: 1'], .item-2hkk8m [style*="height: 12"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 12"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 13"][style*='opacity: 1'], .item-2hkk8m [style*="height: 13"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 13"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 14"][style*='opacity: 1'], .item-2hkk8m [style*="height: 14"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 14"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 15"][style*='opacity: 1'], .item-2hkk8m [style*="height: 15"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 15"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 16"][style*='opacity: 1'], .item-2hkk8m [style*="height: 16"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 16"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 17"][style*='opacity: 1'], .item-2hkk8m [style*="height: 17"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 17"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 18"][style*='opacity: 1'], .item-2hkk8m [style*="height: 18"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 18"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 19"][style*='opacity: 1'], .item-2hkk8m [style*="height: 19"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 19"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 20"][style*='opacity: 1'], .item-2hkk8m [style*="height: 20"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 20"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 21"][style*='opacity: 1'], .item-2hkk8m [style*="height: 21"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 21"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 22"][style*='opacity: 1'], .item-2hkk8m [style*="height: 22"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 22"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 23"][style*='opacity: 1'], .item-2hkk8m [style*="height: 23"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 23"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 24"][style*='opacity: 1'], .item-2hkk8m [style*="height: 24"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 24"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 25"][style*='opacity: 1'], .item-2hkk8m [style*="height: 25"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 25"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 26"][style*='opacity: 1'], .item-2hkk8m [style*="height: 26"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 26"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 27"][style*='opacity: 1'], .item-2hkk8m [style*="height: 27"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 27"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 28"][style*='opacity: 1'], .item-2hkk8m [style*="height: 28"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 28"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 29"][style*='opacity: 1'], .item-2hkk8m [style*="height: 29"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 29"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 30"][style*='opacity: 1'], .item-2hkk8m [style*="height: 30"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 30"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 31"][style*='opacity: 1'], .item-2hkk8m [style*="height: 31"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 31"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 32"][style*='opacity: 1'], .item-2hkk8m [style*="height: 32"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 32"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 33"][style*='opacity: 1'], .item-2hkk8m [style*="height: 33"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 33"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 34"][style*='opacity: 1'], .item-2hkk8m [style*="height: 34"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 34"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 35"][style*='opacity: 1'], .item-2hkk8m [style*="height: 35"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 35"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 36"][style*='opacity: 1'], .item-2hkk8m [style*="height: 36"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 36"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 37"][style*='opacity: 1'], .item-2hkk8m [style*="height: 37"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 37"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 38"][style*='opacity: 1'], .item-2hkk8m [style*="height: 38"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 38"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 39"][style*='opacity: 1'], .item-2hkk8m [style*="height: 39"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 39"][style*='opacity: 0.8'], .item-2hkk8m [style*="height: 40"][style*='opacity: 1'], .item-2hkk8m [style*="height: 40"][style*='opacity: 0.9'], .item-2hkk8m [style*="height: 40"][style*='opacity: 0.8'] {
+.pill-2uzAFe .item-2hkk8m,
+.pill-3YxEhL .item-2hkk8m {
+  display: none; }
+
+.item-2hkk8m[style*="height: 9"][style*='opacity: 1'], .item-2hkk8m[style*="height: 9"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 9"][style*='opacity: 0.8'], .bd-selected .item-2hkk8m, .item-2hkk8m[style*="height: 10"][style*='opacity: 1'], .item-2hkk8m[style*="height: 10"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 10"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 11"][style*='opacity: 1'], .item-2hkk8m[style*="height: 11"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 11"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 12"][style*='opacity: 1'], .item-2hkk8m[style*="height: 12"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 12"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 13"][style*='opacity: 1'], .item-2hkk8m[style*="height: 13"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 13"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 14"][style*='opacity: 1'], .item-2hkk8m[style*="height: 14"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 14"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 15"][style*='opacity: 1'], .item-2hkk8m[style*="height: 15"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 15"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 16"][style*='opacity: 1'], .item-2hkk8m[style*="height: 16"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 16"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 17"][style*='opacity: 1'], .item-2hkk8m[style*="height: 17"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 17"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 18"][style*='opacity: 1'], .item-2hkk8m[style*="height: 18"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 18"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 19"][style*='opacity: 1'], .item-2hkk8m[style*="height: 19"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 19"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 20"][style*='opacity: 1'], .item-2hkk8m[style*="height: 20"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 20"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 21"][style*='opacity: 1'], .item-2hkk8m[style*="height: 21"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 21"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 22"][style*='opacity: 1'], .item-2hkk8m[style*="height: 22"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 22"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 23"][style*='opacity: 1'], .item-2hkk8m[style*="height: 23"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 23"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 24"][style*='opacity: 1'], .item-2hkk8m[style*="height: 24"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 24"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 25"][style*='opacity: 1'], .item-2hkk8m[style*="height: 25"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 25"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 26"][style*='opacity: 1'], .item-2hkk8m[style*="height: 26"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 26"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 27"][style*='opacity: 1'], .item-2hkk8m[style*="height: 27"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 27"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 28"][style*='opacity: 1'], .item-2hkk8m[style*="height: 28"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 28"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 29"][style*='opacity: 1'], .item-2hkk8m[style*="height: 29"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 29"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 30"][style*='opacity: 1'], .item-2hkk8m[style*="height: 30"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 30"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 31"][style*='opacity: 1'], .item-2hkk8m[style*="height: 31"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 31"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 32"][style*='opacity: 1'], .item-2hkk8m[style*="height: 32"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 32"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 33"][style*='opacity: 1'], .item-2hkk8m[style*="height: 33"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 33"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 34"][style*='opacity: 1'], .item-2hkk8m[style*="height: 34"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 34"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 35"][style*='opacity: 1'], .item-2hkk8m[style*="height: 35"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 35"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 36"][style*='opacity: 1'], .item-2hkk8m[style*="height: 36"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 36"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 37"][style*='opacity: 1'], .item-2hkk8m[style*="height: 37"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 37"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 38"][style*='opacity: 1'], .item-2hkk8m[style*="height: 38"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 38"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 39"][style*='opacity: 1'], .item-2hkk8m[style*="height: 39"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 39"][style*='opacity: 0.8'], .item-2hkk8m[style*="height: 40"][style*='opacity: 1'], .item-2hkk8m[style*="height: 40"][style*='opacity: 0.9'], .item-2hkk8m[style*="height: 40"][style*='opacity: 0.8'] {
   width: 100%;
-  height: 100% !important; }
+  height: 100% !important;
+  display: block; }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
+
+.item-2hkk8m {
+  /* BandagedBD */ }
 
 .item-2hkk8m {
   border-radius: 0;
@@ -420,7 +563,7 @@ a {
   border-radius: 50%; }
 
 .badgeWrapper-3e8pMZ {
-  width: 188px; }
+  width: 191px; }
 
 .lowerBadge-29hYVK {
   top: 17px; }
@@ -436,10 +579,10 @@ a {
   border-radius: 50%; }
   .wrapper-25eVIn foreignObject {
     mask: none;
-    x: -76px; }
+    x: -80px; }
 
 .svg-1X37T1 {
-  width: 200px; }
+  width: 208px; }
 
 .wrapper-25eVIn {
   font-weight: 600; }
@@ -447,49 +590,76 @@ a {
 .blobContainer-239gwq:active {
   transform: none; }
 
-.app-2rEoOp .wrapper-1Rf91z {
-  background-color: var(--skypecord-sidebar-bg);
-  border-color: var(--skypecord-border-fg); }
-
-.app-2rEoOp .wrapper-25eVIn {
-  background-color: var(--skypecord-avatar-bg) !important;
-  /* Override inline style on guilds w/ no icon */ }
-  .app-2rEoOp .wrapper-25eVIn a {
+.app-2rEoOp {
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */
+  /* BandagedBD */ }
+  .app-2rEoOp .wrapper-1Rf91z {
+    background-color: var(--skypecord-sidebar-bg);
+    border-color: var(--skypecord-border-fg); }
+  .app-2rEoOp .wrapper-25eVIn {
+    background-color: var(--skypecord-avatar-bg) !important;
+    /* Override inline style on guilds w/ no icon */ }
+    .app-2rEoOp .wrapper-25eVIn a {
+      color: #0078d4; }
+  .app-2rEoOp .item-2hkk8m {
+    background-color: var(--skypecord-indicator-bg);
+    opacity: 1 !important; }
+  .app-2rEoOp .circleIconButton-jET_ig,
+  .app-2rEoOp .circleIconButton-jET_ig:hover,
+  .app-2rEoOp .circleIconButton-jET_ig.selected-wSa2KV,
+  .app-2rEoOp .circleIconButton-jET_ig.selected-bZ3Lue,
+  .app-2rEoOp .circleIconButton-jET_ig.selected-ugP_am,
+  .app-2rEoOp .icon-27yU2q {
+    background-color: var(--skypecord-avatar-bg);
     color: #0078d4; }
-
-.app-2rEoOp .item-2hkk8m {
-  background-color: var(--skypecord-indicator-bg);
-  opacity: 1 !important; }
-
-.app-2rEoOp .circleIconButton-jET_ig,
-.app-2rEoOp .circleIconButton-jET_ig:hover,
-.app-2rEoOp .circleIconButton-jET_ig.selected-wSa2KV,
-.app-2rEoOp .circleIconButton-jET_ig.selected-bZ3Lue,
-.app-2rEoOp .circleIconButton-jET_ig.selected-ugP_am {
-  background-color: var(--skypecord-avatar-bg);
-  color: #0078d4; }
-
-.app-2rEoOp .icon-27yU2q {
-  background-color: #0078d4;
-  color: white; }
-
-.app-2rEoOp .acronym-2mOFsV,
-.app-2rEoOp .homeIcon-tEMBK1 {
-  color: #0078d4; }
-
-.app-2rEoOp .acronym-2mOFsV, .app-2rEoOp .acronym-2mOFsV.selected-wSa2KV, .app-2rEoOp .acronym-2mOFsV.selected-bZ3Lue, .app-2rEoOp .acronym-2mOFsV.selected-ugP_am,
-.app-2rEoOp .button-OhfaWu,
-.app-2rEoOp .button-OhfaWu.selected-wSa2KV,
-.app-2rEoOp .button-OhfaWu.selected-bZ3Lue,
-.app-2rEoOp .button-OhfaWu.selected-ugP_am {
-  background-color: var(--skypecord-avatar-bg);
-  color: #0078d4; }
-
-.app-2rEoOp .listItem-2P_4kh:hover {
-  background-color: var(--skypecord-sidebar-item-hov-bg); }
-
-.app-2rEoOp .item-2hkk8m [style*="height: 9"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 9"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 9"][style*='opacity: 0.8'], .app-2rEoOp .bd-guild .bd-selected .item-2hkk8m, .app-2rEoOp .item-2hkk8m [style*="height: 10"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 10"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 10"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 11"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 11"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 11"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 12"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 12"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 12"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 13"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 13"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 13"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 14"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 14"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 14"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 15"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 15"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 15"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 16"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 16"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 16"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 17"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 17"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 17"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 18"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 18"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 18"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 19"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 19"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 19"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 20"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 20"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 20"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 21"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 21"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 21"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 22"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 22"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 22"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 23"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 23"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 23"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 24"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 24"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 24"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 25"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 25"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 25"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 26"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 26"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 26"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 27"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 27"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 27"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 28"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 28"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 28"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 29"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 29"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 29"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 30"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 30"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 30"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 31"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 31"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 31"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 32"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 32"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 32"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 33"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 33"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 33"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 34"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 34"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 34"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 35"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 35"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 35"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 36"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 36"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 36"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 37"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 37"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 37"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 38"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 38"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 38"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 39"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 39"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 39"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m [style*="height: 40"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m [style*="height: 40"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m [style*="height: 40"][style*='opacity: 0.8'] {
-  background-color: var(--skypecord-sidebar-item-sel-bg); }
+  .app-2rEoOp .acronym-2mOFsV,
+  .app-2rEoOp .homeIcon-tEMBK1 {
+    color: #0078d4; }
+  .app-2rEoOp .acronym-2mOFsV, .app-2rEoOp .acronym-2mOFsV.selected-wSa2KV, .app-2rEoOp .acronym-2mOFsV.selected-bZ3Lue, .app-2rEoOp .acronym-2mOFsV.selected-ugP_am,
+  .app-2rEoOp .button-OhfaWu,
+  .app-2rEoOp .button-OhfaWu.selected-wSa2KV,
+  .app-2rEoOp .button-OhfaWu.selected-bZ3Lue,
+  .app-2rEoOp .button-OhfaWu.selected-ugP_am {
+    background-color: var(--skypecord-avatar-bg);
+    color: #0078d4; }
+  .app-2rEoOp .listItem-2P_4kh:hover .pill-31IEus,
+  .app-2rEoOp .listItem-2P_4kh:hover .pill-2uzAFe,
+  .app-2rEoOp .listItem-2P_4kh:hover .pill-3YxEhL {
+    background-color: var(--skypecord-sidebar-item-hov-bg); }
+  .app-2rEoOp .item-2hkk8m[style*="height: 9"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 9"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 9"][style*='opacity: 0.8'], .app-2rEoOp .bd-selected .item-2hkk8m, .app-2rEoOp .item-2hkk8m[style*="height: 10"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 10"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 10"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 11"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 11"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 11"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 12"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 12"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 12"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 13"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 13"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 13"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 14"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 14"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 14"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 15"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 15"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 15"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 16"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 16"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 16"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 17"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 17"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 17"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 18"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 18"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 18"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 19"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 19"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 19"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 20"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 20"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 20"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 21"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 21"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 21"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 22"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 22"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 22"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 23"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 23"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 23"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 24"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 24"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 24"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 25"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 25"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 25"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 26"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 26"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 26"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 27"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 27"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 27"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 28"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 28"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 28"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 29"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 29"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 29"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 30"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 30"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 30"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 31"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 31"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 31"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 32"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 32"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 32"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 33"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 33"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 33"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 34"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 34"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 34"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 35"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 35"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 35"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 36"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 36"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 36"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 37"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 37"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 37"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 38"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 38"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 38"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 39"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 39"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 39"][style*='opacity: 0.8'], .app-2rEoOp .item-2hkk8m[style*="height: 40"][style*='opacity: 1'], .app-2rEoOp .item-2hkk8m[style*="height: 40"][style*='opacity: 0.9'], .app-2rEoOp .item-2hkk8m[style*="height: 40"][style*='opacity: 0.8'] {
+    background-color: var(--skypecord-sidebar-item-sel-bg); }
+  .app-2rEoOp .badgeWrapper-3e8pMZ .numberBadge-2s8kKX {
+    background-color: #0078d4 !important; }
 
 /* /Guild List - Servers */
 /* Guild Discovery - Server Discovery */
@@ -510,6 +680,12 @@ a {
 
 .channels-Ie2l6A {
   border-right: 1px solid; }
+
+.bannerImage-1jOskm {
+  background-size: 0, cover;
+  /* Shrink gradient background to nothing to get rid of it on banners */ }
+  .bannerImage-1jOskm::after {
+    display: none; }
 
 .app-2rEoOp {
   /* Drop Down Button */
@@ -855,9 +1031,6 @@ a {
 .app-2rEoOp .channel-2QD9_O:hover .activityIconForeground-3VIgI8 {
   fill: var(--skypecord-main-fg); }
 
-.app-2rEoOp .badgeWrapper-3e8pMZ .numberBadge-2s8kKX {
-  box-shadow: 0 0 0 2px var(--skypecord-sidebar-bg); }
-
 .close-3hZ5Ni {
   background-size: 10px 10px;
   height: 10px;
@@ -1033,7 +1206,8 @@ searchBarComponent-32dTOx .input-1Rv96N {
 
 .app-2rEoOp .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover,
 .app-2rEoOp .topPill-30KHOu .themed-OHr7kt.item-PXvHYJ:hover, .app-2rEoOp #bd-settings-sidebar .ui-tab-bar-item:hover {
-  background-color: var(--skypecord-sidebar-item-hov-bg); }
+  background-color: transparent;
+  color: var(--skypecord-secondary-fg); }
 
 .app-2rEoOp #bd-settings-sidebar .ui-tab-bar-item.selected, .app-2rEoOp #bd-settings-sidebar .ui-tab-bar-item.selected:hover {
   background-color: var(--skypecord-sidebar-item-sel-bg); }
@@ -1060,6 +1234,19 @@ searchBarComponent-32dTOx .input-1Rv96N {
 
 .app-2rEoOp .closeButton-1tv5uR:hover {
   background-color: transparent; }
+
+.app-2rEoOp .cardPrimaryOutline-29Ujqw {
+  border-color: var(--skypecord-border-fg); }
+
+.app-2rEoOp .cardPrimary-1Hv-to {
+  border-color: transparent;
+  background-color: rgba(199, 237, 252, 0.5); }
+
+.card-3Qj_Yx {
+  border-radius: 10px; }
+
+.item-26Dhrx {
+  border-radius: 0; }
 
 .layer-3QrUeG:first-child {
   opacity: 1 !important;
