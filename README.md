@@ -6,4 +6,4 @@ A theme inspired by Skype and fluent design (mdl2)
 
 Go to the [Releases](https://github.com/MasicoreLord/Skypecord/releases) page to get the theme now.
 
-![Preview Image](https://i.imgur.com/Ex1hSEk.png)
+![Preview Image](https://i.imgur.com/A4bIlOd.png)
