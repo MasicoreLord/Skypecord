@@ -1,0 +1,17 @@
+#{$suspiciousVerification-image} {
+    display: none;
+}
+
+#{$suspiciousVerification-title} {
+    font-weight: 600;
+}
+
+
+#{$main-app} {
+    #{$suspiciousVerification-screen} {
+        #{$suspiciousVerification-title},
+        #{$suspiciousVerification-body} {
+            color: var(--skypecord-main-fg);
+        }
+    }
+}

@@ -13,19 +13,19 @@
     }
     /* Mute */
     [name='Nova_MicrophoneMute'] {
-        background-image: var(--skypecord-mic-icon)!important;
+        background-image: var(--skypecord-muted-mic-icon)!important;
     }
     /* Unmute */
     [name='Nova_Microphone'] {
-        background-image: var(--skypecord-muted-mic-icon)!important;
+        background-image: var(--skypecord-mic-icon)!important;
     }
     /* Deafen */
     [name='Nova_HeadsetDeafen'] {
-        background-image: var(--skypecord-headphone-icon)!important;
+        background-image: var(--skypecord-muted-headphone-icon)!important;
     }
     /* Undeafen */
     [name='Nova_Headset'] {
-        background-image: var(--skypecord-muted-headphone-icon)!important;
+        background-image: var(--skypecord-headphone-icon)!important;
     }
     /* Settings */
     [name='Gear'] {

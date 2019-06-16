@@ -16,6 +16,10 @@ a {
 }
 
 #{$main-app} {
+    #{$client-layers},
+    #{$client-layer} {
+        background-color: var(--skypecord-layer-bg);
+    }
     #{$client-buttonFilled}#{$client-buttonAccentFilled} {
         background-color: transparent;
         color: var(--skypecord-button-fg);
@@ -29,6 +33,11 @@ a {
             background-color: rgba($accent, .7);
         }
     }
+}
+
+/* Ensure main container inside layer is 100% height (for stuff like Account Verification screen) */
+#{$client-layers} > #{$client-layer}:last-of-type:not(:only-of-type) [data-focus-lock-disabled] {
+    height: 100%;
 }
 
 #{$client-buttonFilled}#{$client-buttonAccentFilled} {
