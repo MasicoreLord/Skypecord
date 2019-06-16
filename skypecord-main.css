@@ -1,3 +1,4 @@
+/*!//META {"name":"SkypecordDev","description":"A theme inspired by Skype and fluent design (mdl2)","author":"MasicoreLord","version":"Rolling (reload for updates)"} *//*!*/
 @import url("https://bdsources.tk/sourcecheck/code.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
 .theme-light {
@@ -44,7 +45,8 @@
   --skypecord-tooltip-bg: #F2F2F2;
   --skypecord-tooltip-fg: rgb(37, 36, 35);
   --skypecord-tooltip-border: #CCC;
-  --skypecord-content-region-bg: rgb(255, 255, 255); }
+  --skypecord-content-region-bg: rgb(255, 255, 255);
+  --skypecord-layer-bg: rgb(255, 255, 255); }
 
 .theme-dark {
   --skypecord-windows-titlebar-bg: rgb(0, 0, 0);
@@ -65,11 +67,12 @@
   --skypecord-tooltip-bg: #2B2B2B;
   --skypecord-tooltip-fg: rgb(213, 217, 222);
   --skypecord-tooltip-border: #767676;
-  --skypecord-content-region-bg: rgb(31, 31, 31); }
+  --skypecord-content-region-bg: rgb(31, 31, 31);
+  --skypecord-layer-bg: rgb(31, 31, 31); }
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.1 Alpha'
 ; }
 
 /* Font */
@@ -107,6 +110,10 @@ textarea {
 a {
   color: #1686d9; }
 
+.app-2rEoOp .layers-3iHuyZ,
+.app-2rEoOp .layer-3QrUeG {
+  background-color: var(--skypecord-layer-bg); }
+
 .app-2rEoOp .lookFilled-1Gx00P.colorBrand-3pXr91 {
   background-color: transparent;
   color: var(--skypecord-button-fg);
@@ -117,6 +124,10 @@ a {
   color: white; }
   .app-2rEoOp .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
     background-color: rgba(0, 120, 212, 0.7); }
+
+/* Ensure main container inside layer is 100% height (for stuff like Account Verification screen) */
+.layers-3iHuyZ > .layer-3QrUeG:last-of-type:not(:only-of-type) [data-focus-lock-disabled] {
+  height: 100%; }
 
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
   border: 1px solid; }
@@ -359,13 +370,13 @@ a {
   .app-2rEoOp .button-s03oPN:hover {
     background-color: transparent; }
   .app-2rEoOp [name='Nova_MicrophoneMute'] {
-    background-image: var(--skypecord-mic-icon) !important; }
-  .app-2rEoOp [name='Nova_Microphone'] {
     background-image: var(--skypecord-muted-mic-icon) !important; }
+  .app-2rEoOp [name='Nova_Microphone'] {
+    background-image: var(--skypecord-mic-icon) !important; }
   .app-2rEoOp [name='Nova_HeadsetDeafen'] {
-    background-image: var(--skypecord-headphone-icon) !important; }
-  .app-2rEoOp [name='Nova_Headset'] {
     background-image: var(--skypecord-muted-headphone-icon) !important; }
+  .app-2rEoOp [name='Nova_Headset'] {
+    background-image: var(--skypecord-headphone-icon) !important; }
   .app-2rEoOp [name='Gear'] {
     background-image: var(--skypecord-ellipsis-icon); }
 
@@ -1338,6 +1349,18 @@ searchBarComponent-32dTOx .input-1Rv96N {
     top: calc(50% - 350px - 9px); }
 
 /* /Settings */
+/* Something's Going on Here Verification Screen */
+image-2LVZ_j {
+  display: none; }
+
+.title-wZCcDo {
+  font-weight: 600; }
+
+.app-2rEoOp .verification-3RfWYC .title-wZCcDo,
+.app-2rEoOp .verification-3RfWYC .body-3ROqbj {
+  color: var(--skypecord-main-fg); }
+
+/* /Something's Going on Here Verification Screen */
 /* Popout */
 .menu-Sp6bN1 {
   border-radius: 0; }
