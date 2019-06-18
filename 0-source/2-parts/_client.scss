@@ -33,15 +33,41 @@ a {
             background-color: rgba($accent, .7);
         }
     }
-}
-
-/* Ensure main container inside layer is 100% height (for stuff like Account Verification screen) */
-#{$client-layers} > #{$client-layer}:last-of-type:not(:only-of-type) [data-focus-lock-disabled] {
-    height: 100%;
+    /* Mute */
+    [name='Nova_MicrophoneMute'] {
+        background-image: var(--skypecord-muted-mic-icon)!important;
+    }
+    /* Unmute */
+    [name='Nova_Microphone'] {
+        background-image: var(--skypecord-mic-icon)!important;
+    }
+    /* Deafen */
+    [name='Nova_HeadsetDeafen'] {
+        background-image: var(--skypecord-muted-headphone-icon)!important;
+    }
+    /* Undeafen */
+    [name='Nova_Headset'] {
+        background-image: var(--skypecord-headphone-icon)!important;
+    }
+    /* Settings */
+    [name='Gear'] {
+        background-image: var(--skypecord-ellipsis-icon);
+    }
 }
 
 #{$client-buttonFilled}#{$client-buttonAccentFilled} {
     border: 1px solid;
+}
+
+[name='Nova_MicrophoneMute'],
+[name='Nova_Microphone'],
+[name='Nova_HeadsetDeafen'],
+[name='Nova_Headset'],
+[name='Gear'] {
+    background-size: 100%;
+    path {
+        fill: none;
+    }
 }
 
 #{$client-minButton} {

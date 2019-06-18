@@ -36,7 +36,8 @@
     #{$message-isMentionedCozy} #{$message-markup}::after {
         border-color: $mentioned-bar-bg;
     }
-    #{$message-isMentioned} {
+    #{$message-isMentioned},
+    #{$chat-typing} {
         background-color: transparent;
     }
     #{$message-isMentioned} #{$message-markup} {
@@ -84,6 +85,10 @@
             font-size: 12px;
         }
     }
+}
+
+#{$chat-typing} {
+    bottom: -2px;
 }
 
 #{$chat-newMessagesBar} {
