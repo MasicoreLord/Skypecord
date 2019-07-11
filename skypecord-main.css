@@ -1,3 +1,4 @@
+/*!//META {"name":"SkypecordDev","description":"A theme inspired by Skype and fluent design (mdl2)","author":"MasicoreLord","version":"Rolling (reload for updates)"} *//*!*/
 @import url("https://bdsources.tk/sourcecheck/code.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
 .theme-light {
@@ -71,7 +72,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.3 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.4 Alpha'
 ; }
 
 /* Font */
@@ -931,11 +932,11 @@ a {
     order: 3; }
 
 /* Reposition attach popout to compensate for re-ordered message box */
-.popoutTopLeft-b5Eb3O[style$='transform: translateX(0%) translateY(-100%) translateZ(0px);'] {
+.popoutTopLeft-3B0mFf[style$='transform: translateX(0%) translateY(-100%) translateZ(0px);'] {
   transform: translateX(calc(-100% + 43px)) translateY(-100%) translateZ(0px) !important;
   margin-right: -20px; }
 
-.popoutTopRight-3BzFIE[style$='translateX(-100%) translateY(-100%) translateZ(0px);'] {
+.popoutTopRight-1lc8Mq[style$='translateX(-100%) translateY(-100%) translateZ(0px);'] {
   transform: translateX(-43px) translateY(-100%) translateZ(0px) !important; }
 
 .channelTextArea-1LDbYG {
@@ -1128,7 +1129,7 @@ searchBarComponent-32dTOx .input-1Rv96N {
   color: var(--skypecord-main-fg) !important;
   border-color: var(--skypecord-main-fg) !important; }
 
-.themedPopout-25DgLi {
+.themedPopout-1TrfdI {
   border: none; }
 
 .theme-light .topSectionNormal-2-vo2m .username-3gJmXY,
@@ -1196,25 +1197,25 @@ searchBarComponent-32dTOx .input-1Rv96N {
 .theme-dark .messagesPopoutWrap-1MQ1bW {
   max-height: calc(100vh - 80px) !important; }
 
-.theme-light .popoutBottom-1YbShG, .theme-light .popoutBottom-1YbShG.popoutBottomRight-2JrySt,
-.theme-light .popoutBottomLeft-JehOp2,
-.theme-light .popoutBottomLeft-JehOp2.popoutBottomRight-2JrySt,
-.theme-light .popoutBottomRight-2JrySt,
-.theme-light .popoutBottomRight-2JrySt.popoutBottomRight-2JrySt,
-.theme-light .popoutTopLeft-b5Eb3O,
-.theme-light .popoutTopLeft-b5Eb3O.popoutBottomRight-2JrySt,
-.theme-light .popoutTopRight-3BzFIE,
-.theme-light .popoutTopRight-3BzFIE.popoutBottomRight-2JrySt,
-.theme-dark .popoutBottom-1YbShG,
-.theme-dark .popoutBottom-1YbShG.popoutBottomRight-2JrySt,
-.theme-dark .popoutBottomLeft-JehOp2,
-.theme-dark .popoutBottomLeft-JehOp2.popoutBottomRight-2JrySt,
-.theme-dark .popoutBottomRight-2JrySt,
-.theme-dark .popoutBottomRight-2JrySt.popoutBottomRight-2JrySt,
-.theme-dark .popoutTopLeft-b5Eb3O,
-.theme-dark .popoutTopLeft-b5Eb3O.popoutBottomRight-2JrySt,
-.theme-dark .popoutTopRight-3BzFIE,
-.theme-dark .popoutTopRight-3BzFIE.popoutBottomRight-2JrySt {
+.theme-light .popoutBottom-2GAFPg, .theme-light .popoutBottom-2GAFPg.popoutBottomRight-2Rno5S,
+.theme-light .popoutBottomLeft-1pG8B4,
+.theme-light .popoutBottomLeft-1pG8B4.popoutBottomRight-2Rno5S,
+.theme-light .popoutBottomRight-2Rno5S,
+.theme-light .popoutBottomRight-2Rno5S.popoutBottomRight-2Rno5S,
+.theme-light .popoutTopLeft-3B0mFf,
+.theme-light .popoutTopLeft-3B0mFf.popoutBottomRight-2Rno5S,
+.theme-light .popoutTopRight-1lc8Mq,
+.theme-light .popoutTopRight-1lc8Mq.popoutBottomRight-2Rno5S,
+.theme-dark .popoutBottom-2GAFPg,
+.theme-dark .popoutBottom-2GAFPg.popoutBottomRight-2Rno5S,
+.theme-dark .popoutBottomLeft-1pG8B4,
+.theme-dark .popoutBottomLeft-1pG8B4.popoutBottomRight-2Rno5S,
+.theme-dark .popoutBottomRight-2Rno5S,
+.theme-dark .popoutBottomRight-2Rno5S.popoutBottomRight-2Rno5S,
+.theme-dark .popoutTopLeft-3B0mFf,
+.theme-dark .popoutTopLeft-3B0mFf.popoutBottomRight-2Rno5S,
+.theme-dark .popoutTopRight-1lc8Mq,
+.theme-dark .popoutTopRight-1lc8Mq.popoutBottomRight-2Rno5S {
   margin: 0; }
 
 /* /Modal */
@@ -1402,10 +1403,10 @@ searchBarComponent-32dTOx .input-1Rv96N {
 
 .theme-light .menu-Sp6bN1,
 .theme-light .container-3ayLPN,
-.theme-light .themedPopout-25DgLi,
+.theme-light .themedPopout-1TrfdI,
 .theme-dark .menu-Sp6bN1,
 .theme-dark .container-3ayLPN,
-.theme-dark .themedPopout-25DgLi {
+.theme-dark .themedPopout-1TrfdI {
   background-color: var(--skypecord-menu-bg); }
 
 .theme-light .option-96V44q::after,
@@ -1456,8 +1457,8 @@ searchBarComponent-32dTOx .input-1Rv96N {
 .theme-dark .resultsGroup-r_nuzN .plusIcon-v0BTrL {
   color: var(--skypecord-header-fg); }
 
-.theme-light .themedPopout-25DgLi,
-.theme-dark .themedPopout-25DgLi {
+.theme-light .themedPopout-1TrfdI,
+.theme-dark .themedPopout-1TrfdI {
   box-shadow: none; }
 
 /* /Popout */
