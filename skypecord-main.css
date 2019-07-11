@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.2 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.3 Alpha'
 ; }
 
 /* Font */
@@ -377,38 +377,38 @@ a {
 
 /* /Header */
 /* Account Info - User Controls */
-.app-2rEoOp .container-2Thooq {
+.app-2rEoOp .container-3baos1 {
   background-color: var(--skypecord-sidebar-bg); }
 
-.app-2rEoOp .username-u0EL4I {
+.app-2rEoOp .username-2BIRiC {
   color: var(--skypecord-main-fg); }
 
-.app-2rEoOp .status-2kJpnA {
+.app-2rEoOp .status-3DaTVG {
   border-color: var(--skypecord-status-border); }
 
-.app-2rEoOp .button-s03oPN:hover {
+.app-2rEoOp .button-2JbWXs:hover {
   background-color: transparent; }
 
-.theme-light .button-s03oPN {
+.theme-light .button-2JbWXs {
   opacity: 1; }
 
-.theme-light .button-s03oPN:hover {
+.theme-light .button-2JbWXs:hover {
   opacity: .6; }
 
-.theme-dark .button-s03oPN {
+.theme-dark .button-2JbWXs {
   opacity: .6; }
 
-.theme-dark .button-s03oPN:hover {
+.theme-dark .button-2JbWXs:hover {
   opacity: 1; }
 
-.container-2Thooq {
+.container-3baos1 {
   margin-bottom: 0;
   padding-bottom: 1px; }
 
-.usernameContainer-1GWXka {
+.usernameContainer-1fp4nu {
   font-size: 12px; }
 
-.discriminator-3W31ZY {
+.discriminator-3-Lf_x {
   display: none; }
 
 /* /Account Info - User Controls */
