@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.4 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.5 Alpha'
 ; }
 
 /* Font */
@@ -951,15 +951,11 @@ a {
 .app-2rEoOp .membersGroup-v9BXpm {
   color: var(--skypecord-header-fg); }
 
-.app-2rEoOp .member-3W1lQa:hover .content-OzHfo4,
-.app-2rEoOp .member-3W1lQa.popout-open .content-OzHfo4,
-.app-2rEoOp .member-3W1lQa.popout-open:hover .content-OzHfo4 {
-  background-color: transparent; }
-
 .app-2rEoOp .member-3W1lQa:hover {
   background-color: var(--skypecord-sidebar-item-hov-bg); }
 
-.app-2rEoOp .member-3W1lQa.popout-open {
+.app-2rEoOp .member-3W1lQa.popout-open,
+.app-2rEoOp .member-3W1lQa.popout-open:hover {
   background-color: var(--skypecord-sidebar-item-sel-bg); }
 
 .members-1998pB {
