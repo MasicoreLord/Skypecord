@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.6 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.7 Alpha'
 ; }
 
 /* Font */
@@ -1495,7 +1495,7 @@ searchBarComponent-32dTOx .input-1Rv96N {
 .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
   display: none; }
 
-.layerContainer-yqaFcK[style*='left: 64'] .tooltipBlack-PPG47z, .layerContainer-yqaFcK[style*='left: 65'] .tooltipBlack-PPG47z {
+.layer-v9HyYc[style*='left: 64'] .tooltipBlack-PPG47z, .layer-v9HyYc[style*='left: 65'] .tooltipBlack-PPG47z {
   display: none; }
 
 /* /Tooltip */
