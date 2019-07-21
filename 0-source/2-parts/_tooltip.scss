@@ -19,7 +19,7 @@
     display: none;
 }
 
-#{$layerContainer} {
+#{$layerContainer-layer} {
     &[style*='left: 64'],
     &[style*='left: 65'] {
         #{$tooltipDefault} {
