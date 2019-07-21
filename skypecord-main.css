@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.5 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.6 Alpha'
 ; }
 
 /* Font */
@@ -382,9 +382,6 @@ a {
 
 .app-2rEoOp .username-2BIRiC {
   color: var(--skypecord-main-fg); }
-
-.app-2rEoOp .status-3DaTVG {
-  border-color: var(--skypecord-status-border); }
 
 .app-2rEoOp .button-2JbWXs:hover {
   background-color: transparent; }
@@ -1034,9 +1031,6 @@ a {
   .app-2rEoOp .channel-2QD9_O.selected-1HYmZZ .activityIconForeground-3VIgI8 {
     fill: var(--skypecord-main-fg); }
 
-.app-2rEoOp .channel-2QD9_O .status-1ibiUI {
-  border-color: var(--skypecord-status-border); }
-
 .app-2rEoOp .close-3hZ5Ni {
   background-image: var(--skypecord-close-icon-2); }
 
@@ -1501,10 +1495,8 @@ searchBarComponent-32dTOx .input-1Rv96N {
 .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
   display: none; }
 
-.layer-v9HyYc {
-  pointer-events: none; }
-  .layer-v9HyYc[style*='left: 64'] .tooltipBlack-PPG47z, .layer-v9HyYc[style*='left: 65'] .tooltipBlack-PPG47z {
-    display: none; }
+.layerContainer-yqaFcK[style*='left: 64'] .tooltipBlack-PPG47z, .layerContainer-yqaFcK[style*='left: 65'] .tooltipBlack-PPG47z {
+  display: none; }
 
 /* /Tooltip */
 /* Plugins Support */
