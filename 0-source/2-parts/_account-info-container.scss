@@ -5,9 +5,6 @@
     #{$currentAccount-username} {
         color: var(--skypecord-main-fg);
     }
-    #{$currentAccount-status} {
-        border-color: var(--skypecord-status-border);
-    }
     #{$currentAccount-button}:hover {
         background-color: transparent;
     }

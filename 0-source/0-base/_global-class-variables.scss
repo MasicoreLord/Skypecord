@@ -119,7 +119,6 @@
     $currentAccount-buttonInner: '.contents-18-Yxp';
     $currentAccount-container: '.container-3baos1';
     $currentAccount-discriminator: '.discriminator-3-Lf_x';
-    $currentAccount-status: '.status-3DaTVG';
     $currentAccount-username: '.username-2BIRiC';
     $currentAccount-usernameContainer: '.usernameContainer-1fp4nu';
 // Emoji Picker
@@ -181,9 +180,6 @@
     $membersList-placeholder: ".placeholder-oNR4zO";
     $membersList-placeholderPulse: ".placeholderPulse-2rZrru";
     $membersList-scrollerWrap: ".scrollerWrap-otKoZo";
-    $membersList-status: ".status-2s6iDp";
-    $membersList-statusAnimated: ".statusAnimated-1SvwJ-";
-    $membersList-statusStatic: ".statusStatic-3QpK4G";
     $membersList-username: ".username-1cB_5E";
     $membersList-usernameOffline: ".usernameOffline-3VSVLk";
     $membersList-usernameOnline: ".usernameOnline-3jr_0Y";
@@ -237,7 +233,6 @@
     $privateChannelList-channelClose: '.close-3hZ5Ni';
     $privateChannelList-channelName: '.name-2WpE7M';
     $privateChannelList-channelSelected: '.selected-1HYmZZ';
-    $privateChannelList-channelStatus: '.status-1ibiUI';
     $privateChannelList-linkButtonIcon: '.linkButtonIcon-Mlm5d6';
     $privateChannelList-searchBar: '.searchBarComponent-32dTOx';
     $privateChannelList-searchBar: 'searchBarComponent-32dTOx';
@@ -306,8 +301,9 @@
     $tooltipDefault: '.tooltipBlack-PPG47z';
     $tooltipAlert: '.tooltipRed-8-9NeP';
     $tooltipRight: '.tooltipRight-2JM5PQ';
-    $tooltips-container: '.layerContainer-yqaFcK';
-    $tooltips-layer: '.layer-v9HyYc';
+// Layer Container
+    $layerContainer: '.layerContainer-yqaFcK';
+    $layerContainer-layer: '.layer-v9HyYc';
 // Unread
     $unread-bar: '.unread-1s3J68';
     $unread-barWrapper: '.bar-30k2ka';

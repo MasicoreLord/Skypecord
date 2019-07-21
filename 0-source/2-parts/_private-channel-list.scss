@@ -66,9 +66,6 @@
                 fill: var(--skypecord-main-fg);
             }
         }
-        #{$privateChannelList-channelStatus} {
-            border-color: var(--skypecord-status-border);
-        }
     }
     #{$privateChannelList-channelClose} {
         background-image: var(--skypecord-close-icon-2);
