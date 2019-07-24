@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.8 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.9 Alpha'
 ; }
 
 /* Font */
@@ -882,6 +882,7 @@ a {
 .markup-2BOw-j:empty {
   display: none; }
 
+.markup-2BOw-j blockquote,
 .markup-2BOw-j pre {
   max-width: fit-content; }
 
