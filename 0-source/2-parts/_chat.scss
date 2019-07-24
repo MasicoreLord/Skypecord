@@ -43,6 +43,9 @@
     #{$message-isMentioned} #{$message-markup} {
         background-color: $mentioned-bg;
     }
+    #{$message-timestampCompact} {
+        color: var(--skypecord-secondary-fg);
+    }
     #{$channelTextArea-inner} {
         background-color: var(--skypecord-textarea-bg);
     }
@@ -117,13 +120,21 @@
     align-self: flex-start;
 }
 
+#{$message-markup},
+#{$message-actionBroadcastContainer} {
+    order: -1;
+}
+
 #{$message-markup} {
     border-radius: 0 inRem(10px) inRem(10px) 0;
     padding: inRem(8px);
-    order: -1;
     overflow: hidden; /* Prevents the markup from overflowing, and also allows the buttons to appear at all times. */
     font-size: inRem(14px);
     font-weight: 400;
+}
+
+#{$message-actionBroadcastContainer} {
+    padding-right: 0;
 }
 
 #{$message-markup}:empty {
@@ -164,6 +175,24 @@
 
 #{$message}:last-of-type #{$message-isMentionedCozy} #{$message-markup}::after {
     border-radius: 0 0 0 inRem(10px);
+}
+
+#{$message-isCompact} {
+    text-indent: 0;
+    margin-left: 20px;
+}
+
+#{$message-containerCompact} {
+    padding-left: 20px;
+}
+
+#{$message-containerCompact},
+#{$message-contentCompact} {
+    padding-right: 20px;
+}
+
+#{$message-timestampCompact} {
+    width: auto;
 }
 
 #{$message-dividerContent}::before,
