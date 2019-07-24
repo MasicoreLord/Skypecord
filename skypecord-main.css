@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.9 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.10 Alpha'
 ; }
 
 /* Font */
@@ -808,6 +808,9 @@ a {
 .app-2rEoOp .isMentioned-N-h9aa .markup-2BOw-j {
   background-color: rgba(252, 198, 104, 0.2); }
 
+.app-2rEoOp .timestampCompact-MHgFLv {
+  color: var(--skypecord-secondary-fg); }
+
 .app-2rEoOp .inner-zqa7da {
   background-color: var(--skypecord-textarea-bg); }
 
@@ -870,14 +873,20 @@ a {
   float: none;
   align-self: flex-start; }
 
+.markup-2BOw-j,
+.container-3-pyIM {
+  order: -1; }
+
 .markup-2BOw-j {
   border-radius: 0 0.625rem 0.625rem 0;
   padding: 0.5rem;
-  order: -1;
   overflow: hidden;
   /* Prevents the markup from overflowing, and also allows the buttons to appear at all times. */
   font-size: 0.875rem;
   font-weight: 400; }
+
+.container-3-pyIM {
+  padding-right: 0; }
 
 .markup-2BOw-j:empty {
   display: none; }
@@ -908,6 +917,20 @@ a {
 
 .message-1PNnaP:last-of-type .isMentionedCozy-3isp7y .markup-2BOw-j::after {
   border-radius: 0 0 0 0.625rem; }
+
+.isCompact-1hsne1 {
+  text-indent: 0;
+  margin-left: 20px; }
+
+.containerCompact-3bB5aN {
+  padding-left: 20px; }
+
+.containerCompact-3bB5aN,
+.contentCompact-1QLHBj {
+  padding-right: 20px; }
+
+.timestampCompact-MHgFLv {
+  width: auto; }
 
 .dividerContent-2L12VI::before,
 .dividerContent-2L12VI::after {
