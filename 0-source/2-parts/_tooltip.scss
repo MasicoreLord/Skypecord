@@ -20,8 +20,12 @@
 }
 
 #{$layerContainer-layer} {
+    // Normal list item
     &[style*='left: 64'],
-    &[style*='left: 65'] {
+    &[style*='left: 65'],
+    // In folder list item
+    &[style*='left: 72'],
+    &[style*='left: 73'] {
         #{$tooltipDefault} {
             display: none;
         }

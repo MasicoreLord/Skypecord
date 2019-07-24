@@ -159,6 +159,29 @@
         background-color: var(--skypecord-avatar-bg);
         color: $accent;
     }
+    #{$mainNavList-folder} {
+        &,
+        &#{$mainNavList-folderHover},
+        &#{$mainNavList-folderSelected},
+        &#{$mainNavList-folderSelected}#{$mainNavList-folderHover} {
+            background-color: transparent;
+        }
+    }
+    #{$mainNavList-folderExpandedGuilds} {
+        #{$mainNavList-item} {
+            padding-left: 16px;
+        }
+    }
+    #{$mainNavList-folderExpandedBackground} {
+        &,
+        &#{$mainNavList-folderSelected},
+        &#{$mainNavList-folderCollapsed} {
+            background-color: transparent;
+        }
+    }
+    #{$mainNavList-folderIconWrapper} {
+        background-color: transparent!important;
+    }
     #{$mainNavList-itemAcronym},
     #{$mainNavList-homeIcon} {
         color: $accent;
