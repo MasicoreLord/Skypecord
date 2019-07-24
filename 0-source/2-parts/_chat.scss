@@ -130,9 +130,12 @@
     display: none;
 }
 
-#{$message-markup} pre {
-    max-width: fit-content;
-}
+#{$message-markup} {
+    blockquote,
+    pre {
+        max-width: fit-content;
+    }
+} 
 
 #{$message}:last-of-type #{$message-markup} {
     border-radius: 0 inRem(10px) inRem(10px) inRem(10px);
