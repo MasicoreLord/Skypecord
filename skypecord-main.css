@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.10 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.11 Alpha'
 ; }
 
 /* Font */
@@ -656,8 +656,10 @@ a {
     color: #0078d4; }
   .app-2rEoOp .folder-21wGz3, .app-2rEoOp .folder-21wGz3.mouseHover-bMC8x3, .app-2rEoOp .folder-21wGz3.selected-2vZ0oV, .app-2rEoOp .folder-21wGz3.selected-2vZ0oV.mouseHover-bMC8x3 {
     background-color: transparent; }
-  .app-2rEoOp .expandedGuilds-1JMD4M .listItem-2P_4kh {
-    padding-left: 16px; }
+  .app-2rEoOp .expandedGuilds-1JMD4M {
+    width: 208px; }
+    .app-2rEoOp .expandedGuilds-1JMD4M .listItem-2P_4kh {
+      padding-left: 16px; }
   .app-2rEoOp .expandedFolderBackground-2sPsd-, .app-2rEoOp .expandedFolderBackground-2sPsd-.selected-2vZ0oV, .app-2rEoOp .expandedFolderBackground-2sPsd-.collapsed-1GMuSb {
     background-color: transparent; }
   .app-2rEoOp .folderIconWrapper-226oVY {
