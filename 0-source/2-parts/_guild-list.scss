@@ -161,9 +161,7 @@
     }
     #{$mainNavList-folder} {
         &,
-        &#{$mainNavList-folderHover},
-        &#{$mainNavList-folderSelected},
-        &#{$mainNavList-folderSelected}#{$mainNavList-folderHover} {
+        &#{$mainNavList-folderHover} {
             background-color: transparent;
         }
     }
@@ -175,7 +173,7 @@
     }
     #{$mainNavList-folderExpandedBackground} {
         &,
-        &#{$mainNavList-folderSelected},
+        &#{$mainNavList-folderHover},
         &#{$mainNavList-folderCollapsed} {
             background-color: transparent;
         }
