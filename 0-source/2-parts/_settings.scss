@@ -76,23 +76,16 @@
         background-color: transparent;
     }
     // Cards
-    .cardPrimaryOutline-29Ujqw {
-        border-color: var(--skypecord-border-fg);
-    }
-
-    .cardPrimary-1Hv-to {
-        border-color: transparent;
-        background-color: rgba(199, 237, 252, .5);
-    }
+    
 }
 
 // Cards
-.card-3Qj_Yx {
+#{$card} {
     border-radius: 10px;
 }
 
 // Radial boxes
-.item-26Dhrx {
+#{$radioBox-item} {
     border-radius: 0;
 }
 

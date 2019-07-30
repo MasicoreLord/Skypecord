@@ -190,7 +190,8 @@
         &,
         &#{$mainNavList-homeSelected},
         &#{$mainNavList-guildNoIconSelected},
-        &#{$mainNavList-actionSelected} {
+        &#{$mainNavList-actionSelected},
+        &#{$mainNavList-nestedItem} {
             background-color: var(--skypecord-avatar-bg);
             color: $accent;
         }
