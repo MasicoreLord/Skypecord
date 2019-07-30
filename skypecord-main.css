@@ -71,7 +71,7 @@
 
 .app-2rEoOp {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.4.12 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.4.13 Alpha'
 ; }
 
 /* Font */
@@ -667,11 +667,12 @@ a {
   .app-2rEoOp .acronym-2mOFsV,
   .app-2rEoOp .homeIcon-tEMBK1 {
     color: #0078d4; }
-  .app-2rEoOp .acronym-2mOFsV, .app-2rEoOp .acronym-2mOFsV.selected-wSa2KV, .app-2rEoOp .acronym-2mOFsV.selected-bZ3Lue, .app-2rEoOp .acronym-2mOFsV.selected-ugP_am,
+  .app-2rEoOp .acronym-2mOFsV, .app-2rEoOp .acronym-2mOFsV.selected-wSa2KV, .app-2rEoOp .acronym-2mOFsV.selected-bZ3Lue, .app-2rEoOp .acronym-2mOFsV.selected-ugP_am, .app-2rEoOp .acronym-2mOFsV.nested-1eglu6,
   .app-2rEoOp .button-OhfaWu,
   .app-2rEoOp .button-OhfaWu.selected-wSa2KV,
   .app-2rEoOp .button-OhfaWu.selected-bZ3Lue,
-  .app-2rEoOp .button-OhfaWu.selected-ugP_am {
+  .app-2rEoOp .button-OhfaWu.selected-ugP_am,
+  .app-2rEoOp .button-OhfaWu.nested-1eglu6 {
     background-color: var(--skypecord-avatar-bg);
     color: #0078d4; }
   .app-2rEoOp .listItem-2P_4kh:hover .pill-31IEus,
@@ -1277,13 +1278,6 @@ searchBarComponent-32dTOx .input-1Rv96N {
 
 .app-2rEoOp .closeButton-1tv5uR:hover {
   background-color: transparent; }
-
-.app-2rEoOp .cardPrimaryOutline-29Ujqw {
-  border-color: var(--skypecord-border-fg); }
-
-.app-2rEoOp .cardPrimary-1Hv-to {
-  border-color: transparent;
-  background-color: rgba(199, 237, 252, 0.5); }
 
 .card-3Qj_Yx {
   border-radius: 10px; }
