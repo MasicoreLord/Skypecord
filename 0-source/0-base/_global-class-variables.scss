@@ -1,3 +1,36 @@
+//  Account Connection
+    $accountConnection: ".connection-1fbD7X";
+    $accountConnection-accountBtn: ".accountBtn-2Nozo3";
+    $accountConnection-accountBtnInner: ".accountBtnInner-sj5jLs";
+    $accountConnection-accountList: ".accountList-33MS45";
+    $accountConnection-channelLink: ".channelLink-2TxEu3";
+    $accountConnection-connectedAccountSeparator: ".connectedAccountSeparator-2EgLhW";
+    $accountConnection-connectedAccounts: ".connectedAccounts-2-XP1G";
+    $accountConnection-accountLabel: ".connectionAccountLabel-1DiK0A";
+    $accountConnection-accountValue: ".connectionAccountValue-3VdBGs";
+    $accountConnection-delete: ".connectionDelete-2Odoln";
+    $accountConnection-header: ".connectionHeader-2MDqhu";
+    $accountConnection-icon: ".connectionIcon-2ElzVe";
+    $accountConnection-optionSwitch: ".connectionOptionSwitch-3KNn-E";
+    $accountConnection-options: ".connectionOptions-YE9FAM";
+    $accountConnection-optionsWrapper: ".connectionOptionsWrapper-3KIj1Z";
+    $accountConnection-elevationLow: ".elevationLow-2lY09M";
+    $accountConnection-guildIcon: ".guildIcon-YCs9He";
+    $accountConnection-integration: ".integration-3kMeY4";
+    $accountConnection-integrationInner: ".integrationInner-3SUFBs";
+    $accountConnection-integrationName: ".integrationName-2tSCoY";
+    $accountConnection-integrationsWrapper: ".integrationsWrapper-VkM_zO";
+    $accountConnection-noUserDrag: ".noUserDrag-5Mb43F";
+    $accountConnection-warning: ".warning-1XxEC9";
+// Account Connection Items
+    $optionItems-disabled: ".disabled-2HSEFa";
+    $optionItems-dividerDefault: ".dividerDefault-3rvLe-";
+    $optionItems-dividerMini: ".dividerMini-3ZRJ-S";
+    $optionItems-note: ".note-1V3kyJ";
+    $optionItems-switchItem: ".switchItem-2hKKKK";
+    $optionItems-title: ".title-31JmR4";
+    $optionItems-titleDefault: ".titleDefault-a8-ZSr";
+    $optionItems-titleMini: ".titleMini-pBwj_L";
 // App
     $appMount: '.appMount-3lHmkl';
 // Badge
@@ -137,6 +170,25 @@
     $currentAccount-usernameContainer: '.usernameContainer-1fp4nu';
 // Emoji Picker
     $emojiPicker-searchBar: '.searchBar-2pWH0_';
+// Game Detection
+    $gameDetection-actions: ".actions-3wcPyD";
+    $gameDetection-addGamePopout: ".addGamePopout-2RY8Ju";
+    $gameDetection-cancelButton: ".cancelButton-10XRsm";
+    $gameDetection-game: ".game-1ipmAa";
+    $gameDetection-gameName: ".gameName-1RiWHm";
+    $gameDetection-gameNameInput: ".gameNameInput-385LoS";
+    $gameDetection-gameNameLastPlayed: ".gameNameLastPlayed-3LJo8n";
+    $gameDetection-gameVerifiedIcon: ".gameVerifiedIcon-2dGGa5";
+    $gameDetection-lastPlayed: ".lastPlayed-3bQ7Bo";
+    $gameDetection-notDetected: ".notDetected-33MY4s";
+    $gameDetection-nowPlaying: ".nowPlaying-284llR";
+    $gameDetection-nowPlayingAdd: ".nowPlayingAdd-1Kdmh_";
+    $gameDetection-overlayStatusText: ".overlayStatusText-L2IACa";
+    $gameDetection-overlayToggleIcon: ".overlayToggleIcon-2liB3r";
+    $gameDetection-overlayToggleIconOff: ".overlayToggleIconOff-1kT42w";
+    $gameDetection-overlayToggleIconOn: ".overlayToggleIconOn-3UNmty";
+    $gameDetection-overlayWarningIcon: ".overlayWarningIcon-3fZsZE";
+    $gameDetection-removeGame: ".removeGame-2JFGPn";
 // Library
     $library-downloadIcon: '.downloadIcon-3TWA3B';
     $library-downloadProgressCircleWrapper: '.downloadProgressCircle-3_wgim';
@@ -174,7 +226,7 @@
     $mainNavList-itemInnerContainer: '.blobContainer-239gwq';
     $mainNavList-itemIcon: '.icon-27yU2q';
     $mainNavList-itemInner: '.wrapper-25eVIn';
-    $mainNavList-itemSvg: '.svg-1X37T1';
+    $mainNavList-itemMaskContainer: '.svg-1X37T1';
     $mainNavList-itemInnerWrapper: '.listItemWrapper-3X98Pc';
     $mainNavList-lowerBadge: '.lowerBadge-29hYVK';
     $mainNavList-nestedItem: '.nested-1eglu6';
@@ -246,6 +298,21 @@
     $modal-topSectionSpotify: '.topSectionSpotify-1lI0-P';
     $modal-topSectionStreaming: '.topSectionStreaming-1Tpf5X';
     $modal-topSectionXbox: '.topSectionXbox-3fWLjS';
+// Overlay Notification Settings
+    $overlayNotificationSettings: '.notificationSettings-1NQKPR';
+//Overlay Notification Setting Items
+    $overlayNotificationSettingItems-bottomLeft: ".bottomLeft-39-xss";
+    $overlayNotificationSettingItems-bottomRight: ".bottomRight-1T56wW";
+    $overlayNotificationSettingItems-disabled: ".disabled-3I9jyo";
+    $overlayNotificationSettingItems-disabledIcon: ".disabledIcon-9QatvX";
+    $overlayNotificationSettingItems-disabledSelected: ".disabledSelected-2Kf0yZ";
+    $overlayNotificationSettingItems-hasFocus: ".hasFocus-2ksn_h";
+    $overlayNotificationSettingItems-hiddenInput: ".hiddenInput-AN-Xon";
+    $overlayNotificationSettingItems-option: ".option-n0icdO";
+    $overlayNotificationSettingItems-selected: ".selected-mKYnfr";
+    $overlayNotificationSettingItems-topLeft: ".topLeft-3buHIc";
+    $overlayNotificationSettingItems-topRight: ".topRight-3GKDeL";
+    $overlayNotificationSettingItems-wrapper: ".wrapper-3jrx9n";
 // Page
     $page-filterIcon: '.icon-1S6UIr';
     $page-filterInput: '.input-3Xdcic';
@@ -285,6 +352,11 @@
     $radioBox-radioGroup: ".radioGroup-1GBvlr";
     $radioBox-title: ".title-3BE6m5";
     $radioBox-titleChecked: ".titleChecked-2wg0pd";
+// Radio Checkbox
+    $radioInput-checkBox: ".checkbox-1ix_J3";
+    $radioInput-checkBoxWrapper: '.checkboxWrapper-SkhIWG';
+    $radioInput-checkBoxWrapperDisabled: '.checkboxWrapperDisabled-36r8NK';
+    $radioInput-checked: '.checked-3_4uQ9';
 // Search
     $search-barInner: '.inner-3ErfOT';
 // Search Popout
@@ -320,6 +392,21 @@
     $settings-tools: '.tools-3-3s-N';
     $settings-toolsContainer: '.toolsContainer-1edPuj';
     $settings-topPill: '.topPill-30KHOu';
+// Slider
+    $slider-bar: ".bar-2Qqk5Z";
+    $slider-barFill: ".barFill-23-gu-";
+    $slider-bubble: ".bubble-3we2di elevationHigh-3A9Xbf";
+    $slider-disabled: ".disabled-bolDAc";
+    $slider-elevationHigh: ".elevationHigh-3A9Xbf";
+    $slider-grabber: ".grabber-3mFHz2";
+    $slider-input: ".input-2_ChIk";
+    $slider-mark: ".mark-1xjQqt";
+    $slider-markDash: ".markDash-3hAolZ";
+    $slider-markDashSimple: ".markDashSimple-1vLOGW";
+    $slider-markValue: ".markValue-2DwdXI";
+    $slider-mini: ".mini-dmm9yo";
+    $slider: ".slider-1PF9SW";
+    $slider-track: ".track-11EASc";
 // Suspicious Verification
     $suspiciousVerification-body: '.body-3ROqbj';
     $suspiciousVerification-container: '.container-1kp68M';
@@ -333,6 +420,21 @@
     $suspiciousVerification-title: '.title-wZCcDo';
     $suspiciousVerification-screen: '.verification-3RfWYC';
     $suspiciousVerification-screenBlock: '.verificationBlock-1Chfpc';
+// Toggle
+    $toggle-checkbox: ".checkbox-2tyjJg";
+    $toggle-checkboxDisabled: ".checkboxDisabled-1MA81A";
+    $toggle-checkboxEnabled: ".checkboxEnabled-CtinEn";
+    $toggle-size: ".size-3rFEHg";
+    $toggle-sizeDefault: ".sizeDefault-2YlOZr";
+    $toggle-sizeMini: ".sizeMini-1ii40f";
+    $toggle-switch: ".switch-3wwwcV";
+    $toggle-switchDisabled: ".switchDisabled-3HsXAJ";
+    $toggle-switchEnabled: ".switchEnabled-V2WDBB";
+    $toggle-themeClear: ".themeClear-1EjkE4";
+    $toggle-themeDefault: ".themeDefault-24hCdX";
+    $toggle-value: ".value-2hFrkk";
+    $toggle-valueChecked: ".valueChecked-m-4IJZ";
+    $toggle-valueUnchecked: ".valueUnchecked-2lU_20";
 // Store/Nitro Tab
     $store-browseSearch: '.browseSearch-e9jF-f';
 // Tooltip
@@ -341,6 +443,13 @@
     $tooltipDefault: '.tooltipBlack-PPG47z';
     $tooltipAlert: '.tooltipRed-8-9NeP';
     $tooltipRight: '.tooltipRight-2JM5PQ';
+// Usage Graph
+    $usageGraph-background: ".background-yZEZik";
+    $usageGraph-foreground: ".foreground-2aE44H";
+    $usageGraph-path: ".path-3H_ZFA";
+    $usageGraph-svg: ".svg-3yO_hc";
+    $usageGraph-usageInfo: ".usageInfo-2WQAwr";
+    $usageGraph-wrapper: ".wrapper-1u09nF";
 // Layer Container
     $layerContainer: '.layerContainer-yqaFcK';
     $layerContainer-layer: '.layer-v9HyYc';

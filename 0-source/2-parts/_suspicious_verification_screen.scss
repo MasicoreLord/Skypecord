@@ -3,7 +3,8 @@
 }
 
 
-#{$main-app} {
+#{$main-themeLight},
+#{$main-themeDark} {
     #{$suspiciousVerification-screen} {
         #{$suspiciousVerification-title},
         #{$suspiciousVerification-body} {

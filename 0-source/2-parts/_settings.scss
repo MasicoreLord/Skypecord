@@ -16,7 +16,8 @@
     background: none;
 }
 
-#{$main-app} {
+#{$main-themeLight},
+#{$main-themeDark} {
     #{$settings-itemThemed}#{$settings-itemSelected}#{$settings-item} {
         &,
         &:hover {
@@ -75,18 +76,223 @@
     #{$settings-closeButton}:hover {
         background-color: transparent;
     }
-    // Cards
     
+    #{$card-primary} {
+        background-color: transparent;
+        border-color: var(--skypecord-border-fg);
+    }
+
+    #{$card-primaryEditable} {
+        background-color: transparent!important;
+        border-color: transparent!important;
+        &[style*='background-color: rgb(240, 71, 71)'] #{$radioBox-titleChecked} {
+            color: rgb(240, 71, 71)!important;
+        }
+        &[style*='background-color: rgb(250, 166, 26)'] #{$radioBox-titleChecked} {
+            color: rgb(250, 166, 26)!important;
+        }
+        &[style*='background-color: rgb(67, 181, 129)'] #{$radioBox-titleChecked} {
+            color: rgb(67, 181, 129)!important;
+        }
+    }
+
+    #{$card-primaryEditable}:not(:last-child) {
+        border-bottom-color: var(--skypecord-border-fg)!important
+    }
+
+    #{$radioBox-radioGroup} {
+        color: var(--skypecord-main-fg);
+    }
+
+    #{$radioInput-checkBox} {
+        border-color: var(--skypecord-border-fg);
+    }
+    #{$radioInput-checked} {
+        background-color: $accent;
+        &[style*='border-color: rgb(240, 71, 71)'] {
+            background-color: rgb(240, 71, 71);
+        }
+        &[style*='border-color: rgb(250, 166, 26)'] {
+            background-color: rgb(250, 166, 26);
+        }
+        &[style*='border-color: rgb(67, 181, 129)'] {
+            background-color: rgb(67, 181, 129);
+        }
+        [name="Checkmark"] polyline {
+            stroke: $alt-fg;
+        }
+    }
+
+    #{$radioBox-titleChecked} {
+        color: var(--skypecord-main-fg)!important;
+    }
+
+    #{$slider-bar} {
+        background-color: var(--skypecord-slider-bg);
+    }
+
+    #{$slider-barFill} {
+        background: $accent;
+    }
+
+    #{$slider-grabber} {
+        background-color: var(--skypecord-slider-grabber-bg);
+        border-color: var(--skypecord-slider-grabber-bg);
+        box-shadow: none;
+    }
+
+    #{$slider-markValue} {
+        color: var(--skypecord-secondary-fg);
+    }
+
+    #{$toggle-themeDefault} {
+        background-color: var(--skypecord-toggle-bg);
+        &#{$toggle-valueChecked} {
+            background-color: $accent;
+        }
+    }
+
+    #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch /* BandagedBD */ {
+        background-color: var(--skypecord-toggle-bg);
+    }
+
+    #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked /* BandagedBD */ {
+        background-color: $accent;
+    }
+
+    #{$accountConnection} #{$optionItems-title} {
+        color: $alt-fg;
+    }
+
+    #{$overlayNotificationSettingItems-wrapper} {
+        background-color: transparent;
+        border-color: $accent;
+    }
+
+    #{$overlayNotificationSettingItems-option} {
+        box-shadow: none;
+        &:hover {
+            background-color: $accent;
+        }
+    }
+
+    #{$overlayNotificationSettingItems-selected} {
+        background-color: darken($accent, 1%);
+        border-color: $accent;
+    }
+
+    #{$gameDetection-notDetected} {
+        background-color: $accent;
+    }
+
+    #{$usageGraph-foreground} {
+        stroke: $accent;
+    }
 }
 
-// Cards
+#{$gameDetection-notDetected},
+#{$gameDetection-nowPlaying} {
+    border-radius: 10px;
+}
+
 #{$card} {
     border-radius: 10px;
 }
 
-// Radial boxes
 #{$radioBox-item} {
     border-radius: 0;
+    border-bottom: 1px solid;
+    padding: 10px 0!important;
+}
+
+#{$radioInput-checkBox} {
+    border-radius: 50%;
+}
+
+#{$radioBox-title} {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#{$slider-bar} {
+    position: relative;
+    height: 10px;
+    border-radius: 5px;
+    top: 15px;
+}
+
+#{$slider-barFill} {
+    clip-path: inset(0 0 0 0); /* fake overflow hidden, due to being statically positioned, and it needing to remain so for the slider's style to work right */
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: $slider-bg;
+    }
+}
+
+#{$slider-grabber} {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    border-width: 1px;
+    transform: translateX(-8px);
+}
+
+#{$slider-mark} {
+    top: -8px;
+}
+
+#{$slider-markValue} {
+    padding-left: 0;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#{$slider-markDash} {
+    display: none;
+}
+
+#{$toggle-sizeDefault} {
+    width: 40px;
+    height: 18px;
+    &::after {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper /* BandagedBD */ {
+    width: 40px;
+    height: 18px;
+    align-self: center;
+}
+
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before /* BandagedBD */ {
+    width: 10px;
+    height: 10px;
+}
+
+#{$toggle-switch} {
+    align-self: center;
+    &::after {
+        left: 2px;
+        top: 1px;
+    }
+}
+
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before /* BandagedBD */ {
+    top: 4px;
+    left: 4px;
+}
+
+#{$toggle-valueChecked}::after,
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked:before /* BandagedBD */ {
+    left: 5px;
 }
 
 #{$client-layer}:first-child {
@@ -105,7 +311,8 @@
             left: 0;
             z-index: 101;
             position: absolute;
-            #{$main-app} & {
+            #{$main-themeLight} &,
+            #{$main-themeDark} & {
                 background-color: rgba(0,0,0,0.5);
             }
         }

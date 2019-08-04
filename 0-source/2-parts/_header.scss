@@ -38,7 +38,8 @@
     }
 }
 
-#{$main-app} {
+#{$main-themeLight},
+#{$main-themeDark} {
     #{$client-headerBar} {
         background-color: var(--skypecord-main-bg);
     }

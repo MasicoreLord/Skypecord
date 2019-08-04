@@ -15,7 +15,8 @@ a {
     color: $link-fg;
 }
 
-#{$main-app} {
+#{$main-themeLight},
+#{$main-themeDark} {
     #{$client-layers},
     #{$client-layer} {
         background-color: var(--skypecord-layer-bg);

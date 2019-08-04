@@ -1,8 +1,12 @@
 #{$mainNavList-wrapper} {
     border-radius: 0;
     border-right: 1px solid;
-    width: 208px;
     box-sizing: border-box;
+    width: 65px;
+    transition: width ease 0.45s;
+    &:hover {
+        width: 212px;
+    }
     #{$client-macOs} & {
         margin-top: 0;
     }
@@ -12,8 +16,12 @@
     width: calc(100% + 2px); // added scrollbar width
 }
 
+#{$mainNavList-item},
+#{$mainNavList-folderWrapper} {
+    width: 212px;
+}
+
 #{$mainNavList-item} {
-    width: 208px;
     justify-content: flex-start;
     padding-left: 8px;
     margin: 0;
@@ -24,7 +32,7 @@
 //     width: 168px;
 // }
 
-#{$mainNavList-itemSvg} {
+#{$mainNavList-itemMaskContainer} {
     overflow: visible;
 }
 
@@ -33,11 +41,11 @@
     &::after {
         content: attr(aria-label);
         position: absolute;
-        left: calc(100% + 4px);
+        left: calc(100% + 8px);
         font-size: 15px;
         font-weight: 500;
         color: var(--skypecord-main-fg);
-        width: 208px - 8px - 48px - 4px - 8px - 3px;
+        width: 132px;
         line-height: 48px;
         overflow: hidden;
         white-space: nowrap;
@@ -98,14 +106,6 @@
     border-radius: 50%;
 }
 
-#{$mainNavList-badgeWrapper} {
-    width: 191px;
-}
-
-#{$mainNavList-lowerBadge} {
-    top: 17px;
-}
-
 #{$mainNavList-separater} {
     width: calc(100% - 16px);
     border-radius: 0;
@@ -119,12 +119,12 @@
     border-radius: 50%;
     foreignObject {
         mask: none;
-        x: -80px;
+        x: -82px;
     }
 }
 
-#{$mainNavList-itemSvg} {
-    width: 208px;
+#{$mainNavList-itemMaskContainer} {
+    width: 212px;
 }
 
 #{$mainNavList-itemInner} {
@@ -135,7 +135,46 @@
     transform: none;
 }
 
-#{$main-app} {
+#{$mainNavList-folderExpandedGuilds} {
+    width: 212px;
+    #{$mainNavList-item} {
+        transition: margin-left ease 0.45s;
+        margin-left: 4px;
+    }
+    #{$mainNavList-wrapper}:hover & {
+        #{$mainNavList-item} {
+            margin-left: 8px;
+        }
+    }
+    #{$mainNavList-badgeWrapper} {
+        width: 187px;
+    }
+}
+
+#{$mainNavList-badgeWrapper} {
+    &,
+    #{$mainNavList-folderExpandedGuilds} & {
+        width: 50px;
+        transition: width ease 0.45s;
+    }
+    #{$mainNavList-wrapper}:hover & {
+        width: 195px;
+    }
+}
+
+#{$mainNavList-lowerBadge} {
+    &,
+    #{$mainNavList-folderExpandedGuilds} & {
+        top: 30px;
+        transition: top ease 0.45s;
+    }
+    #{$mainNavList-wrapper}:hover & {
+        top: 17px;
+    }
+}
+
+#{$main-themeLight},
+#{$main-themeDark} {
     #{$mainNavList-wrapper} {
         background-color: var(--skypecord-sidebar-bg);
         border-color: var(--skypecord-border-fg);
@@ -165,15 +204,12 @@
             background-color: transparent;
         }
     }
-    #{$mainNavList-folderExpandedGuilds} {
-	    width: 208px;
-        #{$mainNavList-item} {
-            padding-left: 16px;
-        }
-    }
     #{$mainNavList-folderExpandedBackground} {
         &,
-        &#{$mainNavList-folderHover},
+        &#{$mainNavList-folderHover} {
+            background-color: transparent;
+        }
+
         &#{$mainNavList-folderCollapsed} {
             background-color: transparent;
         }

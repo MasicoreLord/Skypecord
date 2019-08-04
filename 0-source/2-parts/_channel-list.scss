@@ -27,7 +27,8 @@
     }
 }
 
-#{$main-app} {
+#{$main-themeLight},
+#{$main-themeDark} {
     #{$channelList-container} {
         background-color: var(--skypecord-sidebar-bg);
     }

@@ -13,7 +13,8 @@
     }
 }
 
-#{$main-app} {
+#{$main-themeLight},
+#{$main-themeDark} {
     #{$privateChannelList-searchBarWrapper} {
         box-shadow: none;
     }

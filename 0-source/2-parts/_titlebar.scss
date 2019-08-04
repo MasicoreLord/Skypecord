@@ -9,7 +9,8 @@
 
 #{$client-win},
 #{$client-macOs} {
-    #{$main-app} {
+    #{$main-themeLight},
+    #{$main-themeDark} {
         &::before {
             background-color: var(--skypecord-windows-titlebar-bg);
             content: '';
@@ -27,7 +28,8 @@
     }
 }
 
-#{$client-win} #{$main-app} {
+#{$client-win} #{$main-themeLight},
+#{$client-win} #{$main-themeDark} {
     &::before,
     &::after {
         position: fixed;
@@ -56,7 +58,8 @@
     }
 }
 
-#{$client-macOs} #{$main-app} {
+#{$client-macOs} #{$main-themeLight},
+#{$client-macOs} #{$main-themeDark} {
     &::before {
         position: fixed;
         content: '';
