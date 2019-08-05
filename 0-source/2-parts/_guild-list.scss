@@ -18,7 +18,11 @@
 
 #{$mainNavList-item},
 #{$mainNavList-folderWrapper} {
-    width: 212px;
+    width: 65px;
+    transition: width ease 0.45s;
+    #{$mainNavList-wrapper}:hover & {
+        width: 212px;
+    }
 }
 
 #{$mainNavList-item} {
@@ -152,10 +156,10 @@
 }
 
 #{$mainNavList-badgeWrapper} {
+    transition: width ease 0.45s;
     &,
     #{$mainNavList-folderExpandedGuilds} & {
-        width: 50px;
-        transition: width ease 0.45s;
+        width: 49px;
     }
     #{$mainNavList-wrapper}:hover & {
         width: 195px;
@@ -163,14 +167,21 @@
 }
 
 #{$mainNavList-lowerBadge} {
+    transition: top ease 0.45s;
     &,
     #{$mainNavList-folderExpandedGuilds} & {
-        top: 30px;
-        transition: top ease 0.45s;
+        top: 32px;
     }
     #{$mainNavList-wrapper}:hover & {
         top: 17px;
     }
+}
+
+#bd-pub-button /* BandagedBD */ {
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 10px;
+    line-height: 18px;
 }
 
 #{$main-themeLight},
@@ -180,7 +191,7 @@
         border-color: var(--skypecord-border-fg);
     }
     #{$mainNavList-itemInner} {
-        background-color: var(--skypecord-avatar-bg)!important; /* Override inline style on guilds w/ no icon */
+        background-color: var(--skypecord-avatar-bg);
         a {
             color: $accent;
         }
@@ -221,9 +232,17 @@
     #{$mainNavList-homeIcon} {
         color: $accent;
     }
+
+    #bd-pub-button /* BandagedBD */ {
+        color: var(--skypecord-button-fg);
+        background-color: transparent;
+        border-color: var(--skypecord-button-border);
+    }
+
     #{$mainNavList-itemAcronym},
     #{$mainNavList-homeButton} {
         &,
+        &:hover,
         &#{$mainNavList-homeSelected},
         &#{$mainNavList-guildNoIconSelected},
         &#{$mainNavList-actionSelected},

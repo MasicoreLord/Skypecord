@@ -18,6 +18,14 @@
             }
         }
     }
+    .RANbutton {
+        border-color: var(--skypecord-button-border);
+        &,
+        &:hover {
+            color: var(--skypecord-button-fg);
+            background-color: transparent;
+        }
+    }
 }
 
 /* OnlineFriendCount by Zerthox */
@@ -26,4 +34,17 @@
     .friendsOnline-2JkivW {
         color: var(--skypecord-main-fg);
     }
+}
+
+.friendsOnline-2JkivW {
+    width: 49px;
+}
+
+/* ReadAllNotifications by Devilbro */
+.RANbutton {
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 10px;
+    line-height: 18px;
+    box-sizing: border-box;
 }

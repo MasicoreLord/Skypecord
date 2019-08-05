@@ -18,6 +18,19 @@
 
 #{$main-themeLight},
 #{$main-themeDark} {
+    #{$settings-header} {
+        color: var(--skypecord-header-fg);
+    }
+    #{$settingsOptionPanel-title},
+    #{$authorizedApp-headerInfo} #{$settingsOption-formText} {
+        color: var(--skypecord-header-title-fg);
+    }
+    #{$settingsOption-description},
+    #{$settingsOption-labelDescriptor},
+    #{$authorizedApp} #{$settingsOption-formText},
+    #{$formCard-formNotice} #{$settingsOption-formText} {
+        color: var(--skypecord-description-fg);
+    }
     #{$settings-itemThemed}#{$settings-itemSelected}#{$settings-item} {
         &,
         &:hover {
@@ -125,6 +138,10 @@
 
     #{$radioBox-titleChecked} {
         color: var(--skypecord-main-fg)!important;
+    }
+
+    #{$radioBox-desc} {
+        color: var(--skypecord-description-fg);
     }
 
     #{$slider-bar} {

@@ -22,6 +22,28 @@
     $accountConnection-integrationsWrapper: ".integrationsWrapper-VkM_zO";
     $accountConnection-noUserDrag: ".noUserDrag-5Mb43F";
     $accountConnection-warning: ".warning-1XxEC9";
+// Connected Account Info
+    $connectionAccountInfo-accountBtn: "accountBtn-2Nozo3";
+    $connectionAccountInfo-accountBtnInner: "accountBtnInner-sj5jLs";
+    $connectionAccountInfo-accountList: "accountList-33MS45";
+    $connectionAccountInfo-channelLink: "channelLink-2TxEu3";
+    $connectionAccountInfo-connectedAccountSeparator: "connectedAccountSeparator-2EgLhW";
+    $connectionAccountInfo-connectedAccounts: "connectedAccounts-2-XP1G";
+    $connectionAccountInfo-connection: "connection-1fbD7X";
+    $connectionAccountInfo-connectionAccountLabel: "connectionAccountLabel-1DiK0A";
+    $connectionAccountInfo-connectionAccountValue: "connectionAccountValue-3VdBGs";
+    $connectionAccountInfo-connectionDelete: "connectionDelete-2Odoln";
+    $connectionAccountInfo-connectionHeader: "connectionHeader-2MDqhu";
+    $connectionAccountInfo-connectionIcon: "connectionIcon-2ElzVe";
+    $connectionAccountInfo-connectionOptionSwitch: "connectionOptionSwitch-3KNn-E";
+    $connectionAccountInfo-connectionOptions: "connectionOptions-YE9FAM";
+    $connectionAccountInfo-connectionOptionsWrapper: "connectionOptionsWrapper-3KIj1Z";
+    $connectionAccountInfo-guildIcon: "guildIcon-YCs9He";
+    $connectionAccountInfo-integration: "integration-3kMeY4";
+    $connectionAccountInfo-integrationInner: "integrationInner-3SUFBs";
+    $connectionAccountInfo-integrationName: "integrationName-2tSCoY";
+    $connectionAccountInfo-integrationsWrapper: "integrationsWrapper-VkM_zO";
+    $connectionAccountInfo-warning: "warning-1XxEC9";
 // Account Connection Items
     $optionItems-disabled: ".disabled-2HSEFa";
     $optionItems-dividerDefault: ".dividerDefault-3rvLe-";
@@ -33,10 +55,21 @@
     $optionItems-titleMini: ".titleMini-pBwj_L";
 // App
     $appMount: '.appMount-3lHmkl';
+// Authorized App
+    $authorizedApp-appAvatar: ".appAvatar-3bgkQ9";
+    $authorizedApp: ".authedApp-mj2Hmd";
+    $authorizedApp-deleteApp: ".deleteApp-dtfZIe";
+    $authorizedApp-headerInfo: ".headerInfo-30WFqE";
+    $authorizedApp-permission: ".permission-1gtoyP";
+    $authorizedApp-permissionCheckmark: ".permissionCheckmark-1SeKr2";
 // Badge
     $badge-base: '.base-PmTxvP';
     $badge-wrapper: '.mentionsBadge-7f5lud';
     $badge: '.numberBadge-2s8kKX';
+// Bot Tag
+    $botTag: ".botTag-2WPJ74";
+    $botTag-invert: ".botTagInvert-18-95s";
+    $botTag-regular: ".botTagRegular-2HEhHi";
 // Card
     $card: ".card-3Qj_Yx";
     $card-brand: ".cardBrand-39zmMQ";
@@ -170,6 +203,11 @@
     $currentAccount-usernameContainer: '.usernameContainer-1fp4nu';
 // Emoji Picker
     $emojiPicker-searchBar: '.searchBar-2pWH0_';
+// Form Card
+    $formCard-formNotice: ".formNotice-2_hHWR";
+    $formCard-formNoticeBody: ".formNoticeBody-M4JFHP";
+    $formCard-formNoticeTitle: ".formNoticeTitle-2KGjDe";
+    $formCard-icon: ".icon-4lJsMQ";
 // Game Detection
     $gameDetection-actions: ".actions-3wcPyD";
     $gameDetection-addGamePopout: ".addGamePopout-2RY8Ju";
@@ -392,10 +430,28 @@
     $settings-tools: '.tools-3-3s-N';
     $settings-toolsContainer: '.toolsContainer-1edPuj';
     $settings-topPill: '.topPill-30KHOu';
+// Settings Option Panel
+    $settingsOptionPanel-disabled: ".disabled-2Dh7SK";
+    $settingsOptionPanel-error: ".error-25JxNp";
+    $settingsOptionPanel-errorMessage: ".errorMessage-3Guw2R";
+    $settingsOptionPanel-errorSeparator: ".errorSeparator-30Q6aR";
+    $settingsOptionPanel-required: ".required-7sPBq3";
+    $settingsOptionPanel-statusRed: ".statusRed-21U8Tp";
+    $settingsOptionPanel-title: ".title-3sZWYQ";
+// Settings Option
+    $settingsOption-default: ".default-3nhoK-";
+    $settingsOption-description: ".description-3_Ncsb";
+    $settingsOption-formText: ".formText-3fs7AJ";
+    $settingsOption-labelDescriptor: ".labelDescriptor-1PqHgD";
+    $settingsOption-labelSelected: ".labelSelected-1I1cDg";
+    $settingsOption-modeDefault: ".modeDefault-3a2Ph1";
+    $settingsOption-modeDisabled: ".modeDisabled-33Av8D";
+    $settingsOption-modeSelectable: ".modeSelectable-k2b2pa";
+    $settingsOption-placeholder: ".placeholder-1lCpWK";
 // Slider
     $slider-bar: ".bar-2Qqk5Z";
     $slider-barFill: ".barFill-23-gu-";
-    $slider-bubble: ".bubble-3we2di elevationHigh-3A9Xbf";
+    $slider-bubble: ".bubble-3we2di";
     $slider-disabled: ".disabled-bolDAc";
     $slider-elevationHigh: ".elevationHigh-3A9Xbf";
     $slider-grabber: ".grabber-3mFHz2";

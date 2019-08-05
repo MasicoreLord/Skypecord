@@ -54,6 +54,9 @@ a {
     [name='Gear'] {
         background-image: var(--skypecord-ellipsis-icon);
     }
+    #{$botTag-regular} {
+        background-color: $accent;
+    }
 }
 
 #{$client-buttonFilled}#{$client-buttonAccentFilled} {
@@ -94,4 +97,10 @@ a {
 #{$client-largeButton} {
     height: 44px;
     border-radius: 22px;
+}
+
+#{$botTag} {
+    height: 1.28em; /* ensure typical bot tag height is used */
+    line-height: .8125rem;
+    border-radius: 0.8em;
 }
