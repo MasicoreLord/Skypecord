@@ -22,7 +22,7 @@
         color: var(--skypecord-header-fg);
     }
     #{$settingsOptionPanel-title},
-    #{$authorizedApp-headerInfo} #{$settingsOption-formText} {
+    #{$authorizedApp} #{$authorizedApp-headerInfo} #{$settingsOption-formText} {
         color: var(--skypecord-header-title-fg);
     }
     #{$settingsOption-description},
