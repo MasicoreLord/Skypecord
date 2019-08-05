@@ -76,7 +76,7 @@
 .theme-light,
 .theme-dark {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.5.1 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.5.2 Alpha'
 ; }
 
 /* Font */
@@ -660,7 +660,7 @@ a {
     margin-left: 4px; }
   .wrapper-1Rf91z:hover .expandedGuilds-1JMD4M .listItem-2P_4kh {
     margin-left: 8px; }
-  .expandedGuilds-1JMD4M .badgeWrapper-3e8pMZ {
+  .wrapper-1Rf91z:hover .expandedGuilds-1JMD4M .badgeWrapper-3e8pMZ {
     width: 187px; }
 
 .badgeWrapper-3e8pMZ {
@@ -1886,9 +1886,9 @@ searchBarComponent-32dTOx .input-1Rv96N {
   color: var(--skypecord-header-fg); }
 
 .theme-light .title-3sZWYQ,
-.theme-light .headerInfo-30WFqE .formText-3fs7AJ,
+.theme-light .authedApp-mj2Hmd .headerInfo-30WFqE .formText-3fs7AJ,
 .theme-dark .title-3sZWYQ,
-.theme-dark .headerInfo-30WFqE .formText-3fs7AJ {
+.theme-dark .authedApp-mj2Hmd .headerInfo-30WFqE .formText-3fs7AJ {
   color: var(--skypecord-header-title-fg); }
 
 .theme-light .description-3_Ncsb,
