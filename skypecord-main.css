@@ -31,6 +31,7 @@
   --skypecord-button-border: rgb(43, 44, 51);
   --skypecord-header-topic-fg: rgb(138, 141, 145);
   --skypecord-header-button-bg: rgb(241, 241, 244);
+  --skypecord-description-fg: rgb(138, 141, 145);
   --skypecord-placeholder-fg: rgb(138, 141, 145);
   --skypecord-stat-fg: rgb(138, 141, 145);
   --skypecord-indicator-bg: rgb(37, 36, 35);
@@ -75,7 +76,7 @@
 .theme-light,
 .theme-dark {
   --skypecord-window-control-spacer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='12' viewBox='0 0 33 12'%3E%3C/svg%3E");
-  --skypecord-titlebar-text: 'Skypecord v0.5 Alpha'
+  --skypecord-titlebar-text: 'Skypecord v0.5.1 Alpha'
 ; }
 
 /* Font */
@@ -152,6 +153,9 @@ a {
   .theme-light [name='Gear'],
   .theme-dark [name='Gear'] {
     background-image: var(--skypecord-ellipsis-icon); }
+  .theme-light .botTagRegular-2HEhHi,
+  .theme-dark .botTagRegular-2HEhHi {
+    background-color: #0078d4; }
 
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
   border: 1px solid; }
@@ -188,6 +192,12 @@ a {
 .sizeLarge-1vSeWK {
   height: 44px;
   border-radius: 22px; }
+
+.botTag-2WPJ74 {
+  height: 1.28em;
+  /* ensure typical bot tag height is used */
+  line-height: .8125rem;
+  border-radius: 0.8em; }
 
 /* General Styles */
 /* Titlebar */
@@ -468,7 +478,11 @@ a {
 
 .listItem-2P_4kh,
 .wrapper-21YSNc {
-  width: 212px; }
+  width: 65px;
+  transition: width ease 0.45s; }
+  .wrapper-1Rf91z:hover .listItem-2P_4kh, .wrapper-1Rf91z:hover
+  .wrapper-21YSNc {
+    width: 212px; }
 
 .listItem-2P_4kh {
   justify-content: flex-start;
@@ -649,21 +663,27 @@ a {
   .expandedGuilds-1JMD4M .badgeWrapper-3e8pMZ {
     width: 187px; }
 
-.badgeWrapper-3e8pMZ,
-.expandedGuilds-1JMD4M .badgeWrapper-3e8pMZ {
-  width: 50px;
+.badgeWrapper-3e8pMZ {
   transition: width ease 0.45s; }
+  .badgeWrapper-3e8pMZ,
+  .expandedGuilds-1JMD4M .badgeWrapper-3e8pMZ {
+    width: 49px; }
+  .wrapper-1Rf91z:hover .badgeWrapper-3e8pMZ {
+    width: 195px; }
 
-.wrapper-1Rf91z:hover .badgeWrapper-3e8pMZ {
-  width: 195px; }
-
-.lowerBadge-29hYVK,
-.expandedGuilds-1JMD4M .lowerBadge-29hYVK {
-  top: 30px;
+.lowerBadge-29hYVK {
   transition: top ease 0.45s; }
+  .lowerBadge-29hYVK,
+  .expandedGuilds-1JMD4M .lowerBadge-29hYVK {
+    top: 32px; }
+  .wrapper-1Rf91z:hover .lowerBadge-29hYVK {
+    top: 17px; }
 
-.wrapper-1Rf91z:hover .lowerBadge-29hYVK {
-  top: 17px; }
+#bd-pub-button {
+  font-weight: 500;
+  border: 1px solid;
+  border-radius: 10px;
+  line-height: 18px; }
 
 .theme-light,
 .theme-dark {
@@ -705,8 +725,7 @@ a {
     border-color: var(--skypecord-border-fg); }
   .theme-light .wrapper-25eVIn,
   .theme-dark .wrapper-25eVIn {
-    background-color: var(--skypecord-avatar-bg) !important;
-    /* Override inline style on guilds w/ no icon */ }
+    background-color: var(--skypecord-avatar-bg); }
     .theme-light .wrapper-25eVIn a,
     .theme-dark .wrapper-25eVIn a {
       color: #0078d4; }
@@ -747,18 +766,26 @@ a {
   .theme-dark .acronym-2mOFsV,
   .theme-dark .homeIcon-tEMBK1 {
     color: #0078d4; }
-  .theme-light .acronym-2mOFsV, .theme-light .acronym-2mOFsV.selected-wSa2KV, .theme-light .acronym-2mOFsV.selected-bZ3Lue, .theme-light .acronym-2mOFsV.selected-ugP_am, .theme-light .acronym-2mOFsV.nested-1eglu6,
+  .theme-light #bd-pub-button,
+  .theme-dark #bd-pub-button {
+    color: var(--skypecord-button-fg);
+    background-color: transparent;
+    border-color: var(--skypecord-button-border); }
+  .theme-light .acronym-2mOFsV, .theme-light .acronym-2mOFsV:hover, .theme-light .acronym-2mOFsV.selected-wSa2KV, .theme-light .acronym-2mOFsV.selected-bZ3Lue, .theme-light .acronym-2mOFsV.selected-ugP_am, .theme-light .acronym-2mOFsV.nested-1eglu6,
   .theme-light .button-OhfaWu,
+  .theme-light .button-OhfaWu:hover,
   .theme-light .button-OhfaWu.selected-wSa2KV,
   .theme-light .button-OhfaWu.selected-bZ3Lue,
   .theme-light .button-OhfaWu.selected-ugP_am,
   .theme-light .button-OhfaWu.nested-1eglu6,
   .theme-dark .acronym-2mOFsV,
+  .theme-dark .acronym-2mOFsV:hover,
   .theme-dark .acronym-2mOFsV.selected-wSa2KV,
   .theme-dark .acronym-2mOFsV.selected-bZ3Lue,
   .theme-dark .acronym-2mOFsV.selected-ugP_am,
   .theme-dark .acronym-2mOFsV.nested-1eglu6,
   .theme-dark .button-OhfaWu,
+  .theme-dark .button-OhfaWu:hover,
   .theme-dark .button-OhfaWu.selected-wSa2KV,
   .theme-dark .button-OhfaWu.selected-bZ3Lue,
   .theme-dark .button-OhfaWu.selected-ugP_am,
@@ -1854,6 +1881,26 @@ searchBarComponent-32dTOx .input-1Rv96N {
 .theme-dark #bd-settings-sidebar .ui-tab-bar-separator {
   background: none; }
 
+.theme-light .header-2RyJ0Y,
+.theme-dark .header-2RyJ0Y {
+  color: var(--skypecord-header-fg); }
+
+.theme-light .title-3sZWYQ,
+.theme-light .headerInfo-30WFqE .formText-3fs7AJ,
+.theme-dark .title-3sZWYQ,
+.theme-dark .headerInfo-30WFqE .formText-3fs7AJ {
+  color: var(--skypecord-header-title-fg); }
+
+.theme-light .description-3_Ncsb,
+.theme-light .labelDescriptor-1PqHgD,
+.theme-light .authedApp-mj2Hmd .formText-3fs7AJ,
+.theme-light .formNotice-2_hHWR .formText-3fs7AJ,
+.theme-dark .description-3_Ncsb,
+.theme-dark .labelDescriptor-1PqHgD,
+.theme-dark .authedApp-mj2Hmd .formText-3fs7AJ,
+.theme-dark .formNotice-2_hHWR .formText-3fs7AJ {
+  color: var(--skypecord-description-fg); }
+
 .theme-light .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .theme-light .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover,
 .theme-dark .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
 .theme-dark .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover {
@@ -1934,6 +1981,10 @@ searchBarComponent-32dTOx .input-1Rv96N {
 .theme-light .titleChecked-2wg0pd,
 .theme-dark .titleChecked-2wg0pd {
   color: var(--skypecord-main-fg) !important; }
+
+.theme-light .desc-2Dttbk,
+.theme-dark .desc-2Dttbk {
+  color: var(--skypecord-description-fg); }
 
 .theme-light .bar-2Qqk5Z,
 .theme-dark .bar-2Qqk5Z {
@@ -2368,9 +2419,29 @@ searchBarComponent-32dTOx .input-1Rv96N {
 .theme-dark .topSectionStreaming-1Tpf5X:not(.topSectionNormal-2-vo2m) .creationDate {
   color: white; }
 
+.theme-light .RANbutton,
+.theme-dark .RANbutton {
+  border-color: var(--skypecord-button-border); }
+  .theme-light .RANbutton, .theme-light .RANbutton:hover,
+  .theme-dark .RANbutton,
+  .theme-dark .RANbutton:hover {
+    color: var(--skypecord-button-fg);
+    background-color: transparent; }
+
 /* OnlineFriendCount by Zerthox */
 .theme-light .friendsOnline-2JkivW,
 .theme-dark .friendsOnline-2JkivW {
   color: var(--skypecord-main-fg); }
+
+.friendsOnline-2JkivW {
+  width: 49px; }
+
+/* ReadAllNotifications by Devilbro */
+.RANbutton {
+  font-weight: 500;
+  border: 1px solid;
+  border-radius: 10px;
+  line-height: 18px;
+  box-sizing: border-box; }
 
 /* /Plugin Support */
