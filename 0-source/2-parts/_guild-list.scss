@@ -136,8 +136,9 @@
     font-weight: 600;
 }
 
-#{$mainNavList-itemInnerContainer}:active {
-    transform: none;
+#{$mainNavList-itemInnerContainer}:active,
+#{$mainNavList-itemInnerWrapper}:active {
+    transform: translate(0);
 }
 
 #{$mainNavList-folderExpandedGuilds} {
