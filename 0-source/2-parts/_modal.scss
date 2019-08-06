@@ -98,4 +98,7 @@
             margin: 0;
         }
     }
+    #{$main-themeBrand} #{$channelTextArea-text} {
+        color: var(--skypecord-main-fg);
+    }
 }

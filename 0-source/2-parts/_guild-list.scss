@@ -124,6 +124,7 @@
     foreignObject {
         mask: none;
         x: -82px;
+        overflow: visible; // Due to user agent stylesheet in newer chrome version hiding overflow on foreignObject
     }
 }
 
