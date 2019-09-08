@@ -2451,3 +2451,15 @@ searchBarComponent-32dTOx .input-1Rv96N {
   box-sizing: border-box; }
 
 /* /Plugin Support */
+
+html[class*='theme-'] #app-mount::after {
+    content: 'Skypecord will go through a partial rewrite, next update may take a while to release.\AYes, I know it\'s broken right now as of Discord\'s September UI update, but no fixes are planned till that partial rewrite is released.';
+    white-space: pre;
+    height: fit-content;
+    width: 100%;
+    background-color: #0078d4;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: .25em .125em;
+}
