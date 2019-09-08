@@ -2461,5 +2461,5 @@ html[class*='theme-'] #app-mount::after {
     color: #fff;
     font-size: 1rem;
     line-height: 1.25;
-    padding: .25em .125em;
+    padding: .25em .3125em;
 }
