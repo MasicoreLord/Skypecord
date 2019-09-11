@@ -1,0 +1,47 @@
+#{$client-winTitleBar} {
+    height: 28px;
+}
+
+#{$client-macOSTitleBar} {
+    position: static;
+    height: 32px;
+}
+
+#{$client-winButton} {
+    height: 32px;
+    width: 45px;
+    cursor: default;
+    &:hover {
+        background-color: $window-control-hover-bg;
+        color: $alt-fg;
+    }
+}
+
+#{$client-winButtonClose}:hover {
+    background-color: $window-close-hover-bg;
+}
+
+[name='DiscordWordmark'] {
+    display: none;
+}
+
+#{$client-wordmark} {
+    padding: 0;
+    left: 13px;
+    top: 10px;
+}
+
+#{$client-wordmark}::after,
+#{$client-macOSTitleBar}::after {
+    content: var(--skypecord-titlebar-text);
+    color: var(--skypecord-window-titlebar-fg);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#{$client-macOSTitleBar}::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}

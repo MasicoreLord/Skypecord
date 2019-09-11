@@ -38,25 +38,13 @@
     }
 }
 
-#{$main-themeLight},
-#{$main-themeDark} {
-    #{$client-headerBar} {
-        background-color: var(--skypecord-main-bg);
-    }
-    #{$page-searchBar},
-    #{$chat-searchBarInner} {
-        background-color: transparent;
-    }
-    #{$chat-headerButtonIconWrapper}::after {
-        background-color: var(--skypecord-header-button-bg);
-    }
-    #{$client-headerTitle} {
-        color: var(--skypecord-header-title-fg);
-    }
-    #{$client-topic},
-    #{$chat-nicknames} {
-        color: var(--skypecord-header-topic-fg);
-    }
+
+#{$page-searchBar},
+#{$chat-searchBarInner} {
+    background-color: transparent;
+}
+#{$chat-headerButtonIconWrapper}::after {
+    background-color: var(--skypecord-header-button-bg);
 }
 
 #{$client-headerBar} {

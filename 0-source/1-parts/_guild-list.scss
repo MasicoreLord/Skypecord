@@ -48,7 +48,6 @@
         left: calc(100% + 8px);
         font-size: 15px;
         font-weight: 500;
-        color: var(--skypecord-main-fg);
         width: 132px;
         line-height: 48px;
         overflow: hidden;
@@ -77,22 +76,6 @@
     width: 100%;
     height: 100%!important;
     display: block
-}
-
-@for $i from 9 through 40 {
-    #{$mainNavList-indicator} {
-        &[style*="height: #{$i}"] {
-            &[style*='opacity: 1'],
-            &[style*='opacity: 0.9'],
-            &[style*='opacity: 0.8'] {
-               @extend %main-nav-list-item-selected;
-            }
-        }
-        /* BandagedBD */
-        .bd-selected & {
-            @extend %main-nav-list-item-selected;
-        }
-    }
 }
 
 #{$mainNavList-indicator} {
@@ -186,101 +169,116 @@
     line-height: 18px;
 }
 
-#{$main-themeLight},
-#{$main-themeDark} {
-    #{$mainNavList-wrapper} {
-        background-color: var(--skypecord-sidebar-bg);
-        border-color: var(--skypecord-border-fg);
+
+#{$mainNavList-itemButton},
+#{$mainNavList-actionButton} {
+    &::after {
+        color: var(--channels-default);
     }
-    #{$mainNavList-itemInner} {
-        background-color: var(--skypecord-avatar-bg);
-        a {
-            color: $accent;
-        }
-    }
-    #{$mainNavList-indicator} {
-        background-color: var(--skypecord-indicator-bg);
-        opacity: 1!important;
-    }
-    #{$mainNavList-actionButton},
-    #{$mainNavList-actionButton}:hover,
-    #{$mainNavList-actionButton}#{$mainNavList-homeSelected},
-    #{$mainNavList-actionButton}#{$mainNavList-guildNoIconSelected},
-    #{$mainNavList-actionButton}#{$mainNavList-actionSelected},
-    #{$mainNavList-itemIcon} {
-        background-color: var(--skypecord-avatar-bg);
+}
+#{$mainNavList-wrapper} {
+    border-color: var(--skypecord-border-fg);
+}
+#{$mainNavList-itemInner} {
+    background-color: var(--skypecord-avatar-bg);
+    a {
         color: $accent;
     }
-    #{$mainNavList-folder} {
-        &,
-        &#{$mainNavList-folderHover} {
-            background-color: transparent;
-        }
-    }
-    #{$mainNavList-folderExpandedBackground} {
-        &,
-        &#{$mainNavList-folderHover} {
-            background-color: transparent;
-        }
-
-        &#{$mainNavList-folderCollapsed} {
-            background-color: transparent;
-        }
-    }
-    #{$mainNavList-folderIconWrapper} {
-        background-color: transparent!important;
-    }
-    #{$mainNavList-itemAcronym},
-    #{$mainNavList-homeIcon} {
-        color: $accent;
-    }
-
-    #bd-pub-button /* BandagedBD */ {
-        color: var(--skypecord-button-fg);
+}
+#{$mainNavList-actionButton},
+#{$mainNavList-actionButton}:hover,
+#{$mainNavList-actionButton}#{$mainNavList-homeSelected},
+#{$mainNavList-actionButton}#{$mainNavList-guildNoIconSelected},
+#{$mainNavList-actionButton}#{$mainNavList-actionSelected},
+#{$mainNavList-itemIcon} {
+    background-color: var(--skypecord-avatar-bg);
+    color: $accent;
+}
+#{$mainNavList-folder} {
+    &,
+    &#{$mainNavList-folderHover} {
         background-color: transparent;
-        border-color: var(--skypecord-button-border);
+    }
+}
+#{$mainNavList-folderExpandedBackground} {
+    &,
+    &#{$mainNavList-folderHover} {
+        background-color: transparent;
     }
 
-    #{$mainNavList-itemAcronym},
-    #{$mainNavList-homeButton} {
-        &,
-        &:hover,
-        &#{$mainNavList-homeSelected},
-        &#{$mainNavList-guildNoIconSelected},
-        &#{$mainNavList-actionSelected},
-        &#{$mainNavList-nestedItem} {
-            background-color: var(--skypecord-avatar-bg);
-            color: $accent;
-        }
+    &#{$mainNavList-folderCollapsed} {
+        background-color: transparent;
     }
-    #{$mainNavList-item}:hover {
-        #{$mainNavList-indicatorWrapper},
-        #{$mainNavList-homeIndicatorWrapper},
-        #{$mainNavList-actionIndicatorWrapper} {
-            background-color: var(--skypecord-sidebar-item-hov-bg);
-        }
+}
+#{$mainNavList-childWrapper} {
+    &,
+    &:hover,
+    #{$mainNavList-itemButton}#{$mainNavList-homeSelected} & {
+        background-color: transparent;
     }
-    %nav-list-item-selected-colors {
-        background-color: var(--skypecord-sidebar-item-sel-bg);
+}
+#{$mainNavList-folderIconWrapper} {
+    background-color: transparent!important;
+}
+#{$mainNavList-itemAcronym},
+#{$mainNavList-homeIcon} {
+    color: $accent;
+}
+
+#bd-pub-button /* BandagedBD */ {
+    color: var(--skypecord-button-fg);
+    background-color: transparent;
+    border-color: var(--skypecord-button-border);
+}
+
+#{$mainNavList-itemAcronym},
+#{$mainNavList-homeButton} {
+    &,
+    &:hover,
+    &#{$mainNavList-homeSelected},
+    &#{$mainNavList-guildNoIconSelected},
+    &#{$mainNavList-actionSelected},
+    &#{$mainNavList-nestedItem} {
+        background-color: var(--skypecord-avatar-bg);
+        color: $accent;
     }
-    @for $i from 9 through 40 {
-        #{$mainNavList-indicator} {
-            &[style*="height: #{$i}"] {
+}
+#{$mainNavList-badgeWrapper} {
+    #{$badge} {
+        background-color: $accent!important;
+    }
+}
+
+%main-nav-list-item-selected {
+    width: 100%;
+    height: 100%!important;
+    display: block
+}
+
+@for $i from 9 through 40 {
+    #{$mainNavList-item} {
+        &:not(.bd-guild) /* BandagedBD */ {
+            #{$mainNavList-indicator}[style*="height: #{$i}"] {
                 &[style*='opacity: 1'],
                 &[style*='opacity: 0.9'],
                 &[style*='opacity: 0.8'] {
-                    @extend %nav-list-item-selected-colors;
+                    @extend %main-nav-list-item-selected;
+                    background-color: var(--background-modifier-selected);
                 }
             }
         }
         /* BandagedBD */
-        .bd-selected #{$mainNavList-indicator} {
-            @extend %nav-list-item-selected-colors;
+        &.bd-selected #{$mainNavList-indicator} {
+            @extend %main-nav-list-item-selected;
+            background-color: var(--background-modifier-selected);
+        }
+        &:hover:not(.bd-selected) #{$mainNavList-indicatorWrapper} {
+            background-color: var(--background-modifier-hover);
         }
     }
-    #{$mainNavList-badgeWrapper} {
-        #{$badge} {
-            background-color: $accent!important;
-        }
-    }
+}
+
+#{$mainNavList-indicator} {
+    border-radius: 0;
+    height: 8px!important;
 }

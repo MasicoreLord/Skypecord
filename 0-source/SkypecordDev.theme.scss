@@ -3,5 +3,8 @@ $meta-part2: "*//*!";
 // Sourcecheck
 @import url('https://bdsources.tk/sourcecheck/code.css');
 @import '0-base/base-index';
-@import '1-variables/variables-index';
-@import '2-parts/parts-index';
+@import 'theme-properties';
+@import 'theme-all';
+@import 'theme-dark';
+@import 'theme-light';
+@import '1-parts/parts-index';

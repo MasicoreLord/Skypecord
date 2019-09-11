@@ -1,0 +1,63 @@
+#{$channelList-header} {
+    height: 88px;
+}
+
+#{$channelList-headerContainer} {
+    box-shadow: 0 1px 0 var(--skypecord-border-fg);
+}
+
+#{$channelList} {
+    border-right: 1px solid;
+    border-radius: 0;
+}
+
+#{$channelList} {
+    &,
+    #{$client-win} & {
+        border-radius: 0;
+    }
+}
+
+#{$channelListBanner-background} {
+    border-radius: 0!important;
+}
+
+#{$main-themeLight},
+#{$main-themeDark} {
+    #{$channelList-header} {
+        border-color: var(--skypecord-border-fg);
+        box-shadow: none;
+    }
+    #{$channelList} {
+        border-color: var(--skypecord-border-fg);
+    }
+}
+
+#{$channelList} #{$badge} {
+    background-color: $accent!important;
+}
+
+#{$channelList-itemContentWrapper} {
+    &,
+    &:hover {
+        &#{$channelList-itemMutedInner} {
+            &,
+            &:hover {
+                #{$channelList-itemName} {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+
+#{$channelList-categoryName} {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#{$channelList-itemContent} {
+    padding: 1px 8px 1px 16px;
+    margin: 0;
+    border-radius: 0;
+}

@@ -1,11 +1,6 @@
+
 #{$main-themeLight},
 #{$main-themeDark} {
-    #{$currentAccount-container} {
-        background-color: var(--skypecord-sidebar-bg);
-    }
-    #{$currentAccount-username} {
-        color: var(--skypecord-main-fg);
-    }
     #{$currentAccount-button}:hover {
         background-color: transparent;
     }
@@ -16,12 +11,12 @@
         opacity: 1;
     }
     #{$currentAccount-button}:hover {
-        opacity: .6;
+        opacity: .8;
     }
 }
 #{$main-themeDark} {
     #{$currentAccount-button} {
-        opacity: .6;
+        opacity: .8;
     }
     #{$currentAccount-button}:hover {
         opacity: 1;
@@ -29,12 +24,12 @@
 }
 
 #{$currentAccount-container} {
-    margin-bottom: 0;
-    padding-bottom: 1px; // Balance out margin removal
+    border-top: 1px solid var(--skypecord-border-fg);
 }
 
-#{$currentAccount-usernameContainer} {
+#{$currentAccount-username} {
     font-size: 12px;
+    font-weight: 400;
 }
 
 #{$currentAccount-discriminator} {

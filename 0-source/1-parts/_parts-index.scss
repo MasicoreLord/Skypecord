@@ -6,10 +6,6 @@
 @import "animations";
 /* /Animations */
 
-/* Advisories */
-@import "advisory";
-/* /Advisories */
-
 /* General Styles */
 @import "client";
 /* General Styles */
@@ -57,6 +53,14 @@
 /* Private Channel List - DM / Group Message List */
 @import "private-channel-list";
 /* /Private Channel List - DM / Group Message List */
+
+/* Friends */
+@import "friends";
+/* /Friends */
+
+/* Library */
+@import "library";
+/* /Library */
 
 /* Modal */
 @import "modal";

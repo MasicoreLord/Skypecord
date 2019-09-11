@@ -1,0 +1,28 @@
+
+
+#{$main-themeLight},
+#{$main-themeDark} {
+    #{$membersList} {
+        border-color: var(--skypecord-border-fg);
+    }
+}
+
+#{$membersList} {
+    border-left: 1px solid;
+}
+
+#{$membersList-membersGroup} {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#{$membersList-member} {
+    margin-left: 0;
+    border-radius: 0;
+    max-width: 238px;
+}
+
+#{$client-listItemLayout} {
+    padding: 0 8px 0 16px;
+    border-radius: 0;
+}

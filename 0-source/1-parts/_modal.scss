@@ -1,0 +1,67 @@
+#{$modal-root} {
+    height: 660px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#{$modal-body} {
+    height: unset;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+#{$modal-topSectionNormal} #{$modal-header} {
+    background-image: $modal-header-bg;
+}
+
+#{$modal-additionalActionsIcon} {
+    transform: rotate(-90deg);
+    background-size: 100%;
+}
+
+#{$client-themedPopout} {
+    border: none;
+}
+
+
+#{$modal-topSectionNormal},
+#{$modal-topSectionSpotify},
+#{$modal-topSectionPlaying},
+#{$modal-topSectionStreaming} {
+    #{$profile-username},
+    #{$profile-discriminator} {
+        color: $alt-fg;
+    }
+    #{$modal-additionalActionsIcon} {
+        background-image: $alt-ellipsis-icon;
+    }
+}
+#{$modal-topSectionSpotify},
+#{$modal-topSectionPlaying},
+#{$modal-topSectionStreaming} {
+    #{$modal-tabBarItem} {
+        color: $alt-fg!important;
+        &#{$modal-itemSelected} {
+            border-color: $alt-fg!important;
+        }
+    }
+}
+#{$profile-note} textarea {
+    &:focus {
+        background-color: transparent;
+    }
+}
+#{$messagesPopout-wrap} {
+    max-height: calc(100vh - 80px)!important;
+}
+#{$client-popoutBottom},
+#{$client-popoutBottomLeft},
+#{$client-popoutNoArrow},
+#{$client-popoutTopLeft},
+#{$client-popoutTopRight} {
+    &,
+    &#{$client-popoutNoArrow} {
+        margin: 0;
+    }
+}

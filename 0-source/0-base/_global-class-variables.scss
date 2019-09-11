@@ -1,70 +1,6 @@
 //  Account Connection
     $accountConnection: ".connection-1fbD7X";
-    $accountConnection-accountBtn: ".accountBtn-2Nozo3";
-    $accountConnection-accountBtnInner: ".accountBtnInner-sj5jLs";
-    $accountConnection-accountList: ".accountList-33MS45";
-    $accountConnection-channelLink: ".channelLink-2TxEu3";
-    $accountConnection-connectedAccountSeparator: ".connectedAccountSeparator-2EgLhW";
-    $accountConnection-connectedAccounts: ".connectedAccounts-2-XP1G";
-    $accountConnection-accountLabel: ".connectionAccountLabel-1DiK0A";
-    $accountConnection-accountValue: ".connectionAccountValue-3VdBGs";
-    $accountConnection-delete: ".connectionDelete-2Odoln";
-    $accountConnection-header: ".connectionHeader-2MDqhu";
-    $accountConnection-icon: ".connectionIcon-2ElzVe";
-    $accountConnection-optionSwitch: ".connectionOptionSwitch-3KNn-E";
-    $accountConnection-options: ".connectionOptions-YE9FAM";
-    $accountConnection-optionsWrapper: ".connectionOptionsWrapper-3KIj1Z";
-    $accountConnection-elevationLow: ".elevationLow-2lY09M";
-    $accountConnection-guildIcon: ".guildIcon-YCs9He";
-    $accountConnection-integration: ".integration-3kMeY4";
-    $accountConnection-integrationInner: ".integrationInner-3SUFBs";
-    $accountConnection-integrationName: ".integrationName-2tSCoY";
-    $accountConnection-integrationsWrapper: ".integrationsWrapper-VkM_zO";
-    $accountConnection-noUserDrag: ".noUserDrag-5Mb43F";
-    $accountConnection-warning: ".warning-1XxEC9";
-// Connected Account Info
-    $connectionAccountInfo-accountBtn: "accountBtn-2Nozo3";
-    $connectionAccountInfo-accountBtnInner: "accountBtnInner-sj5jLs";
-    $connectionAccountInfo-accountList: "accountList-33MS45";
-    $connectionAccountInfo-channelLink: "channelLink-2TxEu3";
-    $connectionAccountInfo-connectedAccountSeparator: "connectedAccountSeparator-2EgLhW";
-    $connectionAccountInfo-connectedAccounts: "connectedAccounts-2-XP1G";
-    $connectionAccountInfo-connection: "connection-1fbD7X";
-    $connectionAccountInfo-connectionAccountLabel: "connectionAccountLabel-1DiK0A";
-    $connectionAccountInfo-connectionAccountValue: "connectionAccountValue-3VdBGs";
-    $connectionAccountInfo-connectionDelete: "connectionDelete-2Odoln";
-    $connectionAccountInfo-connectionHeader: "connectionHeader-2MDqhu";
-    $connectionAccountInfo-connectionIcon: "connectionIcon-2ElzVe";
-    $connectionAccountInfo-connectionOptionSwitch: "connectionOptionSwitch-3KNn-E";
-    $connectionAccountInfo-connectionOptions: "connectionOptions-YE9FAM";
-    $connectionAccountInfo-connectionOptionsWrapper: "connectionOptionsWrapper-3KIj1Z";
-    $connectionAccountInfo-guildIcon: "guildIcon-YCs9He";
-    $connectionAccountInfo-integration: "integration-3kMeY4";
-    $connectionAccountInfo-integrationInner: "integrationInner-3SUFBs";
-    $connectionAccountInfo-integrationName: "integrationName-2tSCoY";
-    $connectionAccountInfo-integrationsWrapper: "integrationsWrapper-VkM_zO";
-    $connectionAccountInfo-warning: "warning-1XxEC9";
-// Account Connection Items
-    $optionItems-disabled: ".disabled-2HSEFa";
-    $optionItems-dividerDefault: ".dividerDefault-3rvLe-";
-    $optionItems-dividerMini: ".dividerMini-3ZRJ-S";
-    $optionItems-note: ".note-1V3kyJ";
-    $optionItems-switchItem: ".switchItem-2hKKKK";
-    $optionItems-title: ".title-31JmR4";
-    $optionItems-titleDefault: ".titleDefault-a8-ZSr";
-    $optionItems-titleMini: ".titleMini-pBwj_L";
-// App
-    $appMount: '.appMount-3lHmkl';
-// Authorized App
-    $authorizedApp-appAvatar: ".appAvatar-3bgkQ9";
-    $authorizedApp: ".authedApp-mj2Hmd";
-    $authorizedApp-deleteApp: ".deleteApp-dtfZIe";
-    $authorizedApp-headerInfo: ".headerInfo-30WFqE";
-    $authorizedApp-permission: ".permission-1gtoyP";
-    $authorizedApp-permissionCheckmark: ".permissionCheckmark-1SeKr2";
 // Badge
-    $badge-base: '.base-PmTxvP';
-    $badge-wrapper: '.mentionsBadge-7f5lud';
     $badge: '.numberBadge-2s8kKX';
 // Bot Tag
     $botTag: ".botTag-2WPJ74";
@@ -72,106 +8,66 @@
     $botTag-regular: ".botTagRegular-2HEhHi";
 // Card
     $card: ".card-3Qj_Yx";
-    $card-brand: ".cardBrand-39zmMQ";
-    $card-brandOutline: ".cardBrandOutline-3jvFfo";
-    $card-danger: ".cardDanger-ZurOv3";
-    $card-dangerOutline: ".cardDangerOutline-3t0Do9";
     $card-primary: ".cardPrimary-1Hv-to";
     $card-primaryEditable: ".cardPrimaryEditable-3KtE4g";
-    $card-primaryOutline: ".cardPrimaryOutline-29Ujqw";
-    $card-primaryOutlineEditable: ".cardPrimaryOutlineEditable-PEnpzz";
-    $card-success: ".cardSuccess-3uEYjj";
-    $card-successOutline: ".cardSuccessOutline-1Su_ab";
-    $card-warning: ".cardWarning-2yPNAa";
-    $card-warningOutline: ".cardWarningOutline-1cs56O";
 // Channel List
-    $channelList-actionIcon: '.actionIcon-2Hi9ZG';
-    $channelList-bannerImage: '.bannerImage-1jOskm';
-    $channelList-categoryIcon: '.icon-WnO6o2';
     $channelList-categoryName: '.name-IbjUBS';
-    $channelList-container: '.container-PNkimc';
     $channelList-header: '.header-2o-2hj';
-    $channelList-headerButton: '.button-1w5pas';
     $channelList-headerContainer: '.container-2Rl01u';
-    $channelList-headerName: '.name-3YKhmS';
-    $channelList-item: '.containerDefault-1ZnADq';
-    $channelList-itemConnectedInner: '.modeConnected-2IEL4z';
     $channelList-itemContent: '.content-3at_AU';
     $channelList-itemContentWrapper: '.wrapper-1ucjTd';
-    $channelList-itemIcon: '.icon-1_QxNX';
     $channelList-itemMutedInner: '.modeMuted-3osy7j';
     $channelList-itemName: '.name-3_Dsmg';
-    $channelList-itemSelected: '.selected-37j_iU';
-    $channelList-itemSelectedInner: '.modeSelected-1zApJ_';
-    $channelList-itemUnread: '.unread-3zKkbm';
-    $channelList-itemUnreadInner: '.modeUnread-1zpFdA';
-    $channelList-scroller: '.scroller-2wx7Hm';
-    $channelList-withBanner: '.withBanner-3j8ruM';
-    $channelList: '.channels-Ie2l6A';
-// Channel Text Area
-    $channelTextArea-attachPopout: '.attachPopout-1n-ZKM';
-    $channelTextArea-inner: '.inner-zqa7da';
-    $channelTextArea-text: '.textArea-2Spzkt';
+    $channelList: '.sidebar-2K8pFh';
+// Channel List Banner
+    $channelListBanner-background: '.bannerBG-3zMP90';
+    $channelListBanner-image: '.bannerImage-1jOskm';
 // Chat
     $chat-akaBadge: '.akaBadge-1M-1Gw';
     $chat-base: '.base-3dtUhz';
     $chat-channelTextArea: '.channelTextArea-1LDbYG';
     $chat-channelTextAreaButtons: '.buttons-205you';
     $chat-channelTextAreaInner: '.inner-zqa7da';
-    $chat-content: '.content-yTz4x3';
     $chat-guildMenu: '.menu-Sp6bN1';
-    $chat-guildMenuInviteItem: '.invite-271nFU';
     $chat-guildMenuItem: '.item-1GzJrl';
-    $chat-guildMenuLeaveItem: '.leave-1DRJfn';
     $chat-headerButtonIconWrapper: '.iconWrapper-2OrFZ1';
     $chat-headerMobileIndicator: '.mobileIndicator-U-7hTl';
-    $chat-inviteWrapper: '.wrapper-35wsBm';
     $chat-jumpToPresentBar: '.jumpToPresentBar-9P20AM';
-    $chat-messagesWrapper: '.messagesWrapper-3lZDfY';
     $chat-newMessagesBar: '.newMessagesBar-mujexs';
     $chat-nicknames: '.nicknames-1XK4Zt';
-    $chat-noChannel: '.noChannel-Z1DQK7';
     $chat-searchBar: '.search-2oPWTC';
     $chat-searchBarIcon: '.icon-38sknP';
-    $chat-searchBarIconWrapper: '.iconContainer-O4O2CN';
     $chat-searchBarInner: '.searchBar-3dMhjb';
     $chat-searchBarInput: '.input-1Rv96N';
-    $chat-searchBarWrapper: '.search-36MZv-';
     $chat-searchBarWrapper: '.search-l1Wz-Q';
     $chat-headerStatus: '.status-1XNdyw';
     $chat-titleInput: '.input-2A_zIr';
     $chat-titleText: '.titleText-3X-zRE';
     $chat-typing: '.typing-2GQL18';
-    $chat: '.chat-3bRxxu';
 //Client
-    $client-app: '.app-19_DXt';
-    $client-button: '.button-38aScr';
-    $client-buttonIcon: '.buttonIcon-3yYVOH';
     $client-buttonAccentFilled: '.colorBrand-3pXr91';
     $client-buttonFilled: '.lookFilled-1Gx00P';
     $client-buttonNormal: '.buttonSize-2Pmk-w';
-    $client-colorBlindMode: '.colorblind-mode';
     $client-contextMenu: '.contextMenu-HLZMGh';
     $client-contextMenuItem: '.item-1Yvehc';
+    $client-contextSubMenu: '.itemSubMenu-1vN_Yn';
+    $client-contextSubMenuSelected: '.selected-BYpGTS';
+    $client-container: '.container-2lgZY8';
     $client-headerBar: '.container-1r6BKw';
     $client-headerContent: '.children-19S4PO';
     $client-headerContentDivider: '.divider-3FBTu8';
-    $client-headerIcon: '.icon-22AiRD';
     $client-headerTitle: '.title-29uC1r';
     $client-largeButton: '.sizeLarge-1vSeWK';
-    $client-layerAnimating: '.animating-rRxada';
     $client-layers: '.layers-3iHuyZ';
     $client-layer: '.layer-3QrUeG';
+    $client-listItemLayout: '.layout-2DM8Md';
     $client-linux: '.platform-linux';
-    $client-macButtonClose: '.macButtonClose-MwZ2nf';
-    $client-macButtonMaximize: '.macButtonMaximize-2FMHAO';
-    $client-macButtonMinimize: '.macButtonMinimize-3EJ6wo';
     $client-macOs: '.platform-osx';
+    $client-web: '.platform-web';
+    $client-win: '.platform-win';
     $client-macOSTitleBar: '.typeMacOS-3EmCyP';
-    $client-macOSTitleBarUnfocused: '.unfocused-1QsMU3';
     $client-mediumButton: '.sizeMedium-1AC_Sl';
     $client-minButton: '.sizeMin-1mJd1x';
-    $client-popout: '.popout-2iWAc-';
     $client-popoutBottom: '.popoutBottom-2GAFPg';
     $client-popoutBottomLeft: '.popoutBottomLeft-1pG8B4';
     $client-popoutNoArrow: '.popoutBottomRight-2Rno5S';
@@ -179,84 +75,54 @@
     $client-popoutTopRight: '.popoutTopRight-1lc8Mq';
     $client-primaryButton: '.colorPrimary-3b3xI6';
     $client-scroller: '.scroller-2FKFPG';
-    $client-scrollerWrap: '.scrollerWrap-2lJEkd';
     $client-smallButton: '.sizeSmall-2cSMqn';
     $client-themedPopout: '.themedPopout-1TrfdI';
-    $client-titleBar: '.titleBar-AC4pGV';
     $client-toolbar: '.toolbar-1t6TWx';
     $client-topic: '.topic-TCb_qw';
-    $client-web: '.platform-web';
-    $client-win: '.platform-win';
     $client-winButton: '.winButton-iRh8-Z';
     $client-winButtonClose: '.winButtonClose-1HsbF-';
     $client-winButtonMinMax: '.winButtonMinMax-PBQ2gm';
     $client-winTitleBar: '.typeWindows-1za-n7';
     $client-wordmark: '.wordmark-2iDDfm';
 // Current Account
-    $currentAccount-nameTag: '.nameTag-3uD-yy';
-    $currentAccount-avatar: '.avatar-SmRMf2';
-    $currentAccount-button: '.button-2JbWXs';
-    $currentAccount-buttonInner: '.contents-18-Yxp';
+    $currentAccount-button: '.button-14-BFJ';
     $currentAccount-container: '.container-3baos1';
-    $currentAccount-discriminator: '.discriminator-3-Lf_x';
-    $currentAccount-username: '.username-2BIRiC';
+    $currentAccount-discriminator: '.subtext-3CDbHg';
     $currentAccount-usernameContainer: '.usernameContainer-1fp4nu';
+    $currentAccount-username: '.title-eS5yk3';
 // Emoji Picker
     $emojiPicker-searchBar: '.searchBar-2pWH0_';
-// Form Card
-    $formCard-formNotice: ".formNotice-2_hHWR";
-    $formCard-formNoticeBody: ".formNoticeBody-M4JFHP";
-    $formCard-formNoticeTitle: ".formNoticeTitle-2KGjDe";
-    $formCard-icon: ".icon-4lJsMQ";
+// Friends
+    $friends-wrapper: '.container-3gCOGc';
 // Game Detection
-    $gameDetection-actions: ".actions-3wcPyD";
-    $gameDetection-addGamePopout: ".addGamePopout-2RY8Ju";
-    $gameDetection-cancelButton: ".cancelButton-10XRsm";
-    $gameDetection-game: ".game-1ipmAa";
-    $gameDetection-gameName: ".gameName-1RiWHm";
-    $gameDetection-gameNameInput: ".gameNameInput-385LoS";
-    $gameDetection-gameNameLastPlayed: ".gameNameLastPlayed-3LJo8n";
-    $gameDetection-gameVerifiedIcon: ".gameVerifiedIcon-2dGGa5";
-    $gameDetection-lastPlayed: ".lastPlayed-3bQ7Bo";
     $gameDetection-notDetected: ".notDetected-33MY4s";
     $gameDetection-nowPlaying: ".nowPlaying-284llR";
-    $gameDetection-nowPlayingAdd: ".nowPlayingAdd-1Kdmh_";
-    $gameDetection-overlayStatusText: ".overlayStatusText-L2IACa";
-    $gameDetection-overlayToggleIcon: ".overlayToggleIcon-2liB3r";
-    $gameDetection-overlayToggleIconOff: ".overlayToggleIconOff-1kT42w";
-    $gameDetection-overlayToggleIconOn: ".overlayToggleIconOn-3UNmty";
-    $gameDetection-overlayWarningIcon: ".overlayWarningIcon-3fZsZE";
-    $gameDetection-removeGame: ".removeGame-2JFGPn";
 // Library
-    $library-downloadIcon: '.downloadIcon-3TWA3B';
     $library-downloadProgressCircleWrapper: '.downloadProgressCircle-3_wgim';
     $library-filter: '.libraryFilter-31ZUa2';
+    $library-giftInventoryWrapper: '.root-1BQpZw';
 // Main
     $main-app: '.app-2rEoOp';
     $main-themeDark: '.theme-dark';
     $main-themeLight: '.theme-light';
-    $main-themeBrand: '.theme-brand';
 // Main Nav List (mostly servers)
     $mainNavList-actionButton: '.circleIconButton-jET_ig';
-    $mainNavList-actionButtonInner: '.circleIcon-LvPL6c';
     $mainNavList-actionIndicatorWrapper: '.pill-3YxEhL';
     $mainNavList-actionSelected: '.selected-ugP_am';
     $mainNavList-badgeWrapper: '.badgeWrapper-3e8pMZ';
+    $mainNavList-childWrapper: '.childWrapper-anI2G9';
     $mainNavList-folder: '.folder-21wGz3';
     $mainNavList-folderCollapsed: '.collapsed-1GMuSb';
     $mainNavList-folderExpandedBackground: '.expandedFolderBackground-2sPsd-';
     $mainNavList-folderExpandedGuilds: '.expandedGuilds-1JMD4M';
-    $mainNavList-folderGuildIcon: '.guildIcon-GuAC7C';
     $mainNavList-folderIconWrapper: '.folderIconWrapper-226oVY';
     $mainNavList-folderHover: '.hover-2ji_A7';
-    $mainNavList-folderMiniPlaceHolder: '.miniPlaceholder-2fEHqA';
     $mainNavList-folderWrapper: '.wrapper-21YSNc';
     $mainNavList-guildNoIconSelected: '.selected-bZ3Lue';
     $mainNavList-homeButton: '.button-OhfaWu';
     $mainNavList-homeIcon: '.homeIcon-tEMBK1';
     $mainNavList-homeIndicatorWrapper: '.pill-2uzAFe';
-    $mainNavList-homeLink: '.button-OhfaWu';
-    $mainNavList-homeSelected: '.selected-wSa2KV';
+    $mainNavList-homeSelected: '.selected-bZ3Lue';
     $mainNavList-indicator: '.item-2hkk8m';
     $mainNavList-indicatorWrapper: '.pill-31IEus';
     $mainNavList-item: '.listItem-2P_4kh';
@@ -272,51 +138,25 @@
     $mainNavList-scroller: '.scroller-2TZvBN';
     $mainNavList-scrollerWrap: '.scrollerWrap-1IAIlv';
     $mainNavList-separater: '.guildSeparator-3s64Iy';
-    $mainNavList-upperBadge: '.upperBadge-2XnnGB';
     $mainNavList-wrapper: '.wrapper-1Rf91z';
 // Members List
-    $membersList-activity: ".activity-1IYsbk";
-    $membersList-activityIcon: ".activityIcon-S3CciC";
-    $membersList-activityIconForeground: ".activityIconForeground-qYIPPg";
-    $membersList-activityText: ".activityText-sLG0UL";
-    $membersList-avatarOffline: ".avatarOffline-3GF27z";
-    $membersList-avatarWrapper: ".avatarWrapper-3B0ndJ";
-    $membersList-darken: ".darken-1wMGLZ";
     $membersList-member: ".member-3W1lQa";
-    $membersList-memberGroupsPlaceholder: ".memberGroupsPlaceholder-3mwPub";
-    $membersList-memberInner: ".memberInner-2CPc3V";
-    $membersList-memberOffline: ".memberOffline-2lN7gt";
-    $membersList-memberOnline: ".memberOnline-1CIh-0";
     $membersList-membersGroup: ".membersGroup-v9BXpm";
-    $membersList-membersWrap: ".membersWrap-2h-GB4";
-    $membersList-mobileIndicator: ".mobileIndicator-329Gd6";
-    $membersList-nameTag: ".nameTag-3p0yK-";
-    $membersList-ownerIcon: ".ownerIcon-uZ6mE7";
-    $membersList-placeholder: ".placeholder-oNR4zO";
-    $membersList-placeholderPulse: ".placeholderPulse-2rZrru";
-    $membersList-scrollerWrap: ".scrollerWrap-otKoZo";
-    $membersList-username: ".username-1cB_5E";
-    $membersList-usernameOffline: ".usernameOffline-3VSVLk";
-    $membersList-usernameOnline: ".usernameOnline-3jr_0Y";
     $membersList: ".members-1998pB";
 // Message
     $message-actionBroadcastContainer: '.container-3-pyIM';
-    $message-button: '.button-3Jq0g9';
-    $message-buttonContainer: 'buttonContainer-37UsAw';
     $message-buttonContainerWrapper: '.buttonContainer-KtQ8wc';
     $message-container: '.container-206Blv';
     $message-containerCompact: '.containerCompact-3bB5aN';
-    $message-containerCozy: '.containerCozy-336-Cz';
+    $message-content: '.content-3dzVd8';
     $message-contentCompact: '.contentCompact-1QLHBj';
     $message-divider: '.divider-3gKybi';
     $message-dividerContent: '.dividerContent-2L12VI';
     $message-dividerEnabled: '.dividerEnabled-2TTlcf';
     $message-dividerRed: '.dividerRed-MKoLlr';
     $message-embed: '.embed-IeVjo6';
-    $message-embedContentInner: '.embedContentInner-FBnk7v';
     $message-isCompact: '.isCompact-1hsne1';
     $message-isMentioned: '.isMentioned-N-h9aa';
-    $message-isMentionedCompact: '.isMentionedCompact-3rpPdN';
     $message-isMentionedCozy: '.isMentionedCozy-3isp7y';
     $message-markup: '.markup-2BOw-j';
     $message-timestampCompact: '.timestampCompact-MHgFLv';
@@ -331,7 +171,6 @@
     $modal-itemSelected: '.itemSelected-1qLhcL';
     $modal-root: '.root-SR8cQa';
     $modal-tabBarItem: '.tabBarItem-1b8RUP';
-    $modal-top: '.top-28JiJ-';
     $modal-topSectionNormal: '.topSectionNormal-2-vo2m';
     $modal-topSectionPlaying: '.topSectionPlaying-1J5E4n';
     $modal-topSectionSpotify: '.topSectionSpotify-1lI0-P';
@@ -340,87 +179,51 @@
 // Overlay Notification Settings
     $overlayNotificationSettings: '.notificationSettings-1NQKPR';
 //Overlay Notification Setting Items
-    $overlayNotificationSettingItems-bottomLeft: ".bottomLeft-39-xss";
-    $overlayNotificationSettingItems-bottomRight: ".bottomRight-1T56wW";
-    $overlayNotificationSettingItems-disabled: ".disabled-3I9jyo";
-    $overlayNotificationSettingItems-disabledIcon: ".disabledIcon-9QatvX";
-    $overlayNotificationSettingItems-disabledSelected: ".disabledSelected-2Kf0yZ";
-    $overlayNotificationSettingItems-hasFocus: ".hasFocus-2ksn_h";
-    $overlayNotificationSettingItems-hiddenInput: ".hiddenInput-AN-Xon";
     $overlayNotificationSettingItems-option: ".option-n0icdO";
     $overlayNotificationSettingItems-selected: ".selected-mKYnfr";
-    $overlayNotificationSettingItems-topLeft: ".topLeft-3buHIc";
-    $overlayNotificationSettingItems-topRight: ".topRight-3GKDeL";
     $overlayNotificationSettingItems-wrapper: ".wrapper-3jrx9n";
 // Page
-    $page-filterIcon: '.icon-1S6UIr';
     $page-filterInput: '.input-3Xdcic';
-    $page-filterInputWrapper: '.inner-2P4tQO';
     $page-iconContainer: '.iconLayout-3OgqU3';
     $page-searchBar: '.container-cMG81i';
 // Private Channel List
     $privateChannelList-channel: '.channel-2QD9_O';
-    $privateChannelList-channelActivity: '.activity-525YDR';
-    $privateChannelList-channelActivityIcon: '.activityIcon-1mtTk4';
-    $privateChannelList-channelActivityIconForeground: '.activityIconForeground-3VIgI8';
-    $privateChannelList-channelActivityText: 'activityText-OW8WYb';
+    $privateChannelList-channelActivity: '.activity-E-0FeD';
     $privateChannelList-channelClose: '.close-3hZ5Ni';
-    $privateChannelList-channelName: '.name-2WpE7M';
-    $privateChannelList-channelSelected: '.selected-1HYmZZ';
+    $privateChannelList-channelName: '.name-uJV0GL';
+    $privateChannelList-channelNameWrapper: '.nameAndDecorators-5FJ2dg';
+    $privateChannelList-channelSelected: '.selected-aXhQR6';
+    $privateChannelList-header: '.header-zu8eWb';
     $privateChannelList-linkButtonIcon: '.linkButtonIcon-Mlm5d6';
-    $privateChannelList-searchBar: '.searchBarComponent-32dTOx';
     $privateChannelList-searchBar: 'searchBarComponent-32dTOx';
     $privateChannelList-searchBarWrapper: '.searchBar-6Kv8R2';
     $privateChannelList: '.privateChannels-1nO12o';
 // Profile
     $profile-discriminator: '.discriminator-xUhQkU';
     $profile-note: '.note-3kmerW';
-    $profile-userInfoSectionHeader: '.userInfoSectionHeader-CBvMDh';
     $profile-username: '.username-3gJmXY';
 // Property
     $property-flexLayout: '.flex-1O1GKY';
 // RadioBoxes
-    $radioBox-desc: ".desc-2Dttbk";
-    $radioBox-descChecked: ".descChecked-XkfPsU";
-    $radioBox-disabled: ".disabled-1FsPTr";
-    $radioBox-horizontal: ".horizontal-2EEEnY";
-    $radioBox-info: ".info-3LOr12";
     $radioBox-item: ".item-26Dhrx";
-    $radioBox-marginBottom8: ".marginBottom8-AtZOdT";
-    $radioBox-marginTop4: ".marginTop4-2BNfKC";
-    $radioBox-radioGroup: ".radioGroup-1GBvlr";
     $radioBox-title: ".title-3BE6m5";
     $radioBox-titleChecked: ".titleChecked-2wg0pd";
 // Radio Checkbox
     $radioInput-checkBox: ".checkbox-1ix_J3";
-    $radioInput-checkBoxWrapper: '.checkboxWrapper-SkhIWG';
-    $radioInput-checkBoxWrapperDisabled: '.checkboxWrapperDisabled-36r8NK';
     $radioInput-checked: '.checked-3_4uQ9';
-// Search
-    $search-barInner: '.inner-3ErfOT';
 // Search Popout
-    $searchPopout-answer: '.answer-1n6g43';
     $searchPopout-calenderPicker: '.calendarPicker-2yf6Ci';
-    $searchPopout-clearHistory: '.searchClearHistory0-2cSSMO';
     $searchPopout-container: '.container-3ayLPN';
-    $searchPopout-displayNick: '.displayedNick-3xxvzU';
-    $searchPopout-displayUsername: '.displayUsername-Qekxml';
-    $searchPopout-filter: '.filter-3Y_im-';
-    $searchPopout-header: '.header-2N-gMV';
     $searchPopout-learnMore: '.searchLearnMore-3SQUAj';
     $searchPopout-option: '.option-96V44q';
     $searchPopout-optionSelected: '.selected-rZcOL-';
-    $searchPopout-plusIcon: '.plusIcon-v0BTrL';
     $searchPopout-resultsGroup: '.resultsGroup-r_nuzN';
-    $searchPopout-user: '.user-O3Czj0';
 // Settings
     $settings-contentRegion: '.contentRegion-3nDuYy';
     $settings-contentRegionScroller: '.contentRegionScroller-26nc1e';
     $settings-closeButton: '.closeButton-1tv5uR';
     $settings-header: '.header-2RyJ0Y';
     $settings-item: '.item-PXvHYJ';
-    $settings-itemSelected: '.selected-3s45Ha';
-    $settings-itemThemed: '.themed-OHr7kt';
     $settings-closeKeybind: '.keybind-KpFkfr';
     $settings-separator: '.separator-gCa7yv';
     $settings-side: '.side-8zPYf6';
@@ -430,68 +233,20 @@
     $settings-standardSidebarView: '.standardSidebarView-3F1I7i';
     $settings-tools: '.tools-3-3s-N';
     $settings-toolsContainer: '.toolsContainer-1edPuj';
-    $settings-topPill: '.topPill-30KHOu';
-// Settings Option Panel
-    $settingsOptionPanel-disabled: ".disabled-2Dh7SK";
-    $settingsOptionPanel-error: ".error-25JxNp";
-    $settingsOptionPanel-errorMessage: ".errorMessage-3Guw2R";
-    $settingsOptionPanel-errorSeparator: ".errorSeparator-30Q6aR";
-    $settingsOptionPanel-required: ".required-7sPBq3";
-    $settingsOptionPanel-statusRed: ".statusRed-21U8Tp";
-    $settingsOptionPanel-title: ".title-3sZWYQ";
-// Settings Option
-    $settingsOption-default: ".default-3nhoK-";
-    $settingsOption-description: ".description-3_Ncsb";
-    $settingsOption-formText: ".formText-3fs7AJ";
-    $settingsOption-labelDescriptor: ".labelDescriptor-1PqHgD";
-    $settingsOption-labelSelected: ".labelSelected-1I1cDg";
-    $settingsOption-modeDefault: ".modeDefault-3a2Ph1";
-    $settingsOption-modeDisabled: ".modeDisabled-33Av8D";
-    $settingsOption-modeSelectable: ".modeSelectable-k2b2pa";
-    $settingsOption-placeholder: ".placeholder-1lCpWK";
 // Slider
     $slider-bar: ".bar-2Qqk5Z";
     $slider-barFill: ".barFill-23-gu-";
-    $slider-bubble: ".bubble-3we2di";
-    $slider-disabled: ".disabled-bolDAc";
-    $slider-elevationHigh: ".elevationHigh-3A9Xbf";
     $slider-grabber: ".grabber-3mFHz2";
-    $slider-input: ".input-2_ChIk";
     $slider-mark: ".mark-1xjQqt";
     $slider-markDash: ".markDash-3hAolZ";
-    $slider-markDashSimple: ".markDashSimple-1vLOGW";
     $slider-markValue: ".markValue-2DwdXI";
-    $slider-mini: ".mini-dmm9yo";
-    $slider: ".slider-1PF9SW";
-    $slider-track: ".track-11EASc";
 // Suspicious Verification
-    $suspiciousVerification-body: '.body-3ROqbj';
-    $suspiciousVerification-container: '.container-1kp68M';
-    $suspiciousVerification-email: '.email-1MPDs-';
-    $suspiciousVerification-footer: '.footer-1eZumv';
-    $suspiciousVerification-footerAction: 'footerAction-2ATxbG';
-    $suspiciousVerification-footerBullet: 'footerBullet-1m59pn';
-    $suspiciousVerification-image: 'image-2LVZ_j';
-    $suspiciousVerification-logoutButton: '.logoutButton-1WaAEE';
-    $suspiciousVerification-phone: '.phone-27MBJz';
     $suspiciousVerification-title: '.title-wZCcDo';
-    $suspiciousVerification-screen: '.verification-3RfWYC';
-    $suspiciousVerification-screenBlock: '.verificationBlock-1Chfpc';
 // Toggle
-    $toggle-checkbox: ".checkbox-2tyjJg";
-    $toggle-checkboxDisabled: ".checkboxDisabled-1MA81A";
-    $toggle-checkboxEnabled: ".checkboxEnabled-CtinEn";
-    $toggle-size: ".size-3rFEHg";
     $toggle-sizeDefault: ".sizeDefault-2YlOZr";
-    $toggle-sizeMini: ".sizeMini-1ii40f";
     $toggle-switch: ".switch-3wwwcV";
-    $toggle-switchDisabled: ".switchDisabled-3HsXAJ";
-    $toggle-switchEnabled: ".switchEnabled-V2WDBB";
-    $toggle-themeClear: ".themeClear-1EjkE4";
     $toggle-themeDefault: ".themeDefault-24hCdX";
-    $toggle-value: ".value-2hFrkk";
     $toggle-valueChecked: ".valueChecked-m-4IJZ";
-    $toggle-valueUnchecked: ".valueUnchecked-2lU_20";
 // Store/Nitro Tab
     $store-browseSearch: '.browseSearch-e9jF-f';
 // Tooltip
@@ -499,19 +254,10 @@
     $tooltip: '.tooltip-2QfLtc';
     $tooltipDefault: '.tooltipBlack-PPG47z';
     $tooltipAlert: '.tooltipRed-8-9NeP';
-    $tooltipRight: '.tooltipRight-2JM5PQ';
 // Usage Graph
-    $usageGraph-background: ".background-yZEZik";
     $usageGraph-foreground: ".foreground-2aE44H";
-    $usageGraph-path: ".path-3H_ZFA";
-    $usageGraph-svg: ".svg-3yO_hc";
-    $usageGraph-usageInfo: ".usageInfo-2WQAwr";
-    $usageGraph-wrapper: ".wrapper-1u09nF";
 // Layer Container
-    $layerContainer: '.layerContainer-yqaFcK';
     $layerContainer-layer: '.layer-v9HyYc';
 // Unread
     $unread-bar: '.unread-1s3J68';
     $unread-barWrapper: '.bar-30k2ka';
-    $unread-mentionsBarBottom: '.unreadMentionsIndicatorBottom-BXS58x';
-    $unread-mentionsBarTop: '.unreadMentionsIndicatorTop-gA6RCh';

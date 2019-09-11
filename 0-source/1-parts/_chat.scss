@@ -6,67 +6,55 @@
 
 #{$main-themeLight},
 #{$main-themeDark} {
-    #{$chat-content},
-    #{$chat-noChannel},
-    #{$chat-messagesWrapper},
-    #{$chat},
-    #{$chat} form {
-        background-color: var(--skypecord-main-bg);
-    }
     #{$message-divider}#{$message-dividerRed} #{$message-dividerContent} {
         color: $accent;
     }
-    #{$message-divider} #{$message-dividerContent} {
-        color: var(--skypecord-divider-fg);
-    }
+
     #{$message-divider}#{$message-dividerRed} #{$message-dividerContent}::before,
     #{$message-divider}#{$message-dividerRed} #{$message-dividerContent}::after {
         opacity: 1;
+        background-color: $accent;
     }
+
     #{$message-dividerEnabled} {
         border-bottom-color: transparent;
     }
+
     #{$message-markup} {
         background-color: var(--skypecord-message-bg);
-        color: var(--skypecord-main-fg);
         a {
-            color: var(--skypecord-main-fg);
             text-decoration: underline;
         }
     }
+
     #{$message-isMentionedCozy} #{$message-markup}::after {
         border-color: $mentioned-bar-bg;
     }
+
     #{$message-isMentioned},
     #{$chat-typing} {
         background-color: transparent;
     }
+
     #{$message-isMentioned} #{$message-markup} {
         background-color: $mentioned-bg;
-    }
-    #{$message-timestampCompact} {
-        color: var(--skypecord-secondary-fg);
-    }
-    #{$channelTextArea-inner} {
-        background-color: var(--skypecord-textarea-bg);
-    }
-
-    #{$channelTextArea-text}::placeholder {
-        color: var(--skypecord-placeholder-fg);
     }
 
     #{$chat-channelTextArea} {
         border-top-color: transparent;
     }
+
     #{$chat-newMessagesBar} {
         background-color: var(--skypecord-new-message-bar-bg);
     }
+
     #{$chat-jumpToPresentBar} {
         background-color: $jump-to-present-bar-bg;
         button {
             color: $jump-to-present-bar-fg;
         }
     }
+
     #{$unread-bar} {
         box-shadow: none;
     }
@@ -101,6 +89,10 @@
 
 #{$chat-jumpToPresentBar} {
     bottom: 7px;
+}
+
+#{$message-content} {
+    margin-bottom: .2em;
 }
 
 #{$mainNavList-wrapper} #{$unread-barWrapper}[style$='translateY(-150%);'] {
@@ -235,12 +227,12 @@
 
 /* Reposition attach popout to compensate for re-ordered message box */
 #{$client-popoutTopLeft}[style$='transform: translateX(0%) translateY(-100%) translateZ(0px);'] {
-    transform: translateX(calc(-100% + 43px)) translateY(-100%) translateZ(0px)!important;
+    transform: translateX(calc(-100% + 43px)) translateY(-100%) translateZ(0)!important;
     margin-right: -20px;
 }
 
 #{$client-popoutTopRight}[style$='translateX(-100%) translateY(-100%) translateZ(0px);'] {
-    transform: translateX(-43px) translateY(-100%) translateZ(0px)!important;
+    transform: translateX(-43px) translateY(-100%) translateZ(0)!important;
 }
 
 #{$chat-channelTextArea} {

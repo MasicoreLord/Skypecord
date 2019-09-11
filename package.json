@@ -6,8 +6,7 @@
   "scripts": {
     "watch": "node-sass -w 0-source -o 1-compiled",
     "watch-live:bd": "node-sass -w 0-source -o ../../../Appdata/Roaming/BetterDiscord/themes",
-    "watch-live:pc": "node-sass -w 0-source -o ../../../Documents/Repositories/powercord/src/Powercord/plugins/pc-styleManager/themes",
-    "watch-live": "npm-run-all -p -r watch-live:bd watch-live:pc"
+    "watch-live": "npm-run-all -p -r watch-live:bd"
   },
   "author": "MasicoreLord",
   "license": "GPLv2",

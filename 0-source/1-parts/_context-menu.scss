@@ -1,0 +1,36 @@
+%context-menu-item-hover-selected {
+    background-color: var(--skypecord-menu-item-bg);
+}
+
+#{$client-contextMenuItem},
+#{$client-contextSubMenu} {
+    &:hover {
+        @extend %context-menu-item-hover-selected;
+    }
+}
+
+#{$client-contextSubMenuSelected} {
+    @extend %context-menu-item-hover-selected;
+}
+
+#{$client-contextMenu},
+#{$client-contextMenuItem},
+#{$client-contextSubMenu} {
+    border-radius: 0;
+}
+
+#{$client-contextMenu} {
+    padding: 7px 0;
+    max-height: calc(100vh - 155px);
+    overflow: auto;
+    &:empty {
+        display: none;
+    }
+}
+
+#{$client-contextMenuItem},
+#{$client-contextSubMenu} {
+    padding: 7px 12px;
+    font-size: 14px;
+    line-height: 17px;
+}

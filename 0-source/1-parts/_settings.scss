@@ -1,59 +1,15 @@
-%settings-tab-item-colors {
-    border-color: var(--skypecord-border-fg);
-    color: var(--skypecord-main-fg);
-}
-
-%settings-tab-item-hover-colors {
-    background-color: transparent;
-    color: var(--skypecord-secondary-fg);
-}
-
-%settings-tab-item-selected-colors {
-    background-color: var(--skypecord-sidebar-item-sel-bg);
-}
-
-%settings-tab-separator-colors {
-    background: none;
-}
-
 #{$main-themeLight},
 #{$main-themeDark} {
-    #{$settings-header} {
-        color: var(--skypecord-header-fg);
+    %settings-tab-item-colors {
+        border-color: var(--skypecord-border-fg);
     }
-    #{$settingsOptionPanel-title},
-    #{$authorizedApp} #{$authorizedApp-headerInfo} #{$settingsOption-formText} {
-        color: var(--skypecord-header-title-fg);
+    
+    %settings-tab-item-hover-colors {
+        background-color: transparent;
     }
-    #{$settingsOption-description},
-    #{$settingsOption-labelDescriptor},
-    #{$authorizedApp} #{$settingsOption-formText},
-    #{$formCard-formNotice} #{$settingsOption-formText} {
-        color: var(--skypecord-description-fg);
-    }
-    #{$settings-itemThemed}#{$settings-itemSelected}#{$settings-item} {
-        &,
-        &:hover {
-            color: var(--skypecord-main-fg)
-        }
-    }
-    #{$settings-side},
-    #{$settings-topPill} {
-        #{$settings-itemThemed}#{$settings-itemSelected}#{$settings-item} {
-            &,
-            &:hover {
-                background-color: var(--skypecord-sidebar-item-sel-bg);
-            }
-        }
-        #{$settings-itemThemed}#{$settings-item}:hover {
-            @extend %settings-tab-item-hover-colors;
-        }
-    }
-    #{$settings-sidebarRegion} {
-        background-color: var(--skypecord-sidebar-bg);
-    }
-    #{$settings-contentRegion} {
-        background-color: var(--skypecord-content-region-bg);
+    
+    %settings-tab-separator-colors {
+        background: none;
     }
     #{$settings-side} {
         #{$settings-item} {
@@ -74,13 +30,6 @@
             &.selected:hover {
                 @extend %settings-tab-item-colors;
             }
-            &:hover {
-                @extend %settings-tab-item-hover-colors;
-            }
-            &.selected,
-            &.selected:hover {
-                @extend %settings-tab-item-selected-colors;
-            }
         }
         .ui-tab-bar-separator {
             @extend %settings-tab-separator-colors;
@@ -91,10 +40,9 @@
     }
     
     #{$card-primary} {
-        background-color: transparent;
         border-color: var(--skypecord-border-fg);
     }
-
+    
     #{$card-primaryEditable} {
         background-color: transparent!important;
         border-color: transparent!important;
@@ -108,15 +56,11 @@
             color: rgb(67, 181, 129)!important;
         }
     }
-
+    
     #{$card-primaryEditable}:not(:last-child) {
         border-bottom-color: var(--skypecord-border-fg)!important
     }
-
-    #{$radioBox-radioGroup} {
-        color: var(--skypecord-main-fg);
-    }
-
+    
     #{$radioInput-checkBox} {
         border-color: var(--skypecord-border-fg);
     }
@@ -135,73 +79,57 @@
             stroke: $alt-fg;
         }
     }
-
+    
     #{$radioBox-titleChecked} {
-        color: var(--skypecord-main-fg)!important;
+        color: var(--header-primary)!important;
     }
-
-    #{$radioBox-desc} {
-        color: var(--skypecord-description-fg);
-    }
-
-    #{$slider-bar} {
-        background-color: var(--skypecord-slider-bg);
-    }
-
+    
     #{$slider-barFill} {
         background: $accent;
     }
-
+    
     #{$slider-grabber} {
         background-color: var(--skypecord-slider-grabber-bg);
         border-color: var(--skypecord-slider-grabber-bg);
         box-shadow: none;
     }
-
-    #{$slider-markValue} {
-        color: var(--skypecord-secondary-fg);
-    }
-
+    
     #{$toggle-themeDefault} {
         background-color: var(--skypecord-toggle-bg);
         &#{$toggle-valueChecked} {
             background-color: $accent;
         }
     }
-
+    
     #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch /* BandagedBD */ {
         background-color: var(--skypecord-toggle-bg);
     }
-
+    
     #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked /* BandagedBD */ {
         background-color: $accent;
     }
-
-    #{$accountConnection} #{$optionItems-title} {
-        color: $alt-fg;
-    }
-
+    
     #{$overlayNotificationSettingItems-wrapper} {
         background-color: transparent;
         border-color: $accent;
     }
-
+    
     #{$overlayNotificationSettingItems-option} {
         box-shadow: none;
         &:hover {
             background-color: $accent;
         }
     }
-
+    
     #{$overlayNotificationSettingItems-selected} {
         background-color: darken($accent, 1%);
         border-color: $accent;
     }
-
+    
     #{$gameDetection-notDetected} {
         background-color: $accent;
     }
-
+    
     #{$usageGraph-foreground} {
         stroke: $accent;
     }
