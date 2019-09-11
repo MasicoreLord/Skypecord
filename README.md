@@ -1,9 +1,13 @@
 # Skypecord
 A theme inspired by Skype and fluent design (mdl2)
 
-## **This theme is currently in alpha, and isn't considered close to complete!**
-### Includes partial dark theme support (not in a very usable state yet)
+## **This theme is currently in beta, expect bugs and rough edges!**
+### Now includes Dark theme support
 
 Go to the [Releases](https://github.com/MasicoreLord/Skypecord/releases) page to get the theme now.
 
-![Preview Image](https://i.imgur.com/m5bybZc.png)
+Light Theme:
+![Light theme preview](https://i.imgur.com/GAdcn9s.png)
+
+Dark Theme:
+![Dark theme preview](https://i.imgur.com/iJwBhKr.png)
