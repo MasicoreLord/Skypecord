@@ -11,7 +11,7 @@
     overflow: auto;
 }
 
-#{$modal-topSectionNormal} #{$modal-header} {
+#{$modal-topSectionNormal} {
     background-image: $modal-header-bg;
 }
 
@@ -24,29 +24,39 @@
     border: none;
 }
 
+#{$modal-body} {
+    background-color: var(--skypecord-modal-bg);
+}
 
-#{$modal-topSectionNormal},
-#{$modal-topSectionSpotify},
-#{$modal-topSectionPlaying},
-#{$modal-topSectionStreaming} {
+#{$modal-topSection} {
     #{$profile-username},
     #{$profile-discriminator} {
         color: $alt-fg;
     }
     #{$modal-additionalActionsIcon} {
         background-image: $alt-ellipsis-icon;
+        &,
+        &:hover {
+            color: transparent;
+        }
     }
-}
-#{$modal-topSectionSpotify},
-#{$modal-topSectionPlaying},
-#{$modal-topSectionStreaming} {
     #{$modal-tabBarItem} {
-        color: $alt-fg!important;
-        &#{$modal-itemSelected} {
-            border-color: $alt-fg!important;
+        &,
+        &:hover {
+            color: $alt-fg!important;
+            &:active,
+            &#{$modal-itemSelected} {
+                border-color: $alt-fg!important;
+            }
         }
     }
 }
+
+#{$modal-topSectionNormal} #{$modal-tabBarContainer} {
+    border-top-color: transparent;
+    background-color: rgba(0, 0, 0, .05)
+}
+
 #{$profile-note} textarea {
     &:focus {
         background-color: transparent;

@@ -6,6 +6,9 @@
     padding: 10px 13px;
     font-size: 14px;
     line-height: 17px;
+    &:hover {
+        background-color: var(--skypecord-menu-item-bg);
+    }
 }
 
 #{$searchPopout-option} {
@@ -15,42 +18,83 @@
     font-size: 14px;
     line-height: 17px;
     height: unset;
+    &:hover,
+    &#{$searchPopout-optionSelected} {
+        #{$main-themeLight} &,
+        #{$main-themeDark} & {
+            background-color: var(--skypecord-menu-item-bg);
+        }
+    }
+    &::after {
+        display: none;
+    }
+}
+
+#{$searchPopout-searchOption} {
+    #{$searchPopout-filter} {
+        #{$main-themeLight} &,
+        #{$main-themeDark} & {
+            color: var(--header-primary);
+        }
+    }
+    #{$searchPopout-answer} {
+        #{$main-themeDark} &,
+        #{$main-themeLight} & {
+            color: var(--header-secondary);
+        }
+    }
 }
 
 #{$searchPopout-container}:empty {
     display: none;
 }
 
-#{$searchPopout-resultsGroup} #{$searchPopout-learnMore} {
-    top: 12px;
-    transform: translateY(-50%);
+#{$searchPopout-resultsGroup} {
+    #{$searchPopout-header},
+    #{$searchPopout-learnMore} {
+        #{$main-themeLight} &,
+        #{$main-themeDark} & {
+            color: var(--header-primary);
+        }
+    }
 }
 
 
 #{$searchPopout-container} {
     box-shadow: none;
+    #{$main-themeLight} &,
+    #{$main-themeDark} & {
+        background-color: var(--background-floating);
+    }
 }
 #{$searchPopout-calenderPicker} .react-datepicker,
 #{$searchPopout-calenderPicker} .react-datepicker__header {
     background-color: transparent;
 }
-
-#{$searchPopout-option} {
-    &::after {
-        display: none;
-    }
-}
-#{$chat-guildMenuItem} {
-    &:hover {
-        background-color: var(--skypecord-menu-item-bg);
-    }
-}
-#{$searchPopout-option} {
-    &:hover,
-    &#{$searchPopout-optionSelected} {
-        background-color: var(--skypecord-menu-item-bg);
-    }
-}
 #{$client-themedPopout} {
     box-shadow: none;
 }
+
+// Caps height of user popouts so they don't go off-screen
+#{$userPopout} {
+    max-height: 100vh;
+    #{$client-win} &,
+    #{$client-macOs} & {
+        max-height: calc(100vh - 32px);
+    }
+}
+
+// Ensures they aren't covering the titlebar
+//%user-popout-position-fix {
+//    top: 32px!important;
+//}
+//@for $i from 0 through 31 {
+//    #{$layerContainer-layer} {
+//        #{$client-win} &,
+//        #{$client-macOs} & {
+//            &[style*='top: #{$i}'] {
+//                @extend %user-popout-position-fix;
+//            }
+//        }
+//    }
+//}

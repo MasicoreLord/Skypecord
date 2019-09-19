@@ -20,8 +20,7 @@
 
 #{$client-headerContentDivider},
 #{$chat-headerStatus},
-#{$chat-akaBadge},
-#{$chat-headerMobileIndicator} {
+#{$chat-akaBadge} {
     display: none;
 }
 
@@ -43,9 +42,6 @@
 #{$chat-searchBarInner} {
     background-color: transparent;
 }
-#{$chat-headerButtonIconWrapper}::after {
-    background-color: var(--skypecord-header-button-bg);
-}
 
 #{$client-headerBar} {
     #{$library-filter},
@@ -65,23 +61,23 @@
 }
 
 #{$client-toolbar} #{$chat-headerButtonIconWrapper} {
-    position: relative;
-    margin-left: 24px;
+    margin-left: 8px;
     margin-right: 0;
-    svg {
-        position: relative;
-        z-index: 2;
-    }
-    &::after {
-        content: '';
-        z-index: 1;
+    background-color: var(--skypecord-header-button-bg);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    > svg {
         position: absolute;
-        top: -8px;
-        left: -8px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
     }
+}
+
+#{$chat-headerIconBadge} {
+    left: 22px;
+    top: 21px;
 }
 
 #{$chat-titleText},

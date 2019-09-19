@@ -8,6 +8,13 @@
     border: none !important;
 }
 
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    border: none!important;
+}
+
 ::-webkit-scrollbar-track-piece,
 ::-webkit-scrollbar-track {
     background-color: transparent !important;

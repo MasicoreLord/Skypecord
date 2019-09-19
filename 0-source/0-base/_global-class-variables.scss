@@ -14,6 +14,7 @@
     $channelList-categoryName: '.name-IbjUBS';
     $channelList-header: '.header-2o-2hj';
     $channelList-headerContainer: '.container-2Rl01u';
+    $channelList-headerContainerSelected: '.selected-WP3kCM';
     $channelList-itemContent: '.content-3at_AU';
     $channelList-itemContentWrapper: '.wrapper-1ucjTd';
     $channelList-itemMutedInner: '.modeMuted-3osy7j';
@@ -31,7 +32,7 @@
     $chat-guildMenu: '.menu-Sp6bN1';
     $chat-guildMenuItem: '.item-1GzJrl';
     $chat-headerButtonIconWrapper: '.iconWrapper-2OrFZ1';
-    $chat-headerMobileIndicator: '.mobileIndicator-U-7hTl';
+    $chat-headerIconBadge: '.iconBadge-qZ4Ksk';
     $chat-jumpToPresentBar: '.jumpToPresentBar-9P20AM';
     $chat-newMessagesBar: '.newMessagesBar-mujexs';
     $chat-nicknames: '.nicknames-1XK4Zt';
@@ -142,6 +143,7 @@
 // Members List
     $membersList-member: ".member-3W1lQa";
     $membersList-membersGroup: ".membersGroup-v9BXpm";
+    $membersList-roleColor: '.roleColor-36x_Mz';
     $membersList: ".members-1998pB";
 // Message
     $message-actionBroadcastContainer: '.container-3-pyIM';
@@ -171,11 +173,13 @@
     $modal-itemSelected: '.itemSelected-1qLhcL';
     $modal-root: '.root-SR8cQa';
     $modal-tabBarItem: '.tabBarItem-1b8RUP';
+    $modal-tabBarContainer: '.tabBarContainer-1s1u-z';
     $modal-topSectionNormal: '.topSectionNormal-2-vo2m';
     $modal-topSectionPlaying: '.topSectionPlaying-1J5E4n';
     $modal-topSectionSpotify: '.topSectionSpotify-1lI0-P';
     $modal-topSectionStreaming: '.topSectionStreaming-1Tpf5X';
     $modal-topSectionXbox: '.topSectionXbox-3fWLjS';
+    $modal-topSection: '[class^="topSection"]';
 // Overlay Notification Settings
     $overlayNotificationSettings: '.notificationSettings-1NQKPR';
 //Overlay Notification Setting Items
@@ -212,12 +216,16 @@
     $radioInput-checkBox: ".checkbox-1ix_J3";
     $radioInput-checked: '.checked-3_4uQ9';
 // Search Popout
+    $searchPopout-answer: '.answer-1n6g43';
     $searchPopout-calenderPicker: '.calendarPicker-2yf6Ci';
     $searchPopout-container: '.container-3ayLPN';
+    $searchPopout-filter: '.filter-3Y_im-';
+    $searchPopout-header: '.header-2N-gMV';
     $searchPopout-learnMore: '.searchLearnMore-3SQUAj';
     $searchPopout-option: '.option-96V44q';
     $searchPopout-optionSelected: '.selected-rZcOL-';
     $searchPopout-resultsGroup: '.resultsGroup-r_nuzN';
+    $searchPopout-searchOption: '.searchOption-zQ-1l6';
 // Settings
     $settings-contentRegion: '.contentRegion-3nDuYy';
     $settings-contentRegionScroller: '.contentRegionScroller-26nc1e';
@@ -256,6 +264,8 @@
     $tooltipAlert: '.tooltipRed-8-9NeP';
 // Usage Graph
     $usageGraph-foreground: ".foreground-2aE44H";
+// User Popout
+    $userPopout: ".userPopout-3XzG_A";
 // Layer Container
     $layerContainer-layer: '.layer-v9HyYc';
 // Unread

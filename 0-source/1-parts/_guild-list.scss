@@ -206,7 +206,8 @@
         background-color: transparent;
     }
 
-    &#{$mainNavList-folderCollapsed} {
+    &#{$mainNavList-folderCollapsed},
+    &#{$mainNavList-folderCollapsed} + #{$mainNavList-item} #{$mainNavList-itemInner} {
         background-color: transparent;
     }
 }
@@ -218,7 +219,7 @@
     }
 }
 #{$mainNavList-folderIconWrapper} {
-    background-color: transparent!important;
+    border-radius: 50%;
 }
 #{$mainNavList-itemAcronym},
 #{$mainNavList-homeIcon} {
@@ -255,25 +256,34 @@
     display: block
 }
 
-@for $i from 9 through 40 {
+@for $i from 21 through 40 {
     #{$mainNavList-item} {
-        &:not(.bd-guild) /* BandagedBD */ {
-            #{$mainNavList-indicator}[style*="height: #{$i}"] {
-                &[style*='opacity: 1'],
-                &[style*='opacity: 0.9'],
-                &[style*='opacity: 0.8'] {
+        &:hover #{$mainNavList-indicatorWrapper},
+        &:hover #{$mainNavList-homeIndicatorWrapper},
+        &:hover #{$mainNavList-actionIndicatorWrapper} {
+            background-color: var(--background-modifier-hover);
+        }
+        #{$mainNavList-indicator}[style*="height: #{$i}"] {
+            &[style*='opacity: 1'],
+            &[style*='opacity: 0.9']
+            &[style*='opacity: 0.8'] {
+                &,
+                &:hover {
                     @extend %main-nav-list-item-selected;
                     background-color: var(--background-modifier-selected);
                 }
             }
         }
-        /* BandagedBD */
-        &.bd-selected #{$mainNavList-indicator} {
-            @extend %main-nav-list-item-selected;
-            background-color: var(--background-modifier-selected);
-        }
-        &:hover:not(.bd-selected) #{$mainNavList-indicatorWrapper} {
-            background-color: var(--background-modifier-hover);
+        #{$mainNavList-indicatorWrapper},
+        #{$mainNavList-homeIndicatorWrapper},
+        #{$mainNavList-actionIndicatorWrapper} {
+            &.bd-selected #{$mainNavList-indicator} {
+                &,
+                &:hover {
+                    @extend %main-nav-list-item-selected;
+                    background-color: var(--background-modifier-selected);
+                }
+            }
         }
     }
 }

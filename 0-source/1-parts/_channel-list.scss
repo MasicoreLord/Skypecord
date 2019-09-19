@@ -22,6 +22,19 @@
     border-radius: 0!important;
 }
 
+#{$channelList-itemMutedInner}::after {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-color: var(--interactive-muted);
+    -webkit-mask-image: var(--skypecord-muted-slash);
+    mask-image: var(--skypecord-muted-slash);
+    width: 18px;
+    height: 18px;
+}
+
 #{$main-themeLight},
 #{$main-themeDark} {
     #{$channelList-header} {
@@ -32,23 +45,13 @@
         border-color: var(--skypecord-border-fg);
     }
 }
+#{$channelList-headerContainer} #{$channelList-header}:hover,
+#{$channelList-headerContainerSelected} #{$channelList-header} {
+    background-color: transparent;
+}
 
 #{$channelList} #{$badge} {
     background-color: $accent!important;
-}
-
-#{$channelList-itemContentWrapper} {
-    &,
-    &:hover {
-        &#{$channelList-itemMutedInner} {
-            &,
-            &:hover {
-                #{$channelList-itemName} {
-                    text-decoration: line-through;
-                }
-            }
-        }
-    }
 }
 
 #{$channelList-categoryName} {
