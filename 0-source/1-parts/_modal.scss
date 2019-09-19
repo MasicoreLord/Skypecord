@@ -15,11 +15,6 @@
     background-image: $modal-header-bg;
 }
 
-#{$modal-additionalActionsIcon} {
-    transform: rotate(-90deg);
-    background-size: 100%;
-}
-
 #{$client-themedPopout} {
     border: none;
 }
@@ -34,10 +29,9 @@
         color: $alt-fg;
     }
     #{$modal-additionalActionsIcon} {
-        background-image: $alt-ellipsis-icon;
         &,
         &:hover {
-            color: transparent;
+            color: $alt-fg;
         }
     }
     #{$modal-tabBarItem} {

@@ -37,6 +37,19 @@
     }
 }
 
+// Ensures font weight is still kept even w/ Discord's media query on it
+@media (-webkit-max-device-pixel-ratio: 1) {
+    #{$main-themeLight},
+    #{$main-themeDark} {
+        #{$client-topic} {
+            font-weight: 700;
+            strong {
+                font-weight: 800;
+            }
+        }
+    }
+}
+
 
 #{$page-searchBar},
 #{$chat-searchBarInner} {

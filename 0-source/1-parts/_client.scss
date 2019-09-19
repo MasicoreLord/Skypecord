@@ -44,26 +44,38 @@ a {
         background-color: rgba($accent, .7);
     }
 }
+/* Unmute */
+[name='Nova_Microphone'],
+[name='Nova_MicrophoneMute'] {
+    -webkit-mask-image: var(--skypecord-mic-icon);
+    mask-image: var(--skypecord-mic-icon);
+    background-color: var(--interactive-normal);
+}
 /* Mute */
 [name='Nova_MicrophoneMute'] {
-    background-image: var(--skypecord-muted-mic-icon);
-}
-/* Unmute */
-[name='Nova_Microphone'] {
-    background-image: var(--skypecord-mic-icon);
-}
-/* Deafen */
-[name='Nova_HeadsetDeafen'] {
-    background-image: var(--skypecord-muted-headphone-icon);
+    -webkit-mask-image: var(--skypecord-muted-mic-icon);
+    mask-image: var(--skypecord-muted-mic-icon);
+    background-color: var(--interactive-normal);
 }
 /* Undeafen */
 [name='Nova_Headset'] {
-    background-image: var(--skypecord-headphone-icon);
+    -webkit-mask-image: var(--skypecord-headphone-icon);
+    mask-image: var(--skypecord-headphone-icon);
+    background-color: var(--interactive-normal);
+}
+/* Deafen */
+[name='Nova_HeadsetDeafen'] {
+    -webkit-mask-image: var(--skypecord-deafened-headphone-icon);
+    mask-image: var(--skypecord-deafened-headphone-icon);
+    background-color: var(--interactive-normal);
 }
 /* Settings */
 [name='Gear'] {
-    background-image: var(--skypecord-ellipsis-icon);
+    -webkit-mask-image: var(--skypecord-ellipsis-icon);
+    mask-image: var(--skypecord-ellipsis-icon);
+    background-color: var(--interactive-normal);
 }
+
 #{$botTag-regular} {
     background-color: $accent;
 }
@@ -81,7 +93,8 @@ a {
 [name='Nova_HeadsetDeafen'],
 [name='Nova_Headset'],
 [name='Gear'] {
-    background-size: 100%;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
     path {
         fill: none;
     }
