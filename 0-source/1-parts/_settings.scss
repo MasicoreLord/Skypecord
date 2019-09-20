@@ -58,7 +58,7 @@
     }
     
     #{$card-primaryEditable}:not(:last-child) {
-        border-bottom-color: var(--background-modifier-accent)!important
+        border-bottom-color: var(--skypecord-border-fg)!important
     }
     
     #{$radioInput-checkBox} {
@@ -81,7 +81,7 @@
     }
     
     #{$radioBox-titleChecked} {
-        color: var(--header-primary)!important;
+        color: var(--skypecord-primary-fg)!important;
     }
     
     #{$slider-barFill} {

@@ -34,13 +34,13 @@
     #{$searchPopout-filter} {
         #{$main-themeLight} &,
         #{$main-themeDark} & {
-            color: var(--header-primary);
+            color: var(--skypecord-primary-fg);
         }
     }
     #{$searchPopout-answer} {
         #{$main-themeDark} &,
         #{$main-themeLight} & {
-            color: var(--header-secondary);
+            color: var(--skypecord-secondary-fg);
         }
     }
 }
@@ -54,7 +54,7 @@
     #{$searchPopout-learnMore} {
         #{$main-themeLight} &,
         #{$main-themeDark} & {
-            color: var(--header-primary);
+            color: var(--skypecord-primary-fg);
         }
     }
 }
@@ -64,15 +64,12 @@
     box-shadow: none;
     #{$main-themeLight} &,
     #{$main-themeDark} & {
-        background-color: var(--background-floating);
+        background-color: var(--skypecord-floating-bg);
     }
 }
 #{$searchPopout-calenderPicker} .react-datepicker,
 #{$searchPopout-calenderPicker} .react-datepicker__header {
     background-color: transparent;
-}
-#{$client-themedPopout} {
-    box-shadow: none;
 }
 
 // Caps height of user popouts so they don't go off-screen

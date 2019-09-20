@@ -24,11 +24,11 @@
 
 #{$channelList-itemMutedInner}::after {
     position: absolute;
-    left: 17px;
+    left: 14px;
     top: 50%;
     transform: translateY(-50%);
     content: '';
-    background-color: var(--interactive-muted);
+    background-color: var(--skypecord-primary-fg);
     -webkit-mask-image: var(--skypecord-muted-slash);
     mask-image: var(--skypecord-muted-slash);
     width: 18px;
@@ -39,7 +39,6 @@
 #{$main-themeDark} {
     #{$channelList-header} {
         border-color: var(--skypecord-border-fg);
-        box-shadow: none;
     }
     #{$channelList} {
         border-color: var(--skypecord-border-fg);

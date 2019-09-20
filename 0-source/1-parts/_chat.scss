@@ -95,14 +95,6 @@
     margin-bottom: .2em;
 }
 
-#{$mainNavList-wrapper} #{$unread-barWrapper}[style$='translateY(-150%);'] {
-    -webkit-app-region: drag;
-    #{$main-themeLight} &,
-    #{$main-themeDark} & {
-        box-shadow: none;
-    }
-}
-
 #{$message-container} {
     display: inline-flex;
     flex-direction: row;

@@ -140,25 +140,15 @@
     }
 }
 
-#{$mainNavList-badgeWrapper} {
-    transition: width ease 0.45s;
-    &,
-    #{$mainNavList-folderExpandedGuilds} & {
-        width: 49px;
-    }
-    #{$mainNavList-wrapper}:hover & {
-        width: 195px;
-    }
-}
-
 #{$mainNavList-lowerBadge} {
-    transition: top ease 0.45s;
+    transition: top ease 0.45s, right ease 0.45s;
     &,
     #{$mainNavList-folderExpandedGuilds} & {
         top: 32px;
     }
     #{$mainNavList-wrapper}:hover & {
         top: 17px;
+        right: -147px;
     }
 }
 
@@ -173,7 +163,7 @@
 #{$mainNavList-itemButton},
 #{$mainNavList-actionButton} {
     &::after {
-        color: var(--channels-default);
+        color: var(--skypecord-primary-fg);
     }
 }
 #{$mainNavList-wrapper} {
@@ -244,7 +234,7 @@
         color: $accent;
     }
 }
-#{$mainNavList-badgeWrapper} {
+#{$mainNavList-wrapper} {
     #{$badge} {
         background-color: $accent!important;
     }
@@ -261,7 +251,7 @@
         &:hover #{$mainNavList-indicatorWrapper},
         &:hover #{$mainNavList-homeIndicatorWrapper},
         &:hover #{$mainNavList-actionIndicatorWrapper} {
-            background-color: var(--background-modifier-hover);
+            background-color: var(--skypecord-hover-modifier);
         }
         #{$mainNavList-indicator}[style*="height: #{$i}"] {
             &[style*='opacity: 1'],
@@ -270,7 +260,7 @@
                 &,
                 &:hover {
                     @extend %main-nav-list-item-selected;
-                    background-color: var(--background-modifier-selected);
+                    background-color: var(--skypecord-selected-modifier);
                 }
             }
         }
@@ -281,7 +271,7 @@
                 &,
                 &:hover {
                     @extend %main-nav-list-item-selected;
-                    background-color: var(--background-modifier-selected);
+                    background-color: var(--skypecord-selected-modifier);
                 }
             }
         }
