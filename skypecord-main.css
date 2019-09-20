@@ -605,8 +605,6 @@ a {
     margin-left: 4px; }
   .wrapper-1Rf91z:hover .expandedGuilds-1JMD4M .listItem-2P_4kh {
     margin-left: 8px; }
-  .wrapper-1Rf91z:hover .expandedGuilds-1JMD4M .badgeWrapper-3e8pMZ {
-    width: 187px; }
 
 .lowerBadge-29hYVK {
   transition: top ease 0.45s, right ease 0.45s; }
@@ -616,6 +614,8 @@ a {
   .wrapper-1Rf91z:hover .lowerBadge-29hYVK {
     top: 17px;
     right: -147px; }
+  .wrapper-1Rf91z:hover .expandedGuilds-1JMD4M .lowerBadge-29hYVK {
+    right: -139px; }
 
 #bd-pub-button {
   font-weight: 500;
