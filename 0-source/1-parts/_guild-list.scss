@@ -134,9 +134,6 @@
         #{$mainNavList-item} {
             margin-left: 8px;
         }
-        #{$mainNavList-badgeWrapper} {
-            width: 187px;
-        }
     }
 }
 
@@ -149,6 +146,9 @@
     #{$mainNavList-wrapper}:hover & {
         top: 17px;
         right: -147px;
+    }
+    #{$mainNavList-wrapper}:hover #{$mainNavList-folderExpandedGuilds} & {
+        right: -139px;
     }
 }
 
