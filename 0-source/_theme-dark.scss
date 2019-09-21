@@ -25,6 +25,7 @@
     --skypecord-channeltextarea-bg: rgb(43, 44, 51);
     --skypecord-primary-fg: rgb(255, 255, 255);
     --skypecord-secondary-fg: rgb(138, 141, 145);
+    --skypecord-activty-card-bg: #1E2224;
     --header-primary: var(--skypecord-primary-fg);
     --header-secondary: var(--skypecord-secondary-fg);
     --text-normal: var(--skypecord-primary-fg);
@@ -50,7 +51,7 @@
     --guild-header-text-shadow: none;
     /* /Box shadows */
     --channeltextarea-background: var(--skypecord-channeltextarea-bg);
-    // --activity-card-background: #202225;
+    --activity-card-background: var(--skypecord-activity-card-bg);
     --deprecated-panel-background: var(--skypecord-secondary-bg);
     --deprecated-card-bg: transparent;
     --deprecated-card-editable-bg: transparent;
@@ -61,4 +62,5 @@
     // --deprecated-text-input-border-hover: #040405;
     // --deprecated-text-input-border-disabled: #202225;
     // --deprecated-text-input-prefix: #dcddde;
+    --logo-primary: #{$accent};
 }

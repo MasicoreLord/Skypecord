@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "node-sass -w 0-source -o 1-compiled",
-    "watch-live:bd": "node-sass -w 0-source -o ../../../Appdata/Roaming/BetterDiscord/themes",
+    "watch-live:bd": "node-sass 0-source -o ../../../Appdata/Roaming/BetterDiscord/themes && node-sass -w 0-source -o ../../../Appdata/Roaming/BetterDiscord/themes",
     "watch-live": "npm-run-all -p -r watch-live:bd"
   },
   "author": "MasicoreLord",
