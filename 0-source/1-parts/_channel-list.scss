@@ -2,10 +2,6 @@
     height: 88px;
 }
 
-#{$channelList-headerContainer} {
-    box-shadow: 0 1px 0 var(--skypecord-border-fg);
-}
-
 #{$channelList} {
     border-right: 1px solid;
     border-radius: 0;

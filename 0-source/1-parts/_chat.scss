@@ -40,10 +40,6 @@
         background-color: $mentioned-bg;
     }
 
-    #{$chat-channelTextArea} {
-        border-top-color: transparent;
-    }
-
     #{$chat-newMessagesBar} {
         background-color: var(--skypecord-new-message-bar-bg);
     }
@@ -58,6 +54,10 @@
     #{$unread-bar} {
         box-shadow: none;
     }
+}
+
+#{$chat-channelTextArea} {
+    border-top-color: transparent;
 }
 
 #{$chat-newMessagesBar},
@@ -203,11 +203,13 @@
 }
 
 #{$chat-channelTextAreaInner} {
-    min-height: inRem(60px);
-    border-radius: inRem(10px);
+    min-height: inRem(48px);
+    border-radius: inRem(24px);
     align-items: center;
     #{$chat-channelTextAreaButtons} {
         order: 1;
+        -webkit-box-align: center;
+        align-self: center;
     }
     textarea {
         order: 2;

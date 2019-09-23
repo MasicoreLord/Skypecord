@@ -5,7 +5,8 @@
     --skypecord-button-fg: rgb(43, 44, 51);
     --skypecord-border-fg: rgb(213, 217, 222);
     --skypecord-button-border: rgb(43, 44, 51);
-    --skypecord-header-button-bg: rgb(241, 241, 244);
+    --skypecord-padded-button-bg: rgb(241, 241, 244);
+    --skypecord-padded-button-hover-modifier-bg: rgb(229, 228, 232);
     --skypecord-new-message-bar-bg: rgb(22, 134, 217);
     --skypecord-message-bg: rgb(242, 246, 249);
     --skypecord-modal-bg: var(--skypecord-primary-bg);
@@ -24,18 +25,22 @@
     --skypecord-selected-modifier: rgb(199, 237, 252);
     --skypecord-channeltextarea-bg: rgb(241, 241, 244);
     --skypecord-primary-fg: rgb(37, 36, 35);
+    --skypecord-interactive-primary-fg: var(--skypecord-primary-fg);
     --skypecord-secondary-fg: rgb(138, 141, 145);
+    --skypecord-normal-text-fg: var(--skypecord-primary-fg);
     --skypecord-activity-card-bg: rgb(242, 246, 249);
+    --skypecord-pseudo-border-bottom: 0 1px 0 0 var(--skypecord-border-fg);
+    --skypecord-pseudo-border: 0 1px 0 0 var(--skypecord-border-fg), 0 -1px 0 0 var(--skypecord-border-fg), -1px 0 0 0 var(--skypecord-border-fg), 1px 0 0 0 var(--skypecord-border-fg);
     --header-primary: var(--skypecord-primary-fg);
     --header-secondary: var(--skypecord-secondary-fg);
-    --text-normal: var(--skypecord-primary-fg);
-    --text-muted: var(--skypecord-primary-fg);
-    --text-link: var(--skypecord-primary-fg);
-    --channels-default: var(--skypecord-primary-fg);
-    --interactive-normal: var(--skypecord-primary-fg);
-    --interactive-hover: var(--skypecord-primary-fg);
-    --interactive-active: var(--skypecord-primary-fg);
-    --interactive-muted: var(--skypecord-primary-fg);
+    --text-normal: var(--skypecord-normal-text-fg);
+    --text-muted: var(--skypecord-normal-text-fg);
+    --text-link: var(--skypecord-normal-text-fg);
+    --channels-default: var(--skypecord-interactive-primary-fg);
+    --interactive-normal: var(--skypecord-interactive-primary-fg);
+    --interactive-hover: var(--skypecord-interactive-primary-fg);
+    --interactive-active: var(--skypecord-interactive-primary-fg);
+    --interactive-muted: var(--skypecord-interactive-primary-fg);
     --background-primary: var(--skypecord-primary-bg);
     --background-secondary: var(--skypecord-secondary-bg);
     --background-tertiary: var(--skypecord-primary-bg);
@@ -46,8 +51,8 @@
     --background-modifier-selected: var(--skypecord-selected-modifier);
     --background-modifier-accent: var(--skypecord-border-fg);
     /* Box shadows */
-    --elevation-low: none;
-    --elevation-high: none;
+    --elevation-low: var(--skypecord-pseudo-border-bottom);
+    --elevation-high: var(--skypecord-pseudo-border);
     --guild-header-text-shadow: none;
     /* /Box shadows */
     --channeltextarea-background: var(--skypecord-channeltextarea-bg);

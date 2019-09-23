@@ -33,6 +33,35 @@ a {
 }
 /* /Layout Flexibility Fix */
 
+/* Action Buttons */
+#{$chat-channelTextArea} #{$client-actionButton},
+#{$client-toolbar} #{$chat-headerButtonIconWrapper} {
+    margin-left: 8px;
+    margin-right: 0;
+    background-color: var(--skypecord-padded-button-bg);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    &:hover {
+        background-color: var(--skypecord-padded-button-hover-modifier-bg)
+    }
+    > svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+#{$chat-channelTextArea} #{$client-actionButton}:first-child {
+    margin-left: 5px;
+}
+
+#{$chat-channelTextArea} #{$chat-attachButton} {
+    margin-right: 3px;
+}
+/* /Action Buttons */
+
 #{$client-buttonFilled}#{$client-buttonAccentFilled} {
     background-color: transparent;
 }

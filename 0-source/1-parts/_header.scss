@@ -73,21 +73,6 @@
     padding-right: 2px;
 }
 
-#{$client-toolbar} #{$chat-headerButtonIconWrapper} {
-    margin-left: 8px;
-    margin-right: 0;
-    background-color: var(--skypecord-header-button-bg);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    > svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
-}
-
 #{$chat-headerIconBadge} {
     left: 22px;
     top: 21px;
