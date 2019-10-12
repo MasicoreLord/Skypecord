@@ -2,7 +2,7 @@
 @import url("https://bdsources.tk/sourcecheck/code.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
 html {
-  --skypecord-titlebar-text: 'Skypecord v0.2.2 Beta'
+  --skypecord-titlebar-text: 'Skypecord v0.3 Beta'
 ; }
 
 html {
@@ -20,7 +20,8 @@ html {
   --skypecord-button-fg: rgb(204, 204, 204);
   --skypecord-border-fg: rgb(43, 44, 51);
   --skypecord-button-border: rgb(255, 255, 255);
-  --skypecord-header-button-bg: rgb(43, 51, 59);
+  --skypecord-padded-button-bg: rgb(43, 51, 59);
+  --skypecord-padded-button-hover-modifier-bg: rgb(0, 0, 0);
   --skypecord-new-message-bar-bg: #1686D9;
   --skypecord-message-bg: #1E2224;
   --skypecord-modal-bg: var(--skypecord-secondary-bg);
@@ -39,17 +40,22 @@ html {
   --skypecord-selected-modifier: rgb(43, 51, 59);
   --skypecord-channeltextarea-bg: rgb(43, 44, 51);
   --skypecord-primary-fg: rgb(255, 255, 255);
+  --skypecord-interactive-primary-fg: rgb(213, 217, 222);
   --skypecord-secondary-fg: rgb(138, 141, 145);
+  --skypecord-normal-text-fg: rgb(213, 217, 222);
+  --skypecord-activty-card-bg: #1E2224;
+  --skypecord-pseudo-border-bottom: 0 1px 0 0 var(--skypecord-border-fg);
+  --skypecord-pseudo-border: 0 1px 0 0 var(--skypecord-border-fg), 0 -1px 0 0 var(--skypecord-border-fg), -1px 0 0 0 var(--skypecord-border-fg), 1px 0 0 0 var(--skypecord-border-fg);
   --header-primary: var(--skypecord-primary-fg);
   --header-secondary: var(--skypecord-secondary-fg);
-  --text-normal: var(--skypecord-primary-fg);
-  --text-muted: var(--skypecord-primary-fg);
-  --text-link: var(--skypecord-primary-fg);
-  --channels-default: var(--skypecord-primary-fg);
-  --interactive-normal: var(--skypecord-primary-fg);
-  --interactive-hover: var(--skypecord-primary-fg);
-  --interactive-active: var(--skypecord-primary-fg);
-  --interactive-muted: var(--skypecord-primary-fg);
+  --text-normal: var(--skypecord-normal-text-fg);
+  --text-muted: var(--skypecord-normal-text-fg);
+  --text-link: var(--skypecord-normal-text-fg);
+  --channels-default: var(--skypecord-interactive-primary-fg);
+  --interactive-normal: var(--skypecord-interactive-primary-fg);
+  --interactive-hover: var(--skypecord-interactive-primary-fg);
+  --interactive-active: var(--skypecord-interactive-primary-fg);
+  --interactive-muted: var(--skypecord-interactive-primary-fg);
   --background-primary: var(--skypecord-primary-bg);
   --background-secondary: var(--skypecord-secondary-bg);
   --background-tertiary: var(--skypecord-primary-bg);
@@ -59,16 +65,18 @@ html {
   --background-modifier-selected: var(--skypecord-selected-modifier);
   --background-modifier-accent: var(--skypecord-border-fg);
   /* Box shadows */
-  --elevation-low: none;
-  --elevation-high: none;
+  --elevation-low: var(--skypecord-pseudo-border-bottom);
+  --elevation-high: var(--skypecord-pseudo-border);
   --guild-header-text-shadow: none;
   /* /Box shadows */
   --channeltextarea-background: var(--skypecord-channeltextarea-bg);
+  --activity-card-background: var(--skypecord-activity-card-bg);
   --deprecated-panel-background: var(--skypecord-secondary-bg);
   --deprecated-card-bg: transparent;
   --deprecated-card-editable-bg: transparent;
   --deprecated-store-bg: var(--skypecord-primary-bg);
-  --deprecated-quickswitcher-input-background: var(--skypecord-primary-bg); }
+  --deprecated-quickswitcher-input-background: var(--skypecord-primary-bg);
+  --logo-primary: #0078d4; }
 
 .theme-light {
   --skypecord-app-bg: #E5E4E8;
@@ -77,7 +85,8 @@ html {
   --skypecord-button-fg: rgb(43, 44, 51);
   --skypecord-border-fg: rgb(213, 217, 222);
   --skypecord-button-border: rgb(43, 44, 51);
-  --skypecord-header-button-bg: rgb(241, 241, 244);
+  --skypecord-padded-button-bg: rgb(241, 241, 244);
+  --skypecord-padded-button-hover-modifier-bg: rgb(229, 228, 232);
   --skypecord-new-message-bar-bg: rgb(22, 134, 217);
   --skypecord-message-bg: rgb(242, 246, 249);
   --skypecord-modal-bg: var(--skypecord-primary-bg);
@@ -96,17 +105,22 @@ html {
   --skypecord-selected-modifier: rgb(199, 237, 252);
   --skypecord-channeltextarea-bg: rgb(241, 241, 244);
   --skypecord-primary-fg: rgb(37, 36, 35);
+  --skypecord-interactive-primary-fg: var(--skypecord-primary-fg);
   --skypecord-secondary-fg: rgb(138, 141, 145);
+  --skypecord-normal-text-fg: var(--skypecord-primary-fg);
+  --skypecord-activity-card-bg: rgb(242, 246, 249);
+  --skypecord-pseudo-border-bottom: 0 1px 0 0 var(--skypecord-border-fg);
+  --skypecord-pseudo-border: 0 1px 0 0 var(--skypecord-border-fg), 0 -1px 0 0 var(--skypecord-border-fg), -1px 0 0 0 var(--skypecord-border-fg), 1px 0 0 0 var(--skypecord-border-fg);
   --header-primary: var(--skypecord-primary-fg);
   --header-secondary: var(--skypecord-secondary-fg);
-  --text-normal: var(--skypecord-primary-fg);
-  --text-muted: var(--skypecord-primary-fg);
-  --text-link: var(--skypecord-primary-fg);
-  --channels-default: var(--skypecord-primary-fg);
-  --interactive-normal: var(--skypecord-primary-fg);
-  --interactive-hover: var(--skypecord-primary-fg);
-  --interactive-active: var(--skypecord-primary-fg);
-  --interactive-muted: var(--skypecord-primary-fg);
+  --text-normal: var(--skypecord-normal-text-fg);
+  --text-muted: var(--skypecord-normal-text-fg);
+  --text-link: var(--skypecord-normal-text-fg);
+  --channels-default: var(--skypecord-interactive-primary-fg);
+  --interactive-normal: var(--skypecord-interactive-primary-fg);
+  --interactive-hover: var(--skypecord-interactive-primary-fg);
+  --interactive-active: var(--skypecord-interactive-primary-fg);
+  --interactive-muted: var(--skypecord-interactive-primary-fg);
   --background-primary: var(--skypecord-primary-bg);
   --background-secondary: var(--skypecord-secondary-bg);
   --background-tertiary: var(--skypecord-primary-bg);
@@ -116,16 +130,18 @@ html {
   --background-modifier-selected: var(--skypecord-selected-modifier);
   --background-modifier-accent: var(--skypecord-border-fg);
   /* Box shadows */
-  --elevation-low: none;
-  --elevation-high: none;
+  --elevation-low: var(--skypecord-pseudo-border-bottom);
+  --elevation-high: var(--skypecord-pseudo-border);
   --guild-header-text-shadow: none;
   /* /Box shadows */
   --channeltextarea-background: var(--skypecord-channeltextarea-bg);
+  --activity-card-background: var(--skypecord-activity-card-bg);
   --deprecated-panel-background: var(--skypecord-secondary-bg);
   --deprecated-card-bg: transparent;
   --deprecated-card-editable-bg: transparent;
   --deprecated-store-bg: var(--skypecord-primary-bg);
-  --deprecated-quickswitcher-input-background: var(--skypecord-primary-bg); }
+  --deprecated-quickswitcher-input-background: var(--skypecord-primary-bg);
+  --logo-primary: #0078d4; }
 
 /* Font */
 /* Font */
@@ -174,6 +190,37 @@ a {
   contain: none; }
 
 /* /Layout Flexibility Fix */
+/* Action Buttons */
+.channelTextArea-1LDbYG .button-38aScr,
+.toolbar-1t6TWx .iconWrapper-2OrFZ1 {
+  margin-left: 8px;
+  margin-right: 0;
+  background-color: var(--skypecord-padded-button-bg);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; }
+  .channelTextArea-1LDbYG .button-38aScr:hover,
+  .toolbar-1t6TWx .iconWrapper-2OrFZ1:hover {
+    background-color: var(--skypecord-padded-button-hover-modifier-bg); }
+
+.icon-22AiRD,
+.iconWrapper-2OrFZ1 > svg:not(.icon-22AiRD) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-12px, -12px); }
+
+foreignObject .icon-22AiRD {
+  transform: none;
+  position: static; }
+
+.channelTextArea-1LDbYG .button-38aScr:first-child {
+  margin-left: 5px; }
+
+.channelTextArea-1LDbYG .attachButton-1UjEWA {
+  margin-right: 3px; }
+
+/* /Action Buttons */
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
   background-color: transparent; }
 
@@ -262,6 +309,15 @@ a {
   /* ensure typical bot tag height is used */
   line-height: .8125rem;
   border-radius: 0.8em; }
+
+.platform-win .bg-h5JY_x,
+.platform-osx .bg-h5JY_x {
+  top: -32px;
+  /* Negative titlebar's height */ }
+
+/* Match main Discord app background */
+.bg-h5JY_x {
+  background-color: var(--skypecord-app-bg); }
 
 /* General Styles */
 /* Titlebar */
@@ -388,19 +444,6 @@ a {
 .container-cMG81i .input-3Xdcic {
   padding-left: 2px;
   padding-right: 2px; }
-
-.toolbar-1t6TWx .iconWrapper-2OrFZ1 {
-  margin-left: 8px;
-  margin-right: 0;
-  background-color: var(--skypecord-header-button-bg);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%; }
-  .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
 
 .iconBadge-qZ4Ksk {
   left: 22px;
@@ -1083,9 +1126,6 @@ a {
 .header-2o-2hj {
   height: 88px; }
 
-.container-2Rl01u {
-  box-shadow: 0 1px 0 var(--skypecord-border-fg); }
-
 .sidebar-2K8pFh {
   border-right: 1px solid;
   border-radius: 0; }
@@ -1175,10 +1215,6 @@ a {
 .theme-dark .isMentioned-N-h9aa .markup-2BOw-j {
   background-color: rgba(252, 198, 104, 0.2); }
 
-.theme-light .channelTextArea-1LDbYG,
-.theme-dark .channelTextArea-1LDbYG {
-  border-top-color: transparent; }
-
 .theme-light .newMessagesBar-mujexs,
 .theme-dark .newMessagesBar-mujexs {
   background-color: var(--skypecord-new-message-bar-bg); }
@@ -1193,6 +1229,9 @@ a {
 .theme-light .unreadMentionsBar-1VrBNe,
 .theme-dark .unreadMentionsBar-1VrBNe {
   box-shadow: none; }
+
+.channelTextArea-1LDbYG {
+  border-top-color: transparent; }
 
 .newMessagesBar-mujexs,
 .jumpToPresentBar-9P20AM {
@@ -1221,7 +1260,7 @@ a {
 .jumpToPresentBar-9P20AM {
   bottom: 7px; }
 
-.content-3dzVd8 {
+.container-1YxwTf > div {
   margin-bottom: .2em; }
 
 .container-206Blv {
@@ -1256,7 +1295,7 @@ a {
 .markup-2BOw-j pre {
   max-width: fit-content; }
 
-.message-1PNnaP:last-of-type .markup-2BOw-j {
+.container-1YxwTf > div:last-of-type .markup-2BOw-j {
   border-radius: 0 0.625rem 0.625rem 0.625rem; }
 
 .isMentionedCozy-3isp7y::after {
@@ -1273,10 +1312,10 @@ a {
   content: ''; }
 
 .isMentionedCozy-3isp7y .markup-2BOw-j,
-.message-1PNnaP:last-of-type .isMentionedCozy-3isp7y .markup-2BOw-j {
+.container-1YxwTf > div:last-of-type .isMentionedCozy-3isp7y .markup-2BOw-j {
   border-radius: 0 0.625rem 0.625rem 0; }
 
-.message-1PNnaP:last-of-type .isMentionedCozy-3isp7y .markup-2BOw-j::after {
+.container-1YxwTf > div:last-of-type .isMentionedCozy-3isp7y .markup-2BOw-j::after {
   border-radius: 0 0 0 0.625rem; }
 
 .isCompact-1hsne1 {
@@ -1310,11 +1349,13 @@ a {
   text-transform: capitalize; }
 
 .inner-zqa7da {
-  min-height: 3.75rem;
-  border-radius: 0.625rem;
+  min-height: 3rem;
+  border-radius: 1.5rem;
   align-items: center; }
   .inner-zqa7da .buttons-205you {
-    order: 1; }
+    order: 1;
+    -webkit-box-align: center;
+    align-self: center; }
   .inner-zqa7da textarea {
     order: 2; }
   .inner-zqa7da .flex-1O1GKY {
@@ -1966,7 +2007,13 @@ searchBarComponent-32dTOx .input-1Rv96N {
 
 /* OnlineFriendCount by Zerthox */
 .friendsOnline-2JkivW {
-  width: 49px; }
+  width: fit-content;
+  text-align: left;
+  position: relative;
+  left: -1px;
+  font-weight: 600; }
+  .friendsOnline-2JkivW, .friendsOnline-2JkivW:hover {
+    color: var(--skypecord-interactive-primary-fg); }
 
 /* ReadAllNotifications by Devilbro */
 .RANbutton {
@@ -1975,5 +2022,9 @@ searchBarComponent-32dTOx .input-1Rv96N {
   border-radius: 10px;
   line-height: 18px;
   box-sizing: border-box; }
+
+/* Channel Popouts by Green */
+.ChannelPopoutIcon {
+  top: 104px !important; }
 
 /* /Plugin Support */
