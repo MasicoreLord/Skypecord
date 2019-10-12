@@ -29,15 +29,16 @@
 }
 
 /* OnlineFriendCount by Zerthox */
-// #{$main-themeLight},
-// #{$main-themeDark} {
-//     .friendsOnline-2JkivW {
-//         color: var(--skypecord-main-fg);
-//     }
-// }
-
 .friendsOnline-2JkivW {
-    width: 49px;
+    width: fit-content;
+    text-align: left;
+    position: relative;
+    left: -1px;
+    font-weight: 600;
+    &,
+    &:hover {
+        color: var(--skypecord-interactive-primary-fg);
+    }
 }
 
 /* ReadAllNotifications by Devilbro */

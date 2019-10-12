@@ -45,12 +45,19 @@ a {
     &:hover {
         background-color: var(--skypecord-padded-button-hover-modifier-bg)
     }
-    > svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
+}
+
+#{$chat-headerButtonIcon},
+#{$chat-headerButtonIconWrapper} > svg:not(#{$chat-headerButtonIcon}) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+}
+
+foreignObject #{$chat-headerButtonIcon} {
+    transform: none;
+    position: static;
 }
 
 #{$chat-channelTextArea} #{$client-actionButton}:first-child {
@@ -158,4 +165,16 @@ a {
     height: 1.28em; /* ensure typical bot tag height is used */
     line-height: .8125rem;
     border-radius: 0.8em;
+}
+
+#{$client-win},
+#{$client-macOs} {
+    #{$client-bg} {
+        top: -32px; /* Negative titlebar's height */
+    }
+}
+
+/* Match main Discord app background */
+#{$client-bg} {
+    background-color: var(--skypecord-app-bg);
 }
