@@ -1,5 +1,10 @@
 ::-webkit-scrollbar {
-    width: 2px !important;
+    &:vertical {
+        width: 2px !important;
+    }
+    &:horizontal {
+        height: 2px !important;
+    }
 }
 
 ::-webkit-scrollbar-thumb,
