@@ -1,8 +1,8 @@
 /*! Skypecord is under the MIT License */
-@import url("https://bdsources.tk/sourcecheck/code.css");
+@import url("https://bdsources.github.io/sourcecheck/code.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
 html {
-  --skypecord-titlebar-text: 'Skypecord v0.3 Beta'
+  --skypecord-titlebar-text: 'Skypecord v0.3.1 Beta'
 ; }
 
 html {
@@ -362,8 +362,11 @@ foreignObject .icon-22AiRD {
 
 /* /Titlebar */
 /* Scrollbar */
-::-webkit-scrollbar {
+::-webkit-scrollbar:vertical {
   width: 2px !important; }
+
+::-webkit-scrollbar:horizontal {
+  height: 2px !important; }
 
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-track {
@@ -1961,6 +1964,9 @@ searchBarComponent-32dTOx .input-1Rv96N {
 /* Server Folders by DevilBro (BetterDiscord) */
 .wrapper-1Rf91z.foldercontentclosed {
   border-right: 0; }
+
+.guild-folder-tooltip {
+  display: none; }
 
 /* Joined Date & Created Date by DevilBro */
 .theme-light .topSectionNormal-2-vo2m .joinedAtDate,
