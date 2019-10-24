@@ -7,7 +7,8 @@
 }
 #{$privateChannelList-channel}[href='/activity'],
 #{$privateChannelList-channel}[href='/library'],
-#{$privateChannelList-channel}[href='/store'],
+#{$privateChannelList-channel}[href='/store'], /* Nitro/Store Tab */
+#{$privateChannelList-channel}[href^='/store/'], /* Nitro/Store Tab browsed to a game's page */
 #{$privateChannelList-channel}[href='/channels/@me'] {
     &:hover,
     &#{$privateChannelList-channelSelected} {
@@ -59,7 +60,8 @@
 
 #{$privateChannelList-channel}[href='/activity'],
 #{$privateChannelList-channel}[href='/library'],
-#{$privateChannelList-channel}[href='/store'],
+#{$privateChannelList-channel}[href='/store'], /* Nitro/Store Tab */
+#{$privateChannelList-channel}[href^='/store/'], /* Nitro/Store Tab browsed to a game's page */
 #{$privateChannelList-channel}[href='/channels/@me'] {
     height: 50px;
     margin-bottom: -5px;
