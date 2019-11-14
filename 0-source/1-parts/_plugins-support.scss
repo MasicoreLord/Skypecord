@@ -3,25 +3,21 @@
     border-right: 0;
 }
 
-.guild-folder-tooltip {
-    display: none;
-}
-
 /* Joined Date & Created Date by DevilBro */
 .theme-light,
 .theme-dark {
-    #{$modal-topSectionNormal},
-    #{$modal-topSectionSpotify},
-    #{$modal-topSectionPlaying},
-    #{$modal-topSectionStreaming} {
-        &,
-        &:not(.topSectionNormal-2-vo2m) {
-            .joinedAtDate,
-            .creationDate {
-                color: $alt-fg;
-            }
-        }
-    }
+//    #{$modal-topSectionNormal},
+//    #{$modal-topSectionSpotify},
+//    #{$modal-topSectionPlaying},
+//    #{$modal-topSectionStreaming} {
+//        &,
+//        &:not(.topSectionNormal-2-vo2m) {
+//            .joinedAtDate,
+//            .creationDate {
+//                color: $alt-fg;
+//            }
+//        }
+//    }
     .RANbutton {
         border-color: var(--skypecord-button-border);
         &,
@@ -34,10 +30,61 @@
 
 /* OnlineFriendCount by Zerthox */
 .friendsOnline-2JkivW {
-    width: fit-content;
-    text-align: left;
-    position: relative;
-    left: -1px;
+    font-weight: 600;
+    &,
+    &:hover {
+        color: var(--skypecord-interactive-primary-fg);
+    }
+}
+
+/* ReadAllNotifications by Devilbro */
+.RANbutton {
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 10px;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+/* Channel Popouts by Green */
+.ChannelPopoutIcon {
+    top: 104px!important;
+}/* Server Folders by DevilBro (BetterDiscord) */
+#{$mainNavList-wrapper}.foldercontentclosed {
+    border-right: 0;
+}
+
+/* Joined Date & Created Date by DevilBro */
+.theme-light,
+.theme-dark {
+//    #{$modal-topSectionNormal},
+//    #{$modal-topSectionSpotify},
+//    #{$modal-topSectionPlaying},
+//    #{$modal-topSectionStreaming} {
+//        &,
+//        &:not(.topSectionNormal-2-vo2m) {
+//            .joinedAtDate,
+//            .creationDate {
+//                color: $alt-fg;
+//            }
+//        }
+//    }
+}
+
+.RANbutton {
+    border-color: var(--skypecord-button-border);
+    &,
+    &:hover {
+        color: var(--skypecord-button-fg);
+    }
+}
+
+.RANbutton-inner {
+    background-color: transparent;
+}
+
+/* OnlineFriendCount by Zerthox */
+.friendsOnline-2JkivW {
     font-weight: 600;
     &,
     &:hover {

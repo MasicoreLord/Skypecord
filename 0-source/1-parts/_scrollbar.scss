@@ -1,10 +1,6 @@
 ::-webkit-scrollbar {
-    &:vertical {
-        width: 2px !important;
-    }
-    &:horizontal {
-        height: 2px !important;
-    }
+    width: 2px !important;
+    height: 2px !important;
 }
 
 ::-webkit-scrollbar-thumb,
@@ -17,7 +13,7 @@
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track-piece {
-    border: none!important;
+    border: none !important;
 }
 
 ::-webkit-scrollbar-track-piece,

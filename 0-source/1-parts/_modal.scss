@@ -11,7 +11,7 @@
     overflow: auto;
 }
 
-#{$modal-topSectionNormal} {
+#{$modal-topSectionPlaying} {
     background-image: $modal-header-bg;
 }
 
@@ -23,28 +23,28 @@
     background-color: var(--skypecord-modal-bg);
 }
 
-#{$modal-topSection} {
-    #{$profile-username},
-    #{$profile-discriminator} {
-        color: $alt-fg;
-    }
-    #{$modal-additionalActionsIcon} {
-        &,
-        &:hover {
-            color: $alt-fg;
-        }
-    }
-    #{$modal-tabBarItem} {
-        &,
-        &:hover {
-            color: $alt-fg!important;
-            &:active,
-            &#{$modal-itemSelected} {
-                border-color: $alt-fg!important;
-            }
-        }
-    }
-}
+//#{$modal-topSection} {
+//    #{$profile-username},
+//    #{$profile-discriminator} {
+//        color: $alt-fg;
+//    }
+//    #{$modal-additionalActionsIcon} {
+//        &,
+//        &:hover {
+//            color: $alt-fg;
+//        }
+//    }
+//    #{$modal-tabBarItem} {
+//        &,
+//        &:hover {
+//            color: $alt-fg!important;
+//            &:active,
+//            &#{$modal-itemSelected} {
+//                border-color: $alt-fg!important;
+//            }
+//        }
+//    }
+//}
 
 #{$modal-topSectionNormal} #{$modal-tabBarContainer} {
     border-top-color: transparent;

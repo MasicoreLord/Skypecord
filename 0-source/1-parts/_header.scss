@@ -60,11 +60,26 @@
     #{$library-filter},
     #{$store-browseSearch},
     #{$chat-searchBarWrapper} {
-        margin: 0 16px;
+        margin: 0 0 0 8px;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
         + #{$chat-headerButtonIconWrapper} {
             margin-left: 0;
         }
     }
+}
+
+#{$chat-searchBar},
+#{$page-searchBar},
+#{$chat-searchBarInner} {
+    height: 100%;
+    width: 100%;
+}
+
+#{$chat-searchBarInner} #{$chat-searchBarIcon} {
+    width: 40px;
+    height: 40px;
 }
 
 #{$chat-searchBar} .DraftEditor-root .public-DraftEditorPlaceholder-root,

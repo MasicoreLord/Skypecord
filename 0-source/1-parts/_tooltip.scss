@@ -1,3 +1,7 @@
+#{$tooltipAlert} {
+    --skypecord-tooltip-border: red;
+}
+
 .theme-light,
 .theme-dark {
     #{$tooltip} {
@@ -15,19 +19,6 @@
     animation: skypecord-fade .2s ease-in-out;
 }
 
-#{$tooltipDefault} #{$tooltip-pointer} {
+#{$tooltip-pointer} {
     display: none;
-}
-
-#{$layerContainer-layer} {
-    // Normal list item
-   &[style*='left: 64'],
-   &[style*='left: 65'],
-    // In folder list item
-   &[style*='left: 72'],
-   &[style*='left: 73'] {
-       #{$tooltipDefault} {
-           display: none;
-       }
-   }
 }

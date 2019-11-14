@@ -2,117 +2,27 @@
     border-radius: 0;
     border-right: 1px solid;
     box-sizing: border-box;
-    width: 65px;
-    transition: width ease 0.45s;
-    &:hover {
-        width: 212px;
-    }
     #{$client-macOs} & {
         margin-top: 0;
     }
 }
 
-#{$mainNavList-scrollerWrap} {
-    width: calc(100% + 2px); // added scrollbar width
-}
-
-#{$mainNavList-item},
-#{$mainNavList-folderWrapper} {
-    width: 65px;
-    transition: width ease 0.45s;
-    #{$mainNavList-wrapper}:hover & {
-        width: 212px;
-    }
-}
-
-#{$mainNavList-item} {
-    justify-content: flex-start;
-    padding-left: 8px;
-    margin: 0;
-    padding: 4px 8px;
-}
-
-// #{$mainNavList-itemInner} {
-//     width: 168px;
-// }
-
 #{$mainNavList-itemMaskContainer} {
-    overflow: visible;
-}
-
-#{$mainNavList-itemButton},
-#{$mainNavList-actionButton} {
-    &::after {
-        content: attr(aria-label);
-        position: absolute;
-        left: calc(100% + 8px);
-        font-size: 15px;
-        font-weight: 500;
-        width: 132px;
-        line-height: 48px;
-        overflow: hidden;
-        white-space: nowrap;
-        $mask-image: linear-gradient(to left, transparent 0, #000 21px);
-        -webkit-mask-image: $mask-image;
-        mask-image: $mask-image;
-    }
-}
-
-#{$mainNavList-indicatorWrapper},
-#{$mainNavList-homeIndicatorWrapper},
-#{$mainNavList-actionIndicatorWrapper} {
-    width: 228px;
-    height: 56px;
-}
-
-#{$mainNavList-homeIndicatorWrapper},
-#{$mainNavList-actionIndicatorWrapper} {
-    #{$mainNavList-indicator} {
-        display: none;
-    }
-}
-
-%main-nav-list-item-selected {
-    width: 100%;
-    height: 100%!important;
-    display: block
+    border-radius: 50%;
+    background-color: var(--skypecord-avatar-bg);
 }
 
 #{$mainNavList-indicator} {
-    border-radius: 0;
-    height: 8px!important;
-    #{$mainNavList-item}.bd-guild:not(.bd-unread):not(.bd-selected) & /* BandagedBD */ {
-        display: none;
-    }
-}
-
-#{$mainNavList-itemIcon},
-#{$mainNavList-actionButton},
-#{$mainNavList-homeButton},
-#{$mainNavList-itemAcronym} {
-    border-radius: 50%;
+    border-radius: 0 2px 2px 0;
 }
 
 #{$mainNavList-separater} {
-    width: calc(100% - 16px);
-    border-radius: 0;
+    width: 56px;
+    border-radius: 2px;
 }
 
 #{$client-macOs} #{$mainNavList-scroller} {
     padding-top: 4px;
-}
-
-#{$mainNavList-itemInner} {
-    border-radius: 50%;
-    foreignObject {
-        mask: none;
-        x: -82px;
-        overflow: visible; // Due to user agent stylesheet in newer chrome version hiding overflow on foreignObject
-    }
-}
-
-#{$mainNavList-itemMaskContainer} {
-    width: 212px;
 }
 
 #{$mainNavList-itemInner} {
@@ -124,32 +34,8 @@
     transform: translate(0);
 }
 
-#{$mainNavList-folderExpandedGuilds} {
-    width: 212px;
-    #{$mainNavList-item} {
-        transition: margin-left ease 0.45s;
-        margin-left: 4px;
-    }
-    #{$mainNavList-wrapper}:hover & {
-        #{$mainNavList-item} {
-            margin-left: 8px;
-        }
-    }
-}
-
-#{$mainNavList-lowerBadge} {
-    transition: top ease 0.45s, right ease 0.45s;
-    &,
-    #{$mainNavList-folderExpandedGuilds} & {
-        top: 32px;
-    }
-    #{$mainNavList-wrapper}:hover & {
-        top: 17px;
-        right: -147px;
-    }
-    #{$mainNavList-wrapper}:hover #{$mainNavList-folderExpandedGuilds} & {
-        right: -139px;
-    }
+#{$mainNavList-folderExpandedGuilds} #{$mainNavList-item} {
+    margin-left: 4px;
 }
 
 #bd-pub-button /* BandagedBD */ {
@@ -170,19 +56,9 @@
     border-color: var(--skypecord-border-fg);
 }
 #{$mainNavList-itemInner} {
-    background-color: var(--skypecord-avatar-bg);
     a {
         color: $accent;
     }
-}
-#{$mainNavList-actionButton},
-#{$mainNavList-actionButton}:hover,
-#{$mainNavList-actionButton}#{$mainNavList-homeSelected},
-#{$mainNavList-actionButton}#{$mainNavList-guildNoIconSelected},
-#{$mainNavList-actionButton}#{$mainNavList-actionSelected},
-#{$mainNavList-itemIcon} {
-    background-color: var(--skypecord-avatar-bg);
-    color: $accent;
 }
 #{$mainNavList-folder} {
     &,
@@ -208,12 +84,13 @@
         background-color: transparent;
     }
 }
-#{$mainNavList-folderIconWrapper} {
-    border-radius: 50%;
-}
 #{$mainNavList-itemAcronym},
 #{$mainNavList-homeIcon} {
     color: $accent;
+}
+
+#{$mainNavList-itemButton} {
+    background-color: var(--skypecord-avatar-bg);
 }
 
 #bd-pub-button /* BandagedBD */ {
@@ -238,47 +115,4 @@
     #{$badge} {
         background-color: $accent!important;
     }
-}
-
-%main-nav-list-item-selected {
-    width: 100%;
-    height: 100%!important;
-    display: block
-}
-
-@for $i from 21 through 40 {
-    #{$mainNavList-item} {
-        &:hover #{$mainNavList-indicatorWrapper},
-        &:hover #{$mainNavList-homeIndicatorWrapper},
-        &:hover #{$mainNavList-actionIndicatorWrapper} {
-            background-color: var(--skypecord-hover-modifier);
-        }
-        #{$mainNavList-indicator}[style*="height: #{$i}"] {
-            &[style*='opacity: 1'],
-            &[style*='opacity: 0.9']
-            &[style*='opacity: 0.8'] {
-                &,
-                &:hover {
-                    @extend %main-nav-list-item-selected;
-                    background-color: var(--skypecord-selected-modifier);
-                }
-            }
-        }
-        #{$mainNavList-indicatorWrapper},
-        #{$mainNavList-homeIndicatorWrapper},
-        #{$mainNavList-actionIndicatorWrapper} {
-            &.bd-selected #{$mainNavList-indicator} {
-                &,
-                &:hover {
-                    @extend %main-nav-list-item-selected;
-                    background-color: var(--skypecord-selected-modifier);
-                }
-            }
-        }
-    }
-}
-
-#{$mainNavList-indicator} {
-    border-radius: 0;
-    height: 8px!important;
 }

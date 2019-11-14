@@ -207,29 +207,16 @@
     border-radius: inRem(24px);
     align-items: center;
     #{$chat-channelTextAreaButtons} {
-        order: 1;
         -webkit-box-align: center;
         align-self: center;
     }
-    textarea {
-        order: 2;
-    }
-    #{$property-flexLayout} {
-        order: 3;
-    }
-}
-
-/* Reposition attach popout to compensate for re-ordered message box */
-#{$client-popoutTopLeft}[style$='transform: translateX(0%) translateY(-100%) translateZ(0px);'] {
-    transform: translateX(calc(-100% + 43px)) translateY(-100%) translateZ(0)!important;
-    margin-right: -20px;
-}
-
-#{$client-popoutTopRight}[style$='translateX(-100%) translateY(-100%) translateZ(0px);'] {
-    transform: translateX(-43px) translateY(-100%) translateZ(0)!important;
 }
 
 #{$chat-channelTextArea} {
     padding-top: inRem(8px);
     margin-bottom: inRem(20px);
+}
+
+#{$chat-channelTextAreaInnerNoAttach} #{$chat-channelTextAreaInput} {
+    margin: 2px 2px 2px 4px;
 }

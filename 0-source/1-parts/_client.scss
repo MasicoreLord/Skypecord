@@ -59,14 +59,6 @@ foreignObject #{$chat-headerButtonIcon} {
     transform: none;
     position: static;
 }
-
-#{$chat-channelTextArea} #{$client-actionButton}:first-child {
-    margin-left: 5px;
-}
-
-#{$chat-channelTextArea} #{$chat-attachButton} {
-    margin-right: 3px;
-}
 /* /Action Buttons */
 
 #{$client-buttonFilled}#{$client-buttonAccentFilled} {
