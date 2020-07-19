@@ -1,6 +1,8 @@
 # Skypecord
 A theme inspired by Skype and fluent design (mdl2)
 
+#### Project discontinued, creator lost access to Discord and is unlikely to return
+
 ## **This theme is currently in beta, expect bugs and rough edges!**
 ### Now includes Dark theme support
 
